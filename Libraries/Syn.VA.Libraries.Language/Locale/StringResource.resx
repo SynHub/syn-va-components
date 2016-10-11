@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Browse" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="BrowserWindowTitle" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChannelPlugin_DisplayName" xml:space="preserve">
+    <value>Web API</value>
+    <comment>Display name of Channel plugin</comment>
+  </data>
+  <data name="ChannelPlugin_MessageReceivedLabel" xml:space="preserve">
+    <value>Received Message(s)</value>
+  </data>
+  <data name="ChannelPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>Web API Interface settings saved.</value>
+  </data>
+  <data name="DefaultHint" xml:space="preserve">
+    <value>What can I say?</value>
+  </data>
+  <data name="DictionaryPlugin_DisplayName" xml:space="preserve">
+    <value>Dictionary &amp; Thesaraus</value>
+    <comment>Display name of Dictionary plugin</comment>
+  </data>
+  <data name="DictionaryPlugin_ToggleButtonContent" xml:space="preserve">
+    <value>Common definitions only</value>
+  </data>
+  <data name="VA_ExternalBotPathWatermark" xml:space="preserve">
+    <value>External Bot Knowledge-Base Directory</value>
+  </data>
+  <data name="NameMessageText" xml:space="preserve">
+    <value>What shall I call you?</value>
+    <comment>Text of the second message after installation</comment>
+  </data>
+  <data name="NameMessageTitle" xml:space="preserve">
+    <value>Hello Developer!</value>
+    <comment>Title of the second message after installation</comment>
+  </data>
+  <data name="NameSpecifiedMessage" xml:space="preserve">
+    <value>Thank you {0}! Would you like to run the Speech Recognition Test?</value>
+    <comment>Message displayed if the user has specified his/her name.</comment>
+  </data>
+  <data name="NameUnspecifiedMessage" xml:space="preserve">
+    <value>Would you like to run the Speech Recognition Test?</value>
+    <comment>Message displayed if the user doesn't specify his/her name.</comment>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="PortNumber" xml:space="preserve">
+    <value>Port Number</value>
+  </data>
+  <data name="ReadyMessageText" xml:space="preserve">
+    <value>Please ensure that the Microphone is properly connected and then press the OK button.</value>
+  </data>
+  <data name="ReadyMessageTitle" xml:space="preserve">
+    <value>Get Ready</value>
+  </data>
+  <data name="ResourceDropDownButtonText" xml:space="preserve">
+    <value>Links</value>
+    <comment>Text of the resource button found at the top of the Settings Panel</comment>
+  </data>
+  <data name="SettingPanel_PasswordWatermark" xml:space="preserve">
+    <value>Settings Panel Password</value>
+    <comment>The content of the password box in VA Settings</comment>
+  </data>
+  <data name="SettingsPanel_PasswordDialogText" xml:space="preserve">
+    <value>Please enter the Settings Panel password to continue.</value>
+  </data>
+  <data name="SettingsPanel_PasswordDialogTitle" xml:space="preserve">
+    <value>Password Protected</value>
+  </data>
+  <data name="SettingsPanel_Title" xml:space="preserve">
+    <value>Settings Panel</value>
+    <comment>Settings Panel Title </comment>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="SpeechRecognition" xml:space="preserve">
+    <value>Speech Recognition</value>
+  </data>
+  <data name="SpeechTestSnippetMessage" xml:space="preserve">
+    <value>Waiting to hear '{0}'</value>
+  </data>
+  <data name="SpeechTestSnippetTitle" xml:space="preserve">
+    <value>Please say '{0}'</value>
+  </data>
+  <data name="SpeechTestText" xml:space="preserve">
+    <value>Hello Assistant</value>
+    <comment>Phrase used to test speech recognition</comment>
+  </data>
+  <data name="StartMessageText" xml:space="preserve">
+    <value>If you need any help just say or type 'What can I say?'</value>
+  </data>
+  <data name="StartMessageTitle" xml:space="preserve">
+    <value>Let's Start!</value>
+  </data>
+  <data name="TestFailedMessageText" xml:space="preserve">
+    <value>Speech Recognition Test failed. You can anytime refer our Online Tutorials to calibrate Speech Recognition.</value>
+    <comment>Text message displayed when the Speech Recognition test fails.</comment>
+  </data>
+  <data name="TestFailedMessageTitle" xml:space="preserve">
+    <value>Oops</value>
+  </data>
+  <data name="TestPassedMessageText" xml:space="preserve">
+    <value>Speech Recognition Test passed.</value>
+  </data>
+  <data name="TestPassedMessageTitle" xml:space="preserve">
+    <value>Awesome!</value>
+  </data>
+  <data name="ThankMessage" xml:space="preserve">
+    <value>You Rock! Thank you for installing Syn Virtual Assistant!</value>
+    <comment>First message that is displayed after the installation</comment>
+  </data>
+  <data name="UpdateMessage" xml:space="preserve">
+    <value>A new update, version {version} is now available. Please visit {link} to download the latest version.</value>
+    <comment>Message displayed when an Update is found.</comment>
+  </data>
+  <data name="ChannelPlugin_ToggleOffLabel" xml:space="preserve">
+    <value>Web API is Disabled</value>
+    <comment>Off label when the Web API is disabled</comment>
+  </data>
+  <data name="ChannelPlugin_ToggleOnLabel" xml:space="preserve">
+    <value>Web API is Enabled</value>
+    <comment>On label when the Web API is enabled</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ConfirmPasswordText" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="EmailPlugin_DisplayName" xml:space="preserve">
+    <value>Email Configuration</value>
+  </data>
+  <data name="EmailPlugin_EmailLabelContent" xml:space="preserve">
+    <value>Assistant Email ID</value>
+  </data>
+  <data name="EmailPlugin_WrongPasswordMessage" xml:space="preserve">
+    <value>Passwords Do Not Match!</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="EmailPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>Email configuration updated.</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="UserPlugin_DisplayName" xml:space="preserve">
+    <value>User Information</value>
+    <comment>Name to be displayed in settings panel</comment>
+  </data>
+  <data name="UserPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>User information stored.</value>
+  </data>
+  <data name="HoroscopePlugin_DisplayName" xml:space="preserve">
+    <value>Horoscope</value>
+  </data>
+  <data name="HoroscopePlugin_SelectionLabelContent" xml:space="preserve">
+    <value>Select your Zodiac Sign</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="Directories" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="LauncherPlugin_AddFileMessage" xml:space="preserve">
+    <value>Please specify a name for this file</value>
+  </data>
+  <data name="LauncherPlugin_AddFileTitle" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="LauncherPlugin_AddFolderMessage" xml:space="preserve">
+    <value>Please specify a name for this folder</value>
+  </data>
+  <data name="LauncherPlugin_AddFolderTitle" xml:space="preserve">
+    <value>Folder Name</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineAddressMessage" xml:space="preserve">
+    <value>Please type in the URL of the search engine. Use {0} for query replacement.</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineAddressTitle" xml:space="preserve">
+    <value>Search Engine Address</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineNameMessage" xml:space="preserve">
+    <value>Please type a name for the search engine. Example 'Google'</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineNameTitle" xml:space="preserve">
+    <value>Search Engine Name</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteAddressMessage" xml:space="preserve">
+    <value>Please type in the URL of the website.</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteAddressTitle" xml:space="preserve">
+    <value>Website Address</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteNameMessage" xml:space="preserve">
+    <value>Please type a name for the website. Example 'Google'</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteNameTitle" xml:space="preserve">
+    <value>Website Name</value>
+  </data>
+  <data name="LauncherPlugin_DisplayName" xml:space="preserve">
+    <value>Files, Folders &amp; Websites</value>
+  </data>
+  <data name="MapPlugin_DisplayName" xml:space="preserve">
+    <value>Maps</value>
+  </data>
+  <data name="MapPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>Map settings have been saved.</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="SearchEngines" xml:space="preserve">
+    <value>Search Engines</value>
+  </data>
+  <data name="Websites" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="MapPlugin_DefaultZoomLabelContent" xml:space="preserve">
+    <value>Default Zoom</value>
+  </data>
+  <data name="MapPlugin_MapProviderLabelContent" xml:space="preserve">
+    <value>Map Provider</value>
+  </data>
+  <data name="MapPlugin_MaximumZoomLabelContent" xml:space="preserve">
+    <value>Maximum Zoom</value>
+  </data>
+  <data name="MapPlugin_MinimumZoomLabelContent" xml:space="preserve">
+    <value>Minimum Zoom</value>
+  </data>
+  <data name="MediaPlugin_DisplayName" xml:space="preserve">
+    <value>Songs &amp; Videos</value>
+  </data>
+  <data name="MediaPlugin_IndexingMessage" xml:space="preserve">
+    <value>Indexing has started. You will be notified when indexing is over.</value>
+    <comment>Message displayed in settings panel after a new media directory is set.</comment>
+  </data>
+  <data name="MediaPlugin_MusicDirectoryLabelContentFormat" xml:space="preserve">
+    <value>Selected Songs Directory (Indexed {0} Files)</value>
+  </data>
+  <data name="MediaPlugin_VideoDirectoryLabelContentFormat" xml:space="preserve">
+    <value>Selected Videos Directory (Indexed {0} Files)</value>
+  </data>
+  <data name="MessagingPlugin_DisplayName" xml:space="preserve">
+    <value>Telegram Bot</value>
+  </data>
+  <data name="Hostname" xml:space="preserve">
+    <value>Hostname</value>
+  </data>
+  <data name="MessagingPlugin_AutoConnectOffLabelContent" xml:space="preserve">
+    <value>Auto-Connect Disabled</value>
+  </data>
+  <data name="MessagingPlugin_AutoConnectOnLabelContent" xml:space="preserve">
+    <value>Auto-Connect Enabled</value>
+  </data>
+  <data name="MessagingPlugin_SettingsSaved" xml:space="preserve">
+    <value>Telegram Bot API saved.</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="PerfPlugin_DisplayName" xml:space="preserve">
+    <value>Performance Monitor</value>
+  </data>
+  <data name="PerfPlugin_FlushSwitchOffLabel" xml:space="preserve">
+    <value>Automatic Memory Flushing Off</value>
+  </data>
+  <data name="PerfPlugin_FlushSwitchOnLabel" xml:space="preserve">
+    <value>Automatic Memory Flushing On</value>
+  </data>
+  <data name="PerfPlugin_LastCpuUsage" xml:space="preserve">
+    <value>Last Monitored CPU Usage: {0}</value>
+  </data>
+  <data name="PerfPlugin_FlushButtonContent" xml:space="preserve">
+    <value>Flush Now</value>
+  </data>
+  <data name="PerfPlugin_FlushLabelContent" xml:space="preserve">
+    <value>Automatic Flushing Interval</value>
+  </data>
+  <data name="PerfPlugin_LastDiskUsage" xml:space="preserve">
+    <value>Last Monitored Disk Usage: {0}</value>
+  </data>
+  <data name="PerfPlugin_LastGc" xml:space="preserve">
+    <value>Last Monitored GC Allocation: {0}</value>
+  </data>
+  <data name="PerfPlugin_LastMemoryFlush" xml:space="preserve">
+    <value>Last Recorded Memory Flush: {0}</value>
+  </data>
+  <data name="PerfPlugin_LastRamUsage" xml:space="preserve">
+    <value>Last Monitored RAM Usage: {0}</value>
+  </data>
+  <data name="PerfPlugin_Minute" xml:space="preserve">
+    <value>{0} Minute(s)</value>
+  </data>
+  <data name="ServicePlugin_DisplayName" xml:space="preserve">
+    <value>Services &amp; Plugins</value>
+  </data>
+  <data name="SkypePlugin_AddIdDescription" xml:space="preserve">
+    <value>Please specify the ID of the Skype user.</value>
+  </data>
+  <data name="SkypePlugin_AddIdTitle" xml:space="preserve">
+    <value>Skype User ID</value>
+  </data>
+  <data name="SkypePlugin_AddNameDescription" xml:space="preserve">
+    <value>Please specify a name for this Skype user.</value>
+  </data>
+  <data name="SkypePlugin_AddNameTitle" xml:space="preserve">
+    <value>Skype User Name</value>
+  </data>
+  <data name="SkypePlugin_DisplayName" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="SkypePlugin_KnownUserLabelContent" xml:space="preserve">
+    <value>Known Skype Contact(s)</value>
+  </data>
+  <data name="SkypePlugin_TestButtonContent" xml:space="preserve">
+    <value>Test Skype Call</value>
+  </data>
+  <data name="SkypePlugin_UserAdded" xml:space="preserve">
+    <value>Skype User Added.</value>
+  </data>
+  <data name="SkypePlugin_UserRemoved" xml:space="preserve">
+    <value>Skype User Removed.</value>
+  </data>
+  <data name="SpeechPlugin_DisplayName" xml:space="preserve">
+    <value>Speech Recognition &amp; Synthesis</value>
+  </data>
+  <data name="SpeechPlugin_EngineLabelContent" xml:space="preserve">
+    <value>Speech Recognition Engine</value>
+  </data>
+  <data name="SpeechPlugin_MasterVolumeLabel" xml:space="preserve">
+    <value>Master Volume</value>
+  </data>
+  <data name="SpeechPlugin_MicrophoneVolumeLabelContent" xml:space="preserve">
+    <value>Microphone Volume</value>
+  </data>
+  <data name="SpeechPlugin_RankLabelContent" xml:space="preserve">
+    <value>Minimum Rank (Equal and Above)</value>
+  </data>
+  <data name="SpeechPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>New speech settings saved.</value>
+  </data>
+  <data name="SpeechPlugin_SynthesisConfidenceLabelContent" xml:space="preserve">
+    <value>Minimum Speech Confidence</value>
+  </data>
+  <data name="SpeechPlugin_SynthesisRateLabelContent" xml:space="preserve">
+    <value>Speech Synthesis Rate</value>
+  </data>
+  <data name="SpeechPlugin_SynthesizerLabelContent" xml:space="preserve">
+    <value>Speech Synthesis Engine</value>
+  </data>
+  <data name="SpeechPlugin_VoiceLabelContent" xml:space="preserve">
+    <value>Synthesizer Voice</value>
+  </data>
+  <data name="SpeechPlugin_VolumeLabelContent" xml:space="preserve">
+    <value>Speech Synthesis Volume</value>
+  </data>
+  <data name="TicTacToePlugin_DisplayName" xml:space="preserve">
+    <value>Tic Tac Toe</value>
+  </data>
+  <data name="TicTacToePlugin_PlayerDifficultyContent" xml:space="preserve">
+    <value>Game Difficulty</value>
+  </data>
+  <data name="TicTacToePlugin_PlayerLabelContent" xml:space="preserve">
+    <value>First Player</value>
+  </data>
+  <data name="WeatherPlugin_DisplayName" xml:space="preserve">
+    <value>Weather</value>
+    <comment>Name to be displayed in settings panel</comment>
+  </data>
+  <data name="WeatherPlugin_LocationLabelContent" xml:space="preserve">
+    <value>Your Current Location</value>
+  </data>
+  <data name="WeatherPlugin_SaveButtonContent" xml:space="preserve">
+    <value>Save Location</value>
+  </data>
+  <data name="WeatherPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>Your current location for weather report has now been saved.</value>
+  </data>
+  <data name="WeatherPlugin_WeatherReportServiceDescription" xml:space="preserve">
+    <value>Weather report every 2 hours</value>
+  </data>
+  <data name="WindowsPlugin_DisplayName" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="WindowsPlugin_ScreenshotLabelContent" xml:space="preserve">
+    <value>Screenshot Directory</value>
+  </data>
+  <data name="WindowsPlugin_WallpaperLabelContent" xml:space="preserve">
+    <value>Wallpaper Directory</value>
+  </data>
+  <data name="WolframPlugin_ApiLabelContent" xml:space="preserve">
+    <value>Wolfram Alpha Developer API Key</value>
+  </data>
+  <data name="WolframPlugin_DisplayName" xml:space="preserve">
+    <value>Wolfram Alpha</value>
+  </data>
+  <data name="WolframPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>Wolfram API Key has now been saved. You may now use the Wolfram Alpha features.</value>
+  </data>
+  <data name="AvatarPlugin_AvatarLabelContent" xml:space="preserve">
+    <value>3D Avatar</value>
+  </data>
+  <data name="AvatarPlugin_BackgroundLabelContent" xml:space="preserve">
+    <value>Avatar Background</value>
+  </data>
+  <data name="AvatarPlugin_ColorToggleContent" xml:space="preserve">
+    <value>Use Background Color</value>
+  </data>
+  <data name="AvatarPlugin_DisplayName" xml:space="preserve">
+    <value>3D Avatar</value>
+  </data>
+  <data name="AvatarPlugin_GenderMismatchMessage" xml:space="preserve">
+    <value>Gender of this Avatar does not match the Gender set for Speech Synthesis.</value>
+  </data>
+  <data name="CommonPlugin_DisplayName" xml:space="preserve">
+    <value>Panel &amp; External Directories</value>
+  </data>
+  <data name="DisplayPlugin_DisplayName" xml:space="preserve">
+    <value>Display Mode</value>
+  </data>
+  <data name="DisplayPlugin_ModeLabelContent" xml:space="preserve">
+    <value>Display Modes</value>
+  </data>
+  <data name="LicensePlugin_ArchitectureLabelContent" xml:space="preserve">
+    <value>Architecture:</value>
+  </data>
+  <data name="LicensePlugin_LicenseButtonContent" xml:space="preserve">
+    <value>Read Full License [Online]</value>
+  </data>
+  <data name="LicensePlugin_CurrentVersionLabelContent" xml:space="preserve">
+    <value>Current Version:</value>
+  </data>
+  <data name="LicensePlugin_DisplayName" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="LicensePlugin_FrameworkLabelContent" xml:space="preserve">
+    <value>Framework:</value>
+  </data>
+  <data name="LicensePlugin_LicensedVersionLabelContent" xml:space="preserve">
+    <value>Licensed Version:</value>
+  </data>
+  <data name="LicensePlugin_LicenseeLabelContent" xml:space="preserve">
+    <value>Licensee:</value>
+  </data>
+  <data name="LicensePlugin_LicenseTypeLabelContent" xml:space="preserve">
+    <value>License Type:</value>
+  </data>
+  <data name="LicensePlugin_LicensorLabelContent" xml:space="preserve">
+    <value>Licensor:</value>
+  </data>
+  <data name="LicensePlugin_PartialKeyLabelContent" xml:space="preserve">
+    <value>Partial License Key:</value>
+  </data>
+  <data name="Opacity" xml:space="preserve">
+    <value>Opacity</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="SynFeedServiceDescription" xml:space="preserve">
+    <value>Synthetic Intelligence Network News Feed</value>
+    <comment>Description for Syn Feed Service</comment>
+  </data>
+  <data name="CommandCloseToggleSwitchContent" xml:space="preserve">
+    <value>Command for Closing Window</value>
+  </data>
+  <data name="EmailPlugin_UserEmailLabelContent" xml:space="preserve">
+    <value>Your Email Service Provider</value>
+  </data>
+  <data name="EmailPlugin_BotEmailWatermark" xml:space="preserve">
+    <value>Example: example@Gmail.com</value>
+  </data>
+  <data name="EmailPlugin_UserEmailWatermark" xml:space="preserve">
+    <value>Example: Outlook.com</value>
+  </data>
+  <data name="WelcomePlugin_DisplayName" xml:space="preserve">
+    <value>Welcome Developer</value>
+  </data>
+  <data name="ServicePlugin_DriveSpaceReminderServiceDescription" xml:space="preserve">
+    <value>Notify if a Drive is low on space</value>
+  </data>
+  <data name="ServicePlugin_SystemUptimeReminderServiceDescription" xml:space="preserve">
+    <value>Remind System uptime every 1 hour</value>
+  </data>
+  <data name="ServicePlugin_TimeReminderServiceDescription" xml:space="preserve">
+    <value>Remind the time every 1 hour.</value>
+  </data>
+  <data name="SpeechPlugin_EditChoiceButtonContent" xml:space="preserve">
+    <value>Edit Choice List</value>
+  </data>
+  <data name="SpeechPlugin_ChoiceTabItemHeader" xml:space="preserve">
+    <value>List of Speech Choices</value>
+  </data>
+  <data name="SpeechPlugin_GrammarTabItemHeader" xml:space="preserve">
+    <value>SRGS</value>
+  </data>
+  <data name="SpeechPlugin_ChoicesWindowTitle" xml:space="preserve">
+    <value>Edit Choice List</value>
+  </data>
+  <data name="SpeechPlugin_AddChoiceDialogMessage" xml:space="preserve">
+    <value>Enter the phrase you wish to save as a choice</value>
+  </data>
+  <data name="SpeechPlugin_AddChoiceDialogTitle" xml:space="preserve">
+    <value>Add Choice</value>
+  </data>
+  <data name="InteractionPlugin_DisplayName" xml:space="preserve">
+    <value>Interaction</value>
+  </data>
+  <data name="InteractionPlugin_ServiceDescription" xml:space="preserve">
+    <value>Raise intelligent events based on user interaction</value>
+  </data>
+  <data name="TranslatorPlugin_DisplayName" xml:space="preserve">
+    <value>Translator</value>
+  </data>
+  <data name="TranslatorPlugin_LanguageLabelContent" xml:space="preserve">
+    <value>Selected Source Language</value>
+  </data>
+  <data name="TranslatorPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>Source language updated.</value>
+  </data>
+  <data name="MessagingPlugin_ApiKeyLabelContent" xml:space="preserve">
+    <value>Telegram Bot API Key</value>
+  </data>
+  <data name="LicensePlugin_AdditionalLicenseButtonContent" xml:space="preserve">
+    <value>Additional Licenses</value>
+  </data>
+  <data name="ResetAndShutdown" xml:space="preserve">
+    <value>Reset and Shutdown</value>
+  </data>
+  <data name="VA_ResetConfirmationMessage" xml:space="preserve">
+    <value>Are you sure you wish to Reset the Virtual Assistant?</value>
+  </data>
+  <data name="VA_ResetConfirmationTitle" xml:space="preserve">
+    <value>Reset Confirmation</value>
+  </data>
+  <data name="EmailPlugin_ServiceDescription" xml:space="preserve">
+    <value>Check for new emails every 5 Minutes</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="VA_ExternalPluginsPathWatermark" xml:space="preserve">
+    <value>External Plugins Directory</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="UserPlugin_NameLabelContent" xml:space="preserve">
+    <value>Name (The Bot will call you by this name)</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Cut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Paste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="VA_MultipleInstanceMessageFormat" xml:space="preserve">
+    <value>{0} is already running.</value>
+  </data>
+  <data name="ReminderPlugin_DisplayName" xml:space="preserve">
+    <value>Reminders</value>
+  </data>
+  <data name="ReminderPlugin_TabItemHeader" xml:space="preserve">
+    <value>Reminders</value>
+  </data>
+  <data name="ReminderPlugin_ReminderServiceDescription" xml:space="preserve">
+    <value>Scheduled Reminder Service</value>
+  </data>
+  <data name="DisplayPlugin_RestartButtonContent" xml:space="preserve">
+    <value>Save and Restart</value>
+  </data>
+  <data name="MessagingPlugin_ApiClearedMessage" xml:space="preserve">
+    <value>Telegram Bot API key removed.</value>
+  </data>
+  <data name="Plugins" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="VA_BrowseInstallationDirectory" xml:space="preserve">
+    <value>Open Syn Directory</value>
+  </data>
+  <data name="VA_RestartButtonContent" xml:space="preserve">
+    <value>Restart Virtual Assistant</value>
+  </data>
+  <data name="VA_UpdateMessageTitle" xml:space="preserve">
+    <value>Update Available</value>
+  </data>
+  <data name="LicensePlugin_PrivacyButtonContent" xml:space="preserve">
+    <value>Read Privacy Policy [Online]</value>
+  </data>
+</root>

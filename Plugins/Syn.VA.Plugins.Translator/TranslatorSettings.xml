@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Item Name="Source-Language" Value="English" />
+  <Item Name="Languages">
+    <Value>Afrikaans</Value>
+    <Value>Albanian</Value>
+    <Value>Arabic</Value>
+    <Value>Armenian</Value>
+    <Value>Azerbaijani</Value>
+    <Value>Basque</Value>
+    <Value>Belarusian</Value>
+    <Value>Bengali</Value>
+    <Value>Bulgarian</Value>
+    <Value>Catalan</Value>
+    <Value>Chinese</Value>
+    <Value>Croatian</Value>
+    <Value>Czech</Value>
+    <Value>Danish</Value>
+    <Value>Dutch</Value>
+    <Value>English</Value>
+    <Value>Esperanto</Value>
+    <Value>Estonian</Value>
+    <Value>Filipino</Value>
+    <Value>Finnish</Value>
+    <Value>French</Value>
+    <Value>Galician</Value>
+    <Value>German</Value>
+    <Value>Georgian</Value>
+    <Value>Greek</Value>
+    <Value>Haitian Creole</Value>
+    <Value>Hebrew</Value>
+    <Value>Hindi</Value>
+    <Value>Hungarian</Value>
+    <Value>Icelandic</Value>
+    <Value>Indonesian</Value>
+    <Value>Irish</Value>
+    <Value>Italian</Value>
+    <Value>Japanese</Value>
+    <Value>Korean</Value>
+    <Value>Lao</Value>
+    <Value>Latin</Value>
+    <Value>Latvian</Value>
+    <Value>Lithuanian</Value>
+    <Value>Macedonian</Value>
+    <Value>Malay</Value>
+    <Value>Maltese</Value>
+    <Value>Norwegian</Value>
+    <Value>Persian</Value>
+    <Value>Polish</Value>
+    <Value>Portuguese</Value>
+    <Value>Romanian</Value>
+    <Value>Russian</Value>
+    <Value>Serbian</Value>
+    <Value>Slovak</Value>
+    <Value>Slovenian</Value>
+    <Value>Spanish</Value>
+    <Value>Swahili</Value>
+    <Value>Swedish</Value>
+    <Value>Tamil</Value>
+    <Value>Telugu</Value>
+    <Value>Thai</Value>
+    <Value>Turkish</Value>
+    <Value>Ukrainian</Value>
+    <Value>Urdu</Value>
+    <Value>Vietnamese</Value>
+    <Value>Welsh</Value>
+    <Value>Yiddish</Value>
+  </Item>
+</Settings>

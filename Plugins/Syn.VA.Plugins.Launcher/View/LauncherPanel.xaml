@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="Syn.VA.Plugins.Launcher.View.LauncherPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:viewModel="clr-namespace:Syn.VA.Plugins.Launcher.ViewModel"
+             xmlns:locale="clr-namespace:Syn.VA.Libraries.Language.Locale;assembly=Syn.VA.Libraries.Language"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <viewModel:LauncherContext/>
+    </UserControl.DataContext>
+    <Grid>
+        <controls:MetroAnimatedSingleRowTabControl>
+            <TabItem Header="{x:Static locale:StringResource.Applications}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="53*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid ItemsSource="{Binding FileList}" SelectedItem="{Binding SelectedFile}" VerticalScrollBarVisibility="Auto"  BorderThickness="1">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem Header="{x:Static locale:StringResource.Remove}" Command="{Binding Path=DataContext.RemoveFileCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContextMenu}}}" />
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <Grid Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+                        <DockPanel Grid.Column="1">
+                            <Button Width="50" Height="50" Command="{Binding AddFileCommand}" Style="{DynamicResource MetroCircleButtonStyle}" Margin="5,0">
+                                <Rectangle Width="20" Height="20" Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Fill" Visual="{DynamicResource appbar_add}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                        </DockPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{x:Static locale:StringResource.Directories}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="53*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid ItemsSource="{Binding FolderList}" SelectedItem="{Binding SelectedFolder}" BorderThickness="1">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem Header="{x:Static locale:StringResource.Remove}" Command="{Binding Path=DataContext.RemoveFolderCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContextMenu}}}" />
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <Grid Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="47*"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+                        <DockPanel Grid.Column="1">
+                            <Button Width="50" Height="50" Command="{Binding AddFolderCommand}" Style="{DynamicResource MetroCircleButtonStyle}" Margin="5,0">
+                                <Rectangle Width="20" Height="20" Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Fill" Visual="{DynamicResource appbar_add}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                        </DockPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{x:Static locale:StringResource.SearchEngines}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="53*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid ItemsSource="{Binding SearchEngineList}" SelectedItem="{Binding SelectedSearchEngine}" BorderThickness="1">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem Header="{x:Static locale:StringResource.Remove}" Command="{Binding Path=DataContext.RemoveSearchEngineCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContextMenu}}}" />
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <Grid Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="47*"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+                        <DockPanel Grid.Column="1">
+                            <Button Width="50" Height="50" Command="{Binding AddSearchEngineCommand}" Style="{DynamicResource MetroCircleButtonStyle}" Margin="5,0">
+                                <Rectangle Width="20" Height="20" Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Fill" Visual="{DynamicResource appbar_add}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                        </DockPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{x:Static locale:StringResource.Websites}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="53*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid ItemsSource="{Binding WebsiteList}" SelectedItem="{Binding SelectedWebsite}" BorderThickness="1">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu >
+                                <MenuItem Header="{x:Static locale:StringResource.Remove}" Command="{Binding Path=DataContext.RemoveWebsiteCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContextMenu}}}" />
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <Grid Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="47*"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+                        <DockPanel Grid.Column="1">
+                            <Button Width="50" Height="50" Command="{Binding AddWebsiteCommand}" Style="{DynamicResource MetroCircleButtonStyle}" Margin="5,0">
+                                <Rectangle Width="20" Height="20" Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Fill" Visual="{DynamicResource appbar_add}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                        </DockPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </controls:MetroAnimatedSingleRowTabControl>
+    </Grid>
+</UserControl>

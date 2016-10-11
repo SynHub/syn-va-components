@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Item Name="Busy-Level-Start" Value="600" />
+  <Item Name="Busy-Level-End" Value="1800" />
+  <Item Name="Known-Processes">
+    <Value>Winrar</Value>
+    <Value>Firefox</Value>
+    <Value>Chrome</Value>
+    <Value>iexplore</Value>
+    <Value>calc</Value>
+  </Item>
+</Settings>

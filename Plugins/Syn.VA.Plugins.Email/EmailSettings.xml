@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Item Name="Bot-Email" Value="" />
+  <Item Name="Service-Provider" Value="Gmail.com" />
+  <Item Name="Password" Value="" />
+</Settings>

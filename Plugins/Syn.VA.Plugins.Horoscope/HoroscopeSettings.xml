@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Item Name="Zodiac-Sign" Value="Gemini" />
+  <Item Name="Zodiac-Sign-List">
+    <Value>Aries</Value>
+    <Value>Taurus</Value>
+    <Value>Gemini</Value>
+    <Value>Cancer</Value>
+    <Value>Leo</Value>
+    <Value>Virgo</Value>
+    <Value>Libra</Value>
+    <Value>Scorpio</Value>
+    <Value>Sagittarius</Value>
+    <Value>Capricorn</Value>
+    <Value>Aquarius</Value>
+    <Value>Pisces</Value>
+  </Item>
+</Settings>

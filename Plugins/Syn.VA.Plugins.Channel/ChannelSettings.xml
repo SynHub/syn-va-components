@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Item Name="Enabled" Value="False" />
+  <Item Name="Port-Number" Value="8885" />
+</Settings>

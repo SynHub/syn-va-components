@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Syn.VA.Plugins.Messaging.View.MessagingPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:viewModel="clr-namespace:Syn.VA.Plugins.Messaging.ViewModel"
+             xmlns:locale="clr-namespace:Syn.VA.Libraries.Language.Locale;assembly=Syn.VA.Libraries.Language"
+             xmlns:controls1="clr-namespace:Syn.Controls;assembly=Syn.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="640" Background="Gray">
+    <UserControl.DataContext>
+        <viewModel:MessagingContext/>
+    </UserControl.DataContext>
+    <Grid Margin="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="30*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.IsSharedSizeScope="True" controls1:MarginSetter.Margin="0,20,0,0" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60*"/>
+                        <ColumnDefinition Width="40*"/>
+                    </Grid.ColumnDefinitions>
+                    <controls:ToggleSwitch OnLabel="{x:Static locale:StringResource.MessagingPlugin_AutoConnectOnLabelContent}" OffLabel="{x:Static locale:StringResource.MessagingPlugin_AutoConnectOffLabelContent}" IsChecked="{Binding AutoConnect}" />
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox  Name="ApiBox"
+                        Text="{Binding TelegramApiKey}" 
+                        controls:TextBoxHelper.Watermark="{x:Static locale:StringResource.MessagingPlugin_ApiKeyLabelContent}"
+                        controls:TextBoxHelper.UseFloatingWatermark="True" 
+                        controls:TextBoxHelper.ClearTextButton="True"/>
+                    <Button Margin="5,0,0,0" MinWidth="100" Grid.Column="1" Content="{x:Static locale:StringResource.Save}" Command="{Binding SaveCommand}" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>
