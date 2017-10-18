@@ -1,7 +1,6 @@
 Libraries/Packages/
 
 Libraries/Syn.VA.Libraries.Language/obj/
-
 Libraries/Syn.VA.Libraries.Wikipedia/
 Libraries/Syn.VA.Libraries.Horoscope/
 Libraries/Syn.VA.Libraries.MovieInfo/
@@ -49,3 +48,5 @@ Plugins/Syn.VA.Plugins.Map/
 Plugins/Syn.VA.Plugins.Wolfram/
 Plugins/Syn.VA.Plugins.Speech/
 
+bin/
+.vs/

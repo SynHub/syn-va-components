@@ -39,4 +39,4 @@ We've currently removed projects that were reported to have bugs in them. Once t
 
 ![LGPL-3 Logo](https://www.gnu.org/graphics/lgplv3-147x51.png)
 
-All `Syn.VA.Plugins`, `Syn.VA.Libraries` and _Projects_  included this repository are **strictly** licensed under [GNU Lesser General Public License version 3 or Later](https://www.gnu.org/licenses/lgpl-3.0.html)
+All `Syn.VA.Plugins`, `Syn.VA.Libraries` and _Projects_  included this repository are licensed under [GNU Lesser General Public License version 3 or Later](https://www.gnu.org/licenses/lgpl-3.0.html)
