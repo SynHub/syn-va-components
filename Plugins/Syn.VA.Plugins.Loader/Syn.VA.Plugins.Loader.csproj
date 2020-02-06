@@ -72,7 +72,8 @@
     <Reference Include="Syn.Log">
       <HintPath>..\..\Dependencies\Syn.Log.dll</HintPath>
     </Reference>
-    <Reference Include="Syn.Utility">
+    <Reference Include="Syn.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Dependencies\Syn.Utility.dll</HintPath>
     </Reference>
     <Reference Include="Syn.VA">
