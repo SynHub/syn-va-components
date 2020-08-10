@@ -1,0 +1,298 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "play_game_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "play_game_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "Mark @sys.number:position",
+              "ExpressionName": null,
+              "Id": "ab322d1c-3973-42cc-9fb1-f197848362fd",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4620.8538011695919,
+                "Y": 3350.8488304093544
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "fe3cb527-d8f3-4498-bcf9-1d90bb020dee",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4672.9415204678371,
+              "Y": 3611.0184210526318
+            }
+          },
+          "Id": "60cfc024-8005-4c57-b3fb-350af667ac8e",
+          "IsFolded": false,
+          "DisplayName": "Intent (play_game_intent)",
+          "Position": {
+            "X": 5044.9941520467837,
+            "Y": 3272.106140350877
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "1bc8a772-290f-4b57-aad1-a2405494ac22",
+      "IsFolded": false,
+      "DisplayName": "Dialog (play_game_dialog)",
+      "Position": {
+        "X": 5351.105263157895,
+        "Y": 3190.4394736842105
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "play_game_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "Mark @sys.number:position",
+          "ExpressionName": null,
+          "Id": "ab322d1c-3973-42cc-9fb1-f197848362fd",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4620.8538011695919,
+            "Y": 3350.8488304093544
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "fe3cb527-d8f3-4498-bcf9-1d90bb020dee",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4672.9415204678371,
+          "Y": 3611.0184210526318
+        }
+      },
+      "Id": "60cfc024-8005-4c57-b3fb-350af667ac8e",
+      "IsFolded": false,
+      "DisplayName": "Intent (play_game_intent)",
+      "Position": {
+        "X": 5044.9941520467837,
+        "Y": 3272.106140350877
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "play_game_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "play_game_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "Mark @sys.number:position",
+                  "ExpressionName": null,
+                  "Id": "ab322d1c-3973-42cc-9fb1-f197848362fd",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4620.8538011695919,
+                    "Y": 3350.8488304093544
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "fe3cb527-d8f3-4498-bcf9-1d90bb020dee",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4672.9415204678371,
+                  "Y": 3611.0184210526318
+                }
+              },
+              "Id": "60cfc024-8005-4c57-b3fb-350af667ac8e",
+              "IsFolded": false,
+              "DisplayName": "Intent (play_game_intent)",
+              "Position": {
+                "X": 5044.9941520467837,
+                "Y": 3272.106140350877
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "1bc8a772-290f-4b57-aad1-a2405494ac22",
+          "IsFolded": false,
+          "DisplayName": "Dialog (play_game_dialog)",
+          "Position": {
+            "X": 5351.105263157895,
+            "Y": 3190.4394736842105
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "7d1367f8-e291-4656-a745-f19b4335ada8",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5677.21052631579,
+        "Y": 3146.5447368421051
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "fe3cb527-d8f3-4498-bcf9-1d90bb020dee",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4672.9415204678371,
+        "Y": 3611.0184210526318
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "Mark @sys.number:position",
+      "ExpressionName": null,
+      "Id": "ab322d1c-3973-42cc-9fb1-f197848362fd",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4620.8538011695919,
+        "Y": 3350.8488304093544
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "position",
+      "EntityGetType": 0,
+      "EntityPropertyName": null,
+      "Id": "b8c14bf7-f2f4-4202-887e-8e3336c269a8",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 4979.7426900584805,
+        "Y": 3709.7377192982449
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.TicTacToe.Nodes.TicTacToeNode, Syn.VA.Plugins.TicTacToe",
+      "GameCommand": 2,
+      "MarkPosition": 0,
+      "Id": "7d325dae-d3b6-4fdb-abee-741cc9ef564d",
+      "IsFolded": false,
+      "DisplayName": "Tic Tac Toe",
+      "Position": {
+        "X": 5281.9649122807,
+        "Y": 3734.1821637426883
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "60cfc024-8005-4c57-b3fb-350af667ac8e",
+      "FromPortName": "Output",
+      "ToNodeId": "1bc8a772-290f-4b57-aad1-a2405494ac22",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "ab322d1c-3973-42cc-9fb1-f197848362fd",
+      "FromPortName": "Output",
+      "ToNodeId": "60cfc024-8005-4c57-b3fb-350af667ac8e",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "fe3cb527-d8f3-4498-bcf9-1d90bb020dee",
+      "FromPortName": "Output",
+      "ToNodeId": "60cfc024-8005-4c57-b3fb-350af667ac8e",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "1bc8a772-290f-4b57-aad1-a2405494ac22",
+      "FromPortName": "Output",
+      "ToNodeId": "7d1367f8-e291-4656-a745-f19b4335ada8",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "fe3cb527-d8f3-4498-bcf9-1d90bb020dee",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "b8c14bf7-f2f4-4202-887e-8e3336c269a8",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "b8c14bf7-f2f4-4202-887e-8e3336c269a8",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "7d325dae-d3b6-4fdb-abee-741cc9ef564d",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "b8c14bf7-f2f4-4202-887e-8e3336c269a8",
+      "FromPortName": "Output",
+      "ToNodeId": "7d325dae-d3b6-4fdb-abee-741cc9ef564d",
+      "ToPortName": "MarkPosition"
+    }
+  ]
+}

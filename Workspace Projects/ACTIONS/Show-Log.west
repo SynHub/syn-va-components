@@ -1,0 +1,272 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "actions_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [
+            {
+              "IntentName": "actions_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "show logs",
+                  "ExpressionName": null,
+                  "Id": "b5903fe1-f712-4e81-96b0-38cbd303db9f",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4702.0,
+                    "Y": 3618.65
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "07f1be73-03f0-4f65-ade0-1da38aa4707d",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4702.0,
+                  "Y": 3891.65
+                }
+              },
+              "Id": "0e51cec2-a916-4041-b687-70893bcb3ee8",
+              "IsFolded": false,
+              "DisplayName": "Intent (actions_intent)",
+              "Position": {
+                "X": 4961.0,
+                "Y": 3601.65
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "70102271-c621-41ea-b4a9-2d49ce4dadc9",
+          "IsFolded": false,
+          "DisplayName": "Dialog (actions_dialog)",
+          "Position": {
+            "X": 5205.0,
+            "Y": 3581.65
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "e57eb17b-9489-4cf2-9058-8dd98a84f80c",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5538.0,
+        "Y": 3557.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "actions_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [
+        {
+          "IntentName": "actions_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "show logs",
+              "ExpressionName": null,
+              "Id": "b5903fe1-f712-4e81-96b0-38cbd303db9f",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4702.0,
+                "Y": 3618.65
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "07f1be73-03f0-4f65-ade0-1da38aa4707d",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4702.0,
+              "Y": 3891.65
+            }
+          },
+          "Id": "0e51cec2-a916-4041-b687-70893bcb3ee8",
+          "IsFolded": false,
+          "DisplayName": "Intent (actions_intent)",
+          "Position": {
+            "X": 4961.0,
+            "Y": 3601.65
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "70102271-c621-41ea-b4a9-2d49ce4dadc9",
+      "IsFolded": false,
+      "DisplayName": "Dialog (actions_dialog)",
+      "Position": {
+        "X": 5205.0,
+        "Y": 3581.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "show logs",
+      "ExpressionName": null,
+      "Id": "b5903fe1-f712-4e81-96b0-38cbd303db9f",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4702.0,
+        "Y": 3618.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "07f1be73-03f0-4f65-ade0-1da38aa4707d",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4702.0,
+        "Y": 3891.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotActionCallerNode, Syn.Bot",
+      "ActionId": "show-logs-window",
+      "Id": "4a6fc7ac-faa1-4713-988c-37a04689deb4",
+      "IsFolded": false,
+      "DisplayName": "Action Caller",
+      "Position": {
+        "X": 4999.0,
+        "Y": 3981.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "actions_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "show logs",
+          "ExpressionName": null,
+          "Id": "b5903fe1-f712-4e81-96b0-38cbd303db9f",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4702.0,
+            "Y": 3618.65
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "07f1be73-03f0-4f65-ade0-1da38aa4707d",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4702.0,
+          "Y": 3891.65
+        }
+      },
+      "Id": "0e51cec2-a916-4041-b687-70893bcb3ee8",
+      "IsFolded": false,
+      "DisplayName": "Intent (actions_intent)",
+      "Position": {
+        "X": 4961.0,
+        "Y": 3601.65
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "70102271-c621-41ea-b4a9-2d49ce4dadc9",
+      "FromPortName": "Output",
+      "ToNodeId": "e57eb17b-9489-4cf2-9058-8dd98a84f80c",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "0e51cec2-a916-4041-b687-70893bcb3ee8",
+      "FromPortName": "Output",
+      "ToNodeId": "70102271-c621-41ea-b4a9-2d49ce4dadc9",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "07f1be73-03f0-4f65-ade0-1da38aa4707d",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "4a6fc7ac-faa1-4713-988c-37a04689deb4",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "b5903fe1-f712-4e81-96b0-38cbd303db9f",
+      "FromPortName": "Output",
+      "ToNodeId": "0e51cec2-a916-4041-b687-70893bcb3ee8",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "07f1be73-03f0-4f65-ade0-1da38aa4707d",
+      "FromPortName": "Output",
+      "ToNodeId": "0e51cec2-a916-4041-b687-70893bcb3ee8",
+      "ToPortName": "Response"
+    }
+  ]
+}

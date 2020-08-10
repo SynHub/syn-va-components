@@ -1,0 +1,717 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "search_map_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "search_map_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "Show Map",
+                  "ExpressionName": null,
+                  "Id": "42c7360b-88db-40bc-b1cf-8f633a7ac48c",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 3835.1904761904743,
+                    "Y": 2917.1428571428564
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "For which location or area?",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 3705.7359307359293,
+                  "Y": 3153.4155844155839
+                }
+              },
+              "Id": "56f6122d-5c05-4ca6-bf28-88fd4297414c",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_map_intent)",
+              "Position": {
+                "X": 4183.1904761904743,
+                "Y": 2869.1428571428564
+              }
+            },
+            {
+              "IntentName": "search_map_follow_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [
+                {
+                  "ContextName": "con_map_requested",
+                  "Id": "f43a5d93-3364-466a-a088-d95ef920cc50",
+                  "IsFolded": false,
+                  "DisplayName": "Context",
+                  "Position": {
+                    "X": 3616.0012166980791,
+                    "Y": 3545.1762074093444
+                  }
+                }
+              ],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "@sys.text:keyword",
+                  "ExpressionName": null,
+                  "Id": "bc18e5e8-1b4e-4156-b4d3-4fb28cc6c663",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 3622.2512166980791,
+                    "Y": 3660.1762074093449
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "4575c0bb-2c84-461a-a066-663f3541d9dd",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 3618.8890709244374,
+                  "Y": 3861.2735673712923
+                }
+              },
+              "Id": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_map_follow_intent)",
+              "Position": {
+                "X": 3978.3401764214482,
+                "Y": 3528.7234507838225
+              }
+            }
+          ],
+          "Events": [
+            {
+              "EventName": "map_success",
+              "ResponseNode": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Here's your map",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "10764539-5bef-4ba6-8c42-174ec7d2f050",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4096.157715260013,
+                  "Y": 4445.7152600170493
+                }
+              },
+              "Id": "80fd01ad-1cd5-439e-a9f8-3fe519735984",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 4320.745950554131,
+                "Y": 4386.2446717817547
+              }
+            }
+          ],
+          "Actions": [],
+          "Id": "1de2e9a7-1f3b-4b39-80f7-9f3f8c43d035",
+          "IsFolded": false,
+          "DisplayName": "Dialog (search_map_dialog)",
+          "Position": {
+            "X": 5004.0316764132558,
+            "Y": 3542.7309941520471
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "1b172067-229c-4cdc-b612-0bcc08d7dad8",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5378.4775828460042,
+        "Y": 3644.7105263157896
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "search_map_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "search_map_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "Show Map",
+              "ExpressionName": null,
+              "Id": "42c7360b-88db-40bc-b1cf-8f633a7ac48c",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 3835.1904761904743,
+                "Y": 2917.1428571428564
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "For which location or area?",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 3705.7359307359293,
+              "Y": 3153.4155844155839
+            }
+          },
+          "Id": "56f6122d-5c05-4ca6-bf28-88fd4297414c",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_map_intent)",
+          "Position": {
+            "X": 4183.1904761904743,
+            "Y": 2869.1428571428564
+          }
+        },
+        {
+          "IntentName": "search_map_follow_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [
+            {
+              "ContextName": "con_map_requested",
+              "Id": "f43a5d93-3364-466a-a088-d95ef920cc50",
+              "IsFolded": false,
+              "DisplayName": "Context",
+              "Position": {
+                "X": 3616.0012166980791,
+                "Y": 3545.1762074093444
+              }
+            }
+          ],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "@sys.text:keyword",
+              "ExpressionName": null,
+              "Id": "bc18e5e8-1b4e-4156-b4d3-4fb28cc6c663",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 3622.2512166980791,
+                "Y": 3660.1762074093449
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "4575c0bb-2c84-461a-a066-663f3541d9dd",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 3618.8890709244374,
+              "Y": 3861.2735673712923
+            }
+          },
+          "Id": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_map_follow_intent)",
+          "Position": {
+            "X": 3978.3401764214482,
+            "Y": 3528.7234507838225
+          }
+        }
+      ],
+      "Events": [
+        {
+          "EventName": "map_success",
+          "ResponseNode": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Here's your map",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "10764539-5bef-4ba6-8c42-174ec7d2f050",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4096.157715260013,
+              "Y": 4445.7152600170493
+            }
+          },
+          "Id": "80fd01ad-1cd5-439e-a9f8-3fe519735984",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 4320.745950554131,
+            "Y": 4386.2446717817547
+          }
+        }
+      ],
+      "Actions": [],
+      "Id": "1de2e9a7-1f3b-4b39-80f7-9f3f8c43d035",
+      "IsFolded": false,
+      "DisplayName": "Dialog (search_map_dialog)",
+      "Position": {
+        "X": 5004.0316764132558,
+        "Y": 3542.7309941520471
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_map_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "Show Map",
+          "ExpressionName": null,
+          "Id": "42c7360b-88db-40bc-b1cf-8f633a7ac48c",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 3835.1904761904743,
+            "Y": 2917.1428571428564
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "For which location or area?",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 3705.7359307359293,
+          "Y": 3153.4155844155839
+        }
+      },
+      "Id": "56f6122d-5c05-4ca6-bf28-88fd4297414c",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_map_intent)",
+      "Position": {
+        "X": 4183.1904761904743,
+        "Y": 2869.1428571428564
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "For which location or area?",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 3705.7359307359293,
+        "Y": 3153.4155844155839
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "Show Map",
+      "ExpressionName": null,
+      "Id": "42c7360b-88db-40bc-b1cf-8f633a7ac48c",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 3835.1904761904743,
+        "Y": 2917.1428571428564
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "con_map_requested",
+      "Lifespan": 2,
+      "Id": "3680f32f-494a-40ce-a409-b18f22f50fe2",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 4002.1522999417703,
+        "Y": 3230.7609427609423
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_map_follow_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [
+        {
+          "ContextName": "con_map_requested",
+          "Id": "f43a5d93-3364-466a-a088-d95ef920cc50",
+          "IsFolded": false,
+          "DisplayName": "Context",
+          "Position": {
+            "X": 3616.0012166980791,
+            "Y": 3545.1762074093444
+          }
+        }
+      ],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "@sys.text:keyword",
+          "ExpressionName": null,
+          "Id": "bc18e5e8-1b4e-4156-b4d3-4fb28cc6c663",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 3622.2512166980791,
+            "Y": 3660.1762074093449
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "4575c0bb-2c84-461a-a066-663f3541d9dd",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 3618.8890709244374,
+          "Y": 3861.2735673712923
+        }
+      },
+      "Id": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_map_follow_intent)",
+      "Position": {
+        "X": 3978.3401764214482,
+        "Y": 3528.7234507838225
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
+      "ContextName": "con_map_requested",
+      "Id": "f43a5d93-3364-466a-a088-d95ef920cc50",
+      "IsFolded": false,
+      "DisplayName": "Context",
+      "Position": {
+        "X": 3616.0012166980791,
+        "Y": 3545.1762074093444
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "@sys.text:keyword",
+      "ExpressionName": null,
+      "Id": "bc18e5e8-1b4e-4156-b4d3-4fb28cc6c663",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 3622.2512166980791,
+        "Y": 3660.1762074093449
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "4575c0bb-2c84-461a-a066-663f3541d9dd",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 3618.8890709244374,
+        "Y": 3861.2735673712923
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "keyword",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "f15e51e8-5bfc-471e-8875-84d0bfa50317",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 3849.2936507936524,
+        "Y": 3988.3939014202151
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
+      "ContextName": "con_map_requested",
+      "Id": "f136a8a9-7e0b-46a9-a781-4a23cfddec4f",
+      "IsFolded": false,
+      "DisplayName": "Context Remove",
+      "Position": {
+        "X": 4288.6969924812,
+        "Y": 4086.3719298245614
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "For which location or area?",
+      "Id": "ae8b9e7f-621f-494e-b04f-42cd1b39eca6",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3214.4469548053112,
+        "Y": 3191.0166388192697
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Map.Nodes.MapNode, Syn.VA.Plugins.Map",
+      "MapLocationKeyword": null,
+      "SuccessEventName": "map_success",
+      "FailEventName": null,
+      "Id": "c341c0b1-32f4-4365-bac8-7a667b6e9866",
+      "IsFolded": false,
+      "DisplayName": "Map Viewer",
+      "Position": {
+        "X": 4093.5952380952422,
+        "Y": 4045.2190476190426
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "map_success",
+      "ResponseNode": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Here's your map",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "10764539-5bef-4ba6-8c42-174ec7d2f050",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4096.157715260013,
+          "Y": 4445.7152600170493
+        }
+      },
+      "Id": "80fd01ad-1cd5-439e-a9f8-3fe519735984",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 4320.745950554131,
+        "Y": 4386.2446717817547
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Here's your map",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "10764539-5bef-4ba6-8c42-174ec7d2f050",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4096.157715260013,
+        "Y": 4445.7152600170493
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Here's your map",
+      "Id": "dda63aba-9f2a-4c00-a4d5-3452a0c938a0",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3784.7067348678565,
+        "Y": 4534.20545609548
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "1de2e9a7-1f3b-4b39-80f7-9f3f8c43d035",
+      "FromPortName": "Output",
+      "ToNodeId": "1b172067-229c-4cdc-b612-0bcc08d7dad8",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "56f6122d-5c05-4ca6-bf28-88fd4297414c",
+      "FromPortName": "Output",
+      "ToNodeId": "1de2e9a7-1f3b-4b39-80f7-9f3f8c43d035",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+      "FromPortName": "Output",
+      "ToNodeId": "1de2e9a7-1f3b-4b39-80f7-9f3f8c43d035",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "80fd01ad-1cd5-439e-a9f8-3fe519735984",
+      "FromPortName": "Output",
+      "ToNodeId": "1de2e9a7-1f3b-4b39-80f7-9f3f8c43d035",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "42c7360b-88db-40bc-b1cf-8f633a7ac48c",
+      "FromPortName": "Output",
+      "ToNodeId": "56f6122d-5c05-4ca6-bf28-88fd4297414c",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+      "FromPortName": "Output",
+      "ToNodeId": "56f6122d-5c05-4ca6-bf28-88fd4297414c",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "ae8b9e7f-621f-494e-b04f-42cd1b39eca6",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "e1ea884a-457e-4bb9-ac89-4db9bf27d9ea",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "3680f32f-494a-40ce-a409-b18f22f50fe2",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "f43a5d93-3364-466a-a088-d95ef920cc50",
+      "FromPortName": "Output",
+      "ToNodeId": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+      "ToPortName": "IntentContexts"
+    },
+    {
+      "FromNodeId": "bc18e5e8-1b4e-4156-b4d3-4fb28cc6c663",
+      "FromPortName": "Output",
+      "ToNodeId": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "4575c0bb-2c84-461a-a066-663f3541d9dd",
+      "FromPortName": "Output",
+      "ToNodeId": "52b7ee68-9e93-4cee-b928-5becfd102b19",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "4575c0bb-2c84-461a-a066-663f3541d9dd",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "f15e51e8-5bfc-471e-8875-84d0bfa50317",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "c341c0b1-32f4-4365-bac8-7a667b6e9866",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "f136a8a9-7e0b-46a9-a781-4a23cfddec4f",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "f15e51e8-5bfc-471e-8875-84d0bfa50317",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "c341c0b1-32f4-4365-bac8-7a667b6e9866",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "f15e51e8-5bfc-471e-8875-84d0bfa50317",
+      "FromPortName": "Output",
+      "ToNodeId": "c341c0b1-32f4-4365-bac8-7a667b6e9866",
+      "ToPortName": "MapLocationKeyword"
+    },
+    {
+      "FromNodeId": "10764539-5bef-4ba6-8c42-174ec7d2f050",
+      "FromPortName": "Output",
+      "ToNodeId": "80fd01ad-1cd5-439e-a9f8-3fe519735984",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "dda63aba-9f2a-4c00-a4d5-3452a0c938a0",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "10764539-5bef-4ba6-8c42-174ec7d2f050",
+      "ToPortName": "Text"
+    }
+  ]
+}

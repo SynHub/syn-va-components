@@ -1,0 +1,605 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "search_wiki_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "search_wiki_set_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "wiki",
+                  "ExpressionName": null,
+                  "Id": "cc784db1-8556-4607-a371-b04024c81ab8",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4091.0,
+                    "Y": 3387.0
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "What shall I wiki for you?",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 3967.0,
+                  "Y": 3626.0
+                }
+              },
+              "Id": "c2ea6cb4-94ee-4a56-a286-e564eebcdb57",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_wiki_set_intent)",
+              "Position": {
+                "X": 4439.0,
+                "Y": 3339.0
+              }
+            },
+            {
+              "IntentName": "search_wiki_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [
+                {
+                  "ContextName": "con_search_wiki_added",
+                  "Id": "2b9f62d8-5895-44f0-9fb1-0835c246c8c5",
+                  "IsFolded": false,
+                  "DisplayName": "Context",
+                  "Position": {
+                    "X": 4038.2631214599842,
+                    "Y": 4024.8428740760128
+                  }
+                }
+              ],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "@sys.text:query",
+                  "ExpressionName": null,
+                  "Id": "ea555ac4-9311-4bfb-ab6a-0b0424a3f65d",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4044.5131214599842,
+                    "Y": 4139.8428740760128
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Getting wiki extract",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4041.1509756863425,
+                  "Y": 4340.9402340379611
+                }
+              },
+              "Id": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_wiki_intent)",
+              "Position": {
+                "X": 4413.6020811833532,
+                "Y": 4049.39011745049
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "37ea57ef-0a91-4239-b2c1-ca1f1e37cc79",
+          "IsFolded": false,
+          "DisplayName": "Dialog (search_wiki_dialog)",
+          "Position": {
+            "X": 5038.37030075188,
+            "Y": 3530.9849624060148
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "2aab5f20-b786-4bb9-9a20-0bcbfa53e4b7",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5442.022556390978,
+        "Y": 3568.9962406015038
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "search_wiki_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "search_wiki_set_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "wiki",
+              "ExpressionName": null,
+              "Id": "cc784db1-8556-4607-a371-b04024c81ab8",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4091.0,
+                "Y": 3387.0
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "What shall I wiki for you?",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 3967.0,
+              "Y": 3626.0
+            }
+          },
+          "Id": "c2ea6cb4-94ee-4a56-a286-e564eebcdb57",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_wiki_set_intent)",
+          "Position": {
+            "X": 4439.0,
+            "Y": 3339.0
+          }
+        },
+        {
+          "IntentName": "search_wiki_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [
+            {
+              "ContextName": "con_search_wiki_added",
+              "Id": "2b9f62d8-5895-44f0-9fb1-0835c246c8c5",
+              "IsFolded": false,
+              "DisplayName": "Context",
+              "Position": {
+                "X": 4038.2631214599842,
+                "Y": 4024.8428740760128
+              }
+            }
+          ],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "@sys.text:query",
+              "ExpressionName": null,
+              "Id": "ea555ac4-9311-4bfb-ab6a-0b0424a3f65d",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4044.5131214599842,
+                "Y": 4139.8428740760128
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Getting wiki extract",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4041.1509756863425,
+              "Y": 4340.9402340379611
+            }
+          },
+          "Id": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_wiki_intent)",
+          "Position": {
+            "X": 4413.6020811833532,
+            "Y": 4049.39011745049
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "37ea57ef-0a91-4239-b2c1-ca1f1e37cc79",
+      "IsFolded": false,
+      "DisplayName": "Dialog (search_wiki_dialog)",
+      "Position": {
+        "X": 5038.37030075188,
+        "Y": 3530.9849624060148
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_wiki_set_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "wiki",
+          "ExpressionName": null,
+          "Id": "cc784db1-8556-4607-a371-b04024c81ab8",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4091.0,
+            "Y": 3387.0
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "What shall I wiki for you?",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 3967.0,
+          "Y": 3626.0
+        }
+      },
+      "Id": "c2ea6cb4-94ee-4a56-a286-e564eebcdb57",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_wiki_set_intent)",
+      "Position": {
+        "X": 4439.0,
+        "Y": 3339.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "What shall I wiki for you?",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 3967.0,
+        "Y": 3626.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "wiki",
+      "ExpressionName": null,
+      "Id": "cc784db1-8556-4607-a371-b04024c81ab8",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4091.0,
+        "Y": 3387.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "con_search_wiki_added",
+      "Lifespan": 2,
+      "Id": "574c3dea-c6ff-4262-b167-f8e62f5fc382",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 4328.5486443381178,
+        "Y": 3741.5656565656568
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_wiki_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [
+        {
+          "ContextName": "con_search_wiki_added",
+          "Id": "2b9f62d8-5895-44f0-9fb1-0835c246c8c5",
+          "IsFolded": false,
+          "DisplayName": "Context",
+          "Position": {
+            "X": 4038.2631214599842,
+            "Y": 4024.8428740760128
+          }
+        }
+      ],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "@sys.text:query",
+          "ExpressionName": null,
+          "Id": "ea555ac4-9311-4bfb-ab6a-0b0424a3f65d",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4044.5131214599842,
+            "Y": 4139.8428740760128
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Getting wiki extract",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4041.1509756863425,
+          "Y": 4340.9402340379611
+        }
+      },
+      "Id": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_wiki_intent)",
+      "Position": {
+        "X": 4413.6020811833532,
+        "Y": 4049.39011745049
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
+      "ContextName": "con_search_wiki_added",
+      "Id": "2b9f62d8-5895-44f0-9fb1-0835c246c8c5",
+      "IsFolded": false,
+      "DisplayName": "Context",
+      "Position": {
+        "X": 4038.2631214599842,
+        "Y": 4024.8428740760128
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "@sys.text:query",
+      "ExpressionName": null,
+      "Id": "ea555ac4-9311-4bfb-ab6a-0b0424a3f65d",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4044.5131214599842,
+        "Y": 4139.8428740760128
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Getting wiki extract",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4041.1509756863425,
+        "Y": 4340.9402340379611
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "query",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "a2fa64c7-20f1-4bda-8d9c-e13f7f6a1f64",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 4279.3333333333348,
+        "Y": 4487.7827903091056
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Getting wiki extract",
+      "Id": "c5dd342d-6150-478c-b929-4e785a9a4fd4",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3691.5964912280688,
+        "Y": 4520.069340016712
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
+      "ContextName": "con_search_wiki_added",
+      "Id": "ccc60323-77e8-485d-a8f0-97b25f43e8b5",
+      "IsFolded": false,
+      "DisplayName": "Context Remove",
+      "Position": {
+        "X": 4729.56034024455,
+        "Y": 4548.7243107769445
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "What shall I wiki for you?",
+      "Id": "dd0180c8-531f-4f41-a839-1c79f8f99ef1",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3407.2935156518738,
+        "Y": 3644.5774853801167
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Wikipedia.Nodes.WikipediaNode, Syn.VA.Plugins.Wikipedia",
+      "SearchQuery": null,
+      "Id": "9119dda7-21d9-4f96-9262-e3dd4ae6d24a",
+      "IsFolded": false,
+      "DisplayName": "Wikipedia",
+      "Position": {
+        "X": 4529.371367452638,
+        "Y": 4514.2165326074009
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "37ea57ef-0a91-4239-b2c1-ca1f1e37cc79",
+      "FromPortName": "Output",
+      "ToNodeId": "2aab5f20-b786-4bb9-9a20-0bcbfa53e4b7",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "c2ea6cb4-94ee-4a56-a286-e564eebcdb57",
+      "FromPortName": "Output",
+      "ToNodeId": "37ea57ef-0a91-4239-b2c1-ca1f1e37cc79",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+      "FromPortName": "Output",
+      "ToNodeId": "37ea57ef-0a91-4239-b2c1-ca1f1e37cc79",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "cc784db1-8556-4607-a371-b04024c81ab8",
+      "FromPortName": "Output",
+      "ToNodeId": "c2ea6cb4-94ee-4a56-a286-e564eebcdb57",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+      "FromPortName": "Output",
+      "ToNodeId": "c2ea6cb4-94ee-4a56-a286-e564eebcdb57",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "dd0180c8-531f-4f41-a839-1c79f8f99ef1",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "01c8dbdf-d411-4fc2-8abc-d58a38456194",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "574c3dea-c6ff-4262-b167-f8e62f5fc382",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "2b9f62d8-5895-44f0-9fb1-0835c246c8c5",
+      "FromPortName": "Output",
+      "ToNodeId": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+      "ToPortName": "IntentContexts"
+    },
+    {
+      "FromNodeId": "ea555ac4-9311-4bfb-ab6a-0b0424a3f65d",
+      "FromPortName": "Output",
+      "ToNodeId": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+      "FromPortName": "Output",
+      "ToNodeId": "96930e6b-eaa0-4531-9fc7-dee14e681e1b",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "c5dd342d-6150-478c-b929-4e785a9a4fd4",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "8b33958d-b5ee-47f5-ab07-b2d85dba5cc8",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "a2fa64c7-20f1-4bda-8d9c-e13f7f6a1f64",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "9119dda7-21d9-4f96-9262-e3dd4ae6d24a",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "ccc60323-77e8-485d-a8f0-97b25f43e8b5",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "a2fa64c7-20f1-4bda-8d9c-e13f7f6a1f64",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "9119dda7-21d9-4f96-9262-e3dd4ae6d24a",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "a2fa64c7-20f1-4bda-8d9c-e13f7f6a1f64",
+      "FromPortName": "Output",
+      "ToNodeId": "9119dda7-21d9-4f96-9262-e3dd4ae6d24a",
+      "ToPortName": "SearchQuery"
+    }
+  ]
+}

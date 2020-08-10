@@ -1,0 +1,355 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.News.Nodes.NewsNode, Syn.VA.Plugins.News",
+      "Id": "63cdfd66-dcb7-4675-95f3-9c115a4400f6",
+      "IsFolded": false,
+      "DisplayName": "News",
+      "Position": {
+        "X": 5203.0,
+        "Y": 3861.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "news_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "news_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "news",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "news",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "news",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Gettings your news feed.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "e110e578-377a-42fb-8d89-027c5185fe9a",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4870.272727272727,
+              "Y": 3735.181818181818
+            }
+          },
+          "Id": "6a40f166-25e8-4878-bfd8-5c50fdd4bcda",
+          "IsFolded": false,
+          "DisplayName": "Intent (news_intent)",
+          "Position": {
+            "X": 5134.0,
+            "Y": 3476.0
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "4351b4f7-c77d-4779-b1d4-aec582db1fc3",
+      "IsFolded": false,
+      "DisplayName": "Dialog (news_dialog)",
+      "Position": {
+        "X": 5411.0,
+        "Y": 3409.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "news_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "news",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "news",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "news",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Gettings your news feed.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "e110e578-377a-42fb-8d89-027c5185fe9a",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4870.272727272727,
+          "Y": 3735.181818181818
+        }
+      },
+      "Id": "6a40f166-25e8-4878-bfd8-5c50fdd4bcda",
+      "IsFolded": false,
+      "DisplayName": "Intent (news_intent)",
+      "Position": {
+        "X": 5134.0,
+        "Y": 3476.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Gettings your news feed.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "e110e578-377a-42fb-8d89-027c5185fe9a",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4870.272727272727,
+        "Y": 3735.181818181818
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "news_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "news_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "news",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "news",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "news",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Gettings your news feed.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "e110e578-377a-42fb-8d89-027c5185fe9a",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4870.272727272727,
+                  "Y": 3735.181818181818
+                }
+              },
+              "Id": "6a40f166-25e8-4878-bfd8-5c50fdd4bcda",
+              "IsFolded": false,
+              "DisplayName": "Intent (news_intent)",
+              "Position": {
+                "X": 5134.0,
+                "Y": 3476.0
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "4351b4f7-c77d-4779-b1d4-aec582db1fc3",
+          "IsFolded": false,
+          "DisplayName": "Dialog (news_dialog)",
+          "Position": {
+            "X": 5411.0,
+            "Y": 3409.0
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "bfe61308-fb90-4010-85e1-c552cde543e0",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5723.90909090909,
+        "Y": 3433.4545454545455
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionListNode, Syn.Bot",
+      "ExpressionList": [
+        "news"
+      ],
+      "Id": "947ef2d1-cfb4-43ae-8e13-1f76d76b3bb6",
+      "IsFolded": false,
+      "DisplayName": "Expression List",
+      "Position": {
+        "X": 4865.272727272727,
+        "Y": 3501.636363636364
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Gettings your news feed.",
+      "Id": "741f8969-9a7e-4fa4-9949-1551a414c5ec",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4472.363636363636,
+        "Y": 3831.909090909091
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "e110e578-377a-42fb-8d89-027c5185fe9a",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "63cdfd66-dcb7-4675-95f3-9c115a4400f6",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "6a40f166-25e8-4878-bfd8-5c50fdd4bcda",
+      "FromPortName": "Output",
+      "ToNodeId": "4351b4f7-c77d-4779-b1d4-aec582db1fc3",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "947ef2d1-cfb4-43ae-8e13-1f76d76b3bb6",
+      "FromPortName": "Expressions",
+      "ToNodeId": "6a40f166-25e8-4878-bfd8-5c50fdd4bcda",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "e110e578-377a-42fb-8d89-027c5185fe9a",
+      "FromPortName": "Output",
+      "ToNodeId": "6a40f166-25e8-4878-bfd8-5c50fdd4bcda",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "741f8969-9a7e-4fa4-9949-1551a414c5ec",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "e110e578-377a-42fb-8d89-027c5185fe9a",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "4351b4f7-c77d-4779-b1d4-aec582db1fc3",
+      "FromPortName": "Output",
+      "ToNodeId": "bfe61308-fb90-4010-85e1-c552cde543e0",
+      "ToPortName": "Dialogs"
+    }
+  ]
+}

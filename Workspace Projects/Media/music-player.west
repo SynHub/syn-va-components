@@ -1,0 +1,505 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "music_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "start_music_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "play @song-title",
+                  "ExpressionName": null,
+                  "Id": "ee113034-3d87-480b-8e70-6c760f5b0cba",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4733.6140350877195,
+                    "Y": 3303.7377192982458
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "ba6638db-f7b3-42aa-9e25-d2d9174b2b27",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4759.9473684210516,
+                  "Y": 3542.5622807017535
+                }
+              },
+              "Id": "d4d33274-21d5-44b7-b2c9-5cfb5cf3bd7b",
+              "IsFolded": false,
+              "DisplayName": "Intent (start_music_intent)",
+              "Position": {
+                "X": 5267.666666666667,
+                "Y": 3254.5798245614028
+              }
+            },
+            {
+              "IntentName": "stop_music_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "stop music",
+                  "ExpressionName": null,
+                  "Id": "9ef2c138-c1d6-4a40-91a2-3e67e4630e87",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4946.52029300249,
+                    "Y": 4074.708641135267
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "3119b8aa-68bc-431a-8b7b-09728f2342bb",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4926.721758203952,
+                  "Y": 4339.5960870227145
+                }
+              },
+              "Id": "252affca-516b-493a-80cc-df26d9788751",
+              "IsFolded": false,
+              "DisplayName": "Intent (stop_music_intent)",
+              "Position": {
+                "X": 5287.5179124281285,
+                "Y": 4027.7819229446168
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "d49dedb7-6189-4026-accd-82aba46c2ab6",
+          "IsFolded": false,
+          "DisplayName": "Dialog (music_dialog)",
+          "Position": {
+            "X": 5788.0726817042605,
+            "Y": 3578.9557644110282
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "fd2e9e3d-bcda-4927-bdda-c39ded5348f4",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 6165.80701754386,
+        "Y": 3690.7377192982458
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "music_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "start_music_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "play @song-title",
+              "ExpressionName": null,
+              "Id": "ee113034-3d87-480b-8e70-6c760f5b0cba",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4733.6140350877195,
+                "Y": 3303.7377192982458
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "ba6638db-f7b3-42aa-9e25-d2d9174b2b27",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4759.9473684210516,
+              "Y": 3542.5622807017535
+            }
+          },
+          "Id": "d4d33274-21d5-44b7-b2c9-5cfb5cf3bd7b",
+          "IsFolded": false,
+          "DisplayName": "Intent (start_music_intent)",
+          "Position": {
+            "X": 5267.666666666667,
+            "Y": 3254.5798245614028
+          }
+        },
+        {
+          "IntentName": "stop_music_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "stop music",
+              "ExpressionName": null,
+              "Id": "9ef2c138-c1d6-4a40-91a2-3e67e4630e87",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4946.52029300249,
+                "Y": 4074.708641135267
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "3119b8aa-68bc-431a-8b7b-09728f2342bb",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4926.721758203952,
+              "Y": 4339.5960870227145
+            }
+          },
+          "Id": "252affca-516b-493a-80cc-df26d9788751",
+          "IsFolded": false,
+          "DisplayName": "Intent (stop_music_intent)",
+          "Position": {
+            "X": 5287.5179124281285,
+            "Y": 4027.7819229446168
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "d49dedb7-6189-4026-accd-82aba46c2ab6",
+      "IsFolded": false,
+      "DisplayName": "Dialog (music_dialog)",
+      "Position": {
+        "X": 5788.0726817042605,
+        "Y": 3578.9557644110282
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "start_music_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "play @song-title",
+          "ExpressionName": null,
+          "Id": "ee113034-3d87-480b-8e70-6c760f5b0cba",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4733.6140350877195,
+            "Y": 3303.7377192982458
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "ba6638db-f7b3-42aa-9e25-d2d9174b2b27",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4759.9473684210516,
+          "Y": 3542.5622807017535
+        }
+      },
+      "Id": "d4d33274-21d5-44b7-b2c9-5cfb5cf3bd7b",
+      "IsFolded": false,
+      "DisplayName": "Intent (start_music_intent)",
+      "Position": {
+        "X": 5267.666666666667,
+        "Y": 3254.5798245614028
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "ba6638db-f7b3-42aa-9e25-d2d9174b2b27",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4759.9473684210516,
+        "Y": 3542.5622807017535
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "play @song-title",
+      "ExpressionName": null,
+      "Id": "ee113034-3d87-480b-8e70-6c760f5b0cba",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4733.6140350877195,
+        "Y": 3303.7377192982458
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "song-title",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "f9485ae4-82c8-471c-b908-46d254651909",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 5041.3157894736842,
+        "Y": 3654.2815789473693
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "stop_music_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "stop music",
+          "ExpressionName": null,
+          "Id": "9ef2c138-c1d6-4a40-91a2-3e67e4630e87",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4946.52029300249,
+            "Y": 4074.708641135267
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "3119b8aa-68bc-431a-8b7b-09728f2342bb",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4926.721758203952,
+          "Y": 4339.5960870227145
+        }
+      },
+      "Id": "252affca-516b-493a-80cc-df26d9788751",
+      "IsFolded": false,
+      "DisplayName": "Intent (stop_music_intent)",
+      "Position": {
+        "X": 5287.5179124281285,
+        "Y": 4027.7819229446168
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "stop music",
+      "ExpressionName": null,
+      "Id": "9ef2c138-c1d6-4a40-91a2-3e67e4630e87",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4946.52029300249,
+        "Y": 4074.708641135267
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "3119b8aa-68bc-431a-8b7b-09728f2342bb",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4926.721758203952,
+        "Y": 4339.5960870227145
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Media.Nodes.MusicPlayerNode, Syn.VA.Plugins.Media",
+      "SongTitle": null,
+      "PlayerTask": 0,
+      "Id": "a8ff6a5c-57ba-4cac-9046-27182d44e8ab",
+      "IsFolded": false,
+      "DisplayName": "Music Player",
+      "Position": {
+        "X": 5286.0,
+        "Y": 3698.65
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Media.Nodes.MusicPlayerNode, Syn.VA.Plugins.Media",
+      "SongTitle": null,
+      "PlayerTask": 1,
+      "Id": "fd435c0e-2a2f-4898-b09b-b6b74443b7c6",
+      "IsFolded": false,
+      "DisplayName": "Music Player",
+      "Position": {
+        "X": 5304.0,
+        "Y": 4443.65
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "d49dedb7-6189-4026-accd-82aba46c2ab6",
+      "FromPortName": "Output",
+      "ToNodeId": "fd2e9e3d-bcda-4927-bdda-c39ded5348f4",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "d4d33274-21d5-44b7-b2c9-5cfb5cf3bd7b",
+      "FromPortName": "Output",
+      "ToNodeId": "d49dedb7-6189-4026-accd-82aba46c2ab6",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "252affca-516b-493a-80cc-df26d9788751",
+      "FromPortName": "Output",
+      "ToNodeId": "d49dedb7-6189-4026-accd-82aba46c2ab6",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "ee113034-3d87-480b-8e70-6c760f5b0cba",
+      "FromPortName": "Output",
+      "ToNodeId": "d4d33274-21d5-44b7-b2c9-5cfb5cf3bd7b",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "ba6638db-f7b3-42aa-9e25-d2d9174b2b27",
+      "FromPortName": "Output",
+      "ToNodeId": "d4d33274-21d5-44b7-b2c9-5cfb5cf3bd7b",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "ba6638db-f7b3-42aa-9e25-d2d9174b2b27",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "f9485ae4-82c8-471c-b908-46d254651909",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "9ef2c138-c1d6-4a40-91a2-3e67e4630e87",
+      "FromPortName": "Output",
+      "ToNodeId": "252affca-516b-493a-80cc-df26d9788751",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "3119b8aa-68bc-431a-8b7b-09728f2342bb",
+      "FromPortName": "Output",
+      "ToNodeId": "252affca-516b-493a-80cc-df26d9788751",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "f9485ae4-82c8-471c-b908-46d254651909",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "a8ff6a5c-57ba-4cac-9046-27182d44e8ab",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "f9485ae4-82c8-471c-b908-46d254651909",
+      "FromPortName": "Output",
+      "ToNodeId": "a8ff6a5c-57ba-4cac-9046-27182d44e8ab",
+      "ToPortName": "SongTitle"
+    },
+    {
+      "FromNodeId": "3119b8aa-68bc-431a-8b7b-09728f2342bb",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "fd435c0e-2a2f-4898-b09b-b6b74443b7c6",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

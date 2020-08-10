@@ -1,0 +1,288 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "open_website_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "open_website_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "open @WebsiteName",
+                  "ExpressionName": null,
+                  "Id": "a492608d-b19c-4004-b028-f34ee00418b2",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4041.0,
+                    "Y": 3227.0
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Opening website.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4123.0,
+                  "Y": 3452.0
+                }
+              },
+              "Id": "f85f9d47-d9db-42d4-ab25-bb86184fdfb4",
+              "IsFolded": false,
+              "DisplayName": "Intent (open_website_intent)",
+              "Position": {
+                "X": 4375.0,
+                "Y": 3204.0
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "c59586ff-c469-4178-87e4-76e1d62c1b5e",
+          "IsFolded": false,
+          "DisplayName": "Dialog (open_website_dialog)",
+          "Position": {
+            "X": 4714.0,
+            "Y": 3204.0
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "6c22f34e-50e0-4ec9-afa7-575e76f035bc",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5028.0,
+        "Y": 3143.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "open_website_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "open_website_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "open @WebsiteName",
+              "ExpressionName": null,
+              "Id": "a492608d-b19c-4004-b028-f34ee00418b2",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4041.0,
+                "Y": 3227.0
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Opening website.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4123.0,
+              "Y": 3452.0
+            }
+          },
+          "Id": "f85f9d47-d9db-42d4-ab25-bb86184fdfb4",
+          "IsFolded": false,
+          "DisplayName": "Intent (open_website_intent)",
+          "Position": {
+            "X": 4375.0,
+            "Y": 3204.0
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "c59586ff-c469-4178-87e4-76e1d62c1b5e",
+      "IsFolded": false,
+      "DisplayName": "Dialog (open_website_dialog)",
+      "Position": {
+        "X": 4714.0,
+        "Y": 3204.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "open_website_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "open @WebsiteName",
+          "ExpressionName": null,
+          "Id": "a492608d-b19c-4004-b028-f34ee00418b2",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4041.0,
+            "Y": 3227.0
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Opening website.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4123.0,
+          "Y": 3452.0
+        }
+      },
+      "Id": "f85f9d47-d9db-42d4-ab25-bb86184fdfb4",
+      "IsFolded": false,
+      "DisplayName": "Intent (open_website_intent)",
+      "Position": {
+        "X": 4375.0,
+        "Y": 3204.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Opening website.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4123.0,
+        "Y": 3452.0
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Launcher.Nodes.WebsiteLauncherNode, Syn.VA.Plugins.Launcher",
+      "Id": "b9ca10f6-8705-4103-8b4f-fdb2346644cb",
+      "IsFolded": false,
+      "DisplayName": "Website Launcher",
+      "Position": {
+        "X": 4372.0,
+        "Y": 3539.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "open @WebsiteName",
+      "ExpressionName": null,
+      "Id": "a492608d-b19c-4004-b028-f34ee00418b2",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4041.0,
+        "Y": 3227.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Opening website.",
+      "Id": "8216782c-e38d-44d3-8f97-6835fdd30a4b",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3814.0,
+        "Y": 3506.0
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "c59586ff-c469-4178-87e4-76e1d62c1b5e",
+      "FromPortName": "Output",
+      "ToNodeId": "6c22f34e-50e0-4ec9-afa7-575e76f035bc",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "f85f9d47-d9db-42d4-ab25-bb86184fdfb4",
+      "FromPortName": "Output",
+      "ToNodeId": "c59586ff-c469-4178-87e4-76e1d62c1b5e",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "a492608d-b19c-4004-b028-f34ee00418b2",
+      "FromPortName": "Output",
+      "ToNodeId": "f85f9d47-d9db-42d4-ab25-bb86184fdfb4",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+      "FromPortName": "Output",
+      "ToNodeId": "f85f9d47-d9db-42d4-ab25-bb86184fdfb4",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "8216782c-e38d-44d3-8f97-6835fdd30a4b",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "d51dbf7e-643d-4c80-87f2-96c93c8c22d0",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "b9ca10f6-8705-4103-8b4f-fdb2346644cb",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

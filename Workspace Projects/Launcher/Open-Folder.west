@@ -1,0 +1,288 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "open_folder_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "open_folder_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "open @FolderName",
+                  "ExpressionName": null,
+                  "Id": "5ab85a3e-61d5-4487-bceb-5706a394c496",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4162.5047619047618,
+                    "Y": 3292.6000000000008
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Opening folder.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "d562c170-0564-418e-b15a-5998b69e8b7e",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4248.9047619047624,
+                  "Y": 3578.0
+                }
+              },
+              "Id": "e2ccc3b9-6bbb-4508-a095-da2ed29ec431",
+              "IsFolded": false,
+              "DisplayName": "Intent (open_folder_intent)",
+              "Position": {
+                "X": 4468.0,
+                "Y": 3320.0
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "f3575aae-54fd-4fa3-a041-499333cb8e86",
+          "IsFolded": false,
+          "DisplayName": "Dialog (open_folder_dialog)",
+          "Position": {
+            "X": 4787.0,
+            "Y": 3224.0
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "3f7f4b29-40dd-4a3c-b2e9-4fa5fb5827e7",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5116.0,
+        "Y": 3168.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "open_folder_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "open_folder_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "open @FolderName",
+              "ExpressionName": null,
+              "Id": "5ab85a3e-61d5-4487-bceb-5706a394c496",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4162.5047619047618,
+                "Y": 3292.6000000000008
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Opening folder.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "d562c170-0564-418e-b15a-5998b69e8b7e",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4248.9047619047624,
+              "Y": 3578.0
+            }
+          },
+          "Id": "e2ccc3b9-6bbb-4508-a095-da2ed29ec431",
+          "IsFolded": false,
+          "DisplayName": "Intent (open_folder_intent)",
+          "Position": {
+            "X": 4468.0,
+            "Y": 3320.0
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "f3575aae-54fd-4fa3-a041-499333cb8e86",
+      "IsFolded": false,
+      "DisplayName": "Dialog (open_folder_dialog)",
+      "Position": {
+        "X": 4787.0,
+        "Y": 3224.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "open_folder_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "open @FolderName",
+          "ExpressionName": null,
+          "Id": "5ab85a3e-61d5-4487-bceb-5706a394c496",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4162.5047619047618,
+            "Y": 3292.6000000000008
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Opening folder.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "d562c170-0564-418e-b15a-5998b69e8b7e",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4248.9047619047624,
+          "Y": 3578.0
+        }
+      },
+      "Id": "e2ccc3b9-6bbb-4508-a095-da2ed29ec431",
+      "IsFolded": false,
+      "DisplayName": "Intent (open_folder_intent)",
+      "Position": {
+        "X": 4468.0,
+        "Y": 3320.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Opening folder.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "d562c170-0564-418e-b15a-5998b69e8b7e",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4248.9047619047624,
+        "Y": 3578.0
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Launcher.Nodes.FolderLauncherNode, Syn.VA.Plugins.Launcher",
+      "Id": "ba2cdbcc-bf3a-4679-8588-9fb568530dcf",
+      "IsFolded": false,
+      "DisplayName": "Folder Launcher",
+      "Position": {
+        "X": 4500.9047619047624,
+        "Y": 3709.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Opening folder.",
+      "Id": "20e74548-7b4e-4168-8ac4-482100cb7a0e",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3992.1047619047627,
+        "Y": 3751.7999999999988
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "open @FolderName",
+      "ExpressionName": null,
+      "Id": "5ab85a3e-61d5-4487-bceb-5706a394c496",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4162.5047619047618,
+        "Y": 3292.6000000000008
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "f3575aae-54fd-4fa3-a041-499333cb8e86",
+      "FromPortName": "Output",
+      "ToNodeId": "3f7f4b29-40dd-4a3c-b2e9-4fa5fb5827e7",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "e2ccc3b9-6bbb-4508-a095-da2ed29ec431",
+      "FromPortName": "Output",
+      "ToNodeId": "f3575aae-54fd-4fa3-a041-499333cb8e86",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "5ab85a3e-61d5-4487-bceb-5706a394c496",
+      "FromPortName": "Output",
+      "ToNodeId": "e2ccc3b9-6bbb-4508-a095-da2ed29ec431",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "d562c170-0564-418e-b15a-5998b69e8b7e",
+      "FromPortName": "Output",
+      "ToNodeId": "e2ccc3b9-6bbb-4508-a095-da2ed29ec431",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "20e74548-7b4e-4168-8ac4-482100cb7a0e",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "d562c170-0564-418e-b15a-5998b69e8b7e",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "d562c170-0564-418e-b15a-5998b69e8b7e",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "ba2cdbcc-bf3a-4679-8588-9fb568530dcf",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

@@ -1,0 +1,674 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "search_engine_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "search_engine_open_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [
+                {
+                  "ContextName": "con_search_engine_added",
+                  "Id": "dc6f9be4-0168-44d8-8289-b4bef7ca4d22",
+                  "IsFolded": false,
+                  "DisplayName": "Context",
+                  "Position": {
+                    "X": 4088.2631214599842,
+                    "Y": 4140.5571597902981
+                  }
+                }
+              ],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "@sys.text:search-term",
+                  "ExpressionName": null,
+                  "Id": "f33b5473-dd4c-4e53-87bb-247ff4f7476c",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4094.5131214599842,
+                    "Y": 4255.5571597902981
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Opening search engine.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "11934f6c-927c-46eb-b687-b19ad352da84",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4091.1509756863425,
+                  "Y": 4456.6545197522455
+                }
+              },
+              "Id": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_engine_open_intent)",
+              "Position": {
+                "X": 4463.6020811833532,
+                "Y": 4165.1044031647752
+              }
+            },
+            {
+              "IntentName": "search_engine_set_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "search @SearchEngine",
+                  "ExpressionName": null,
+                  "Id": "2420d485-e5d2-4a7a-9d4a-aab5cc13e256",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4091.0,
+                    "Y": 3387.0
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Please specify the search term.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "9b380666-c2d3-459b-9871-d1712ef752eb",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 3967.0,
+                  "Y": 3626.0
+                }
+              },
+              "Id": "ea4929e7-449d-4f75-80d0-b081db3a7a6e",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_engine_set_intent)",
+              "Position": {
+                "X": 4439.0,
+                "Y": 3339.0
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "8518c799-7a6e-4c9c-b133-c38dc94a2794",
+          "IsFolded": false,
+          "DisplayName": "Dialog (search_engine_dialog)",
+          "Position": {
+            "X": 5185.5131578947367,
+            "Y": 3533.8421052631579
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "b403db16-6a68-4a8d-add3-56dc3ca7b4f2",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5637.7368421052633,
+        "Y": 3644.7105263157896
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "search_engine_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "search_engine_open_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [
+            {
+              "ContextName": "con_search_engine_added",
+              "Id": "dc6f9be4-0168-44d8-8289-b4bef7ca4d22",
+              "IsFolded": false,
+              "DisplayName": "Context",
+              "Position": {
+                "X": 4088.2631214599842,
+                "Y": 4140.5571597902981
+              }
+            }
+          ],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "@sys.text:search-term",
+              "ExpressionName": null,
+              "Id": "f33b5473-dd4c-4e53-87bb-247ff4f7476c",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4094.5131214599842,
+                "Y": 4255.5571597902981
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Opening search engine.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "11934f6c-927c-46eb-b687-b19ad352da84",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4091.1509756863425,
+              "Y": 4456.6545197522455
+            }
+          },
+          "Id": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_engine_open_intent)",
+          "Position": {
+            "X": 4463.6020811833532,
+            "Y": 4165.1044031647752
+          }
+        },
+        {
+          "IntentName": "search_engine_set_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "search @SearchEngine",
+              "ExpressionName": null,
+              "Id": "2420d485-e5d2-4a7a-9d4a-aab5cc13e256",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4091.0,
+                "Y": 3387.0
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Please specify the search term.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "9b380666-c2d3-459b-9871-d1712ef752eb",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 3967.0,
+              "Y": 3626.0
+            }
+          },
+          "Id": "ea4929e7-449d-4f75-80d0-b081db3a7a6e",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_engine_set_intent)",
+          "Position": {
+            "X": 4439.0,
+            "Y": 3339.0
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "8518c799-7a6e-4c9c-b133-c38dc94a2794",
+      "IsFolded": false,
+      "DisplayName": "Dialog (search_engine_dialog)",
+      "Position": {
+        "X": 5185.5131578947367,
+        "Y": 3533.8421052631579
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_engine_set_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "search @SearchEngine",
+          "ExpressionName": null,
+          "Id": "2420d485-e5d2-4a7a-9d4a-aab5cc13e256",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4091.0,
+            "Y": 3387.0
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Please specify the search term.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "9b380666-c2d3-459b-9871-d1712ef752eb",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 3967.0,
+          "Y": 3626.0
+        }
+      },
+      "Id": "ea4929e7-449d-4f75-80d0-b081db3a7a6e",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_engine_set_intent)",
+      "Position": {
+        "X": 4439.0,
+        "Y": 3339.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Please specify the search term.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "9b380666-c2d3-459b-9871-d1712ef752eb",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 3967.0,
+        "Y": 3626.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "search @SearchEngine",
+      "ExpressionName": null,
+      "Id": "2420d485-e5d2-4a7a-9d4a-aab5cc13e256",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4091.0,
+        "Y": 3387.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableSetNode, Syn.Bot",
+      "VariableName": "search_engine",
+      "VariableOrigin": 1,
+      "VariableValue": null,
+      "Id": "baa91c53-1f33-40a1-a592-d81f858d8360",
+      "IsFolded": false,
+      "DisplayName": "Variable Set",
+      "Position": {
+        "X": 4455.88888888889,
+        "Y": 3689.2222222222226
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "SearchEngine",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "c2b19e77-22ba-4285-a6a9-f964418ee868",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 4204.0,
+        "Y": 3735.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "con_search_engine_added",
+      "Lifespan": 2,
+      "Id": "14f51ad5-3002-476c-bcf8-a760d9dab371",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 4714.9122807017538,
+        "Y": 3736.1111111111113
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_engine_open_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [
+        {
+          "ContextName": "con_search_engine_added",
+          "Id": "dc6f9be4-0168-44d8-8289-b4bef7ca4d22",
+          "IsFolded": false,
+          "DisplayName": "Context",
+          "Position": {
+            "X": 4088.2631214599842,
+            "Y": 4140.5571597902981
+          }
+        }
+      ],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "@sys.text:search-term",
+          "ExpressionName": null,
+          "Id": "f33b5473-dd4c-4e53-87bb-247ff4f7476c",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4094.5131214599842,
+            "Y": 4255.5571597902981
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Opening search engine.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "11934f6c-927c-46eb-b687-b19ad352da84",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4091.1509756863425,
+          "Y": 4456.6545197522455
+        }
+      },
+      "Id": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_engine_open_intent)",
+      "Position": {
+        "X": 4463.6020811833532,
+        "Y": 4165.1044031647752
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
+      "ContextName": "con_search_engine_added",
+      "Id": "dc6f9be4-0168-44d8-8289-b4bef7ca4d22",
+      "IsFolded": false,
+      "DisplayName": "Context",
+      "Position": {
+        "X": 4088.2631214599842,
+        "Y": 4140.5571597902981
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "@sys.text:search-term",
+      "ExpressionName": null,
+      "Id": "f33b5473-dd4c-4e53-87bb-247ff4f7476c",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4094.5131214599842,
+        "Y": 4255.5571597902981
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Opening search engine.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "11934f6c-927c-46eb-b687-b19ad352da84",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4091.1509756863425,
+        "Y": 4456.6545197522455
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Launcher.Nodes.SearchEngineLauncherNode, Syn.VA.Plugins.Launcher",
+      "SearchQuery": null,
+      "SearchEngineName": null,
+      "Id": "b7af90a9-90b1-4184-aef5-a1a872c2bff7",
+      "IsFolded": false,
+      "DisplayName": "Search Engine Launcher",
+      "Position": {
+        "X": 4800.8018709876287,
+        "Y": 4663.1343465615937
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "search-term",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "822c00e1-724d-4200-82a1-1d41a581f48d",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 4318.2222222222235,
+        "Y": 4607.9415204678353
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.VariableGetNode, Syn.Bot",
+      "VariableName": "search_engine",
+      "VariableOrigin": 1,
+      "Id": "f4deb7a8-514f-451a-a488-1505e36eecc4",
+      "IsFolded": false,
+      "DisplayName": "Variable Get",
+      "Position": {
+        "X": 4534.3157894736851,
+        "Y": 4477.3684210526317
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Opening search engine.",
+      "Id": "f8300d86-5ca3-43d3-9a12-441a9b40876b",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3748.2631578947353,
+        "Y": 4636.8947368421077
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
+      "ContextName": "con_search_engine_added",
+      "Id": "76815c7d-4953-4293-a6ee-fa79c775d346",
+      "IsFolded": false,
+      "DisplayName": "Context Remove",
+      "Position": {
+        "X": 5053.0956937799037,
+        "Y": 4681.1052631578968
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Please specify the search term.",
+      "Id": "13d13980-41a8-4323-9b8a-3eacad0dfb5c",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3407.2935156518738,
+        "Y": 3644.5774853801167
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "8518c799-7a6e-4c9c-b133-c38dc94a2794",
+      "FromPortName": "Output",
+      "ToNodeId": "b403db16-6a68-4a8d-add3-56dc3ca7b4f2",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+      "FromPortName": "Output",
+      "ToNodeId": "8518c799-7a6e-4c9c-b133-c38dc94a2794",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "ea4929e7-449d-4f75-80d0-b081db3a7a6e",
+      "FromPortName": "Output",
+      "ToNodeId": "8518c799-7a6e-4c9c-b133-c38dc94a2794",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "2420d485-e5d2-4a7a-9d4a-aab5cc13e256",
+      "FromPortName": "Output",
+      "ToNodeId": "ea4929e7-449d-4f75-80d0-b081db3a7a6e",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "9b380666-c2d3-459b-9871-d1712ef752eb",
+      "FromPortName": "Output",
+      "ToNodeId": "ea4929e7-449d-4f75-80d0-b081db3a7a6e",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "13d13980-41a8-4323-9b8a-3eacad0dfb5c",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "9b380666-c2d3-459b-9871-d1712ef752eb",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "c2b19e77-22ba-4285-a6a9-f964418ee868",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "baa91c53-1f33-40a1-a592-d81f858d8360",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "c2b19e77-22ba-4285-a6a9-f964418ee868",
+      "FromPortName": "Output",
+      "ToNodeId": "baa91c53-1f33-40a1-a592-d81f858d8360",
+      "ToPortName": "VariableValue"
+    },
+    {
+      "FromNodeId": "9b380666-c2d3-459b-9871-d1712ef752eb",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "c2b19e77-22ba-4285-a6a9-f964418ee868",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "baa91c53-1f33-40a1-a592-d81f858d8360",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "14f51ad5-3002-476c-bcf8-a760d9dab371",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "dc6f9be4-0168-44d8-8289-b4bef7ca4d22",
+      "FromPortName": "Output",
+      "ToNodeId": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+      "ToPortName": "IntentContexts"
+    },
+    {
+      "FromNodeId": "f33b5473-dd4c-4e53-87bb-247ff4f7476c",
+      "FromPortName": "Output",
+      "ToNodeId": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "11934f6c-927c-46eb-b687-b19ad352da84",
+      "FromPortName": "Output",
+      "ToNodeId": "696e8ef8-dfc0-432b-b282-22c75348f07d",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "f8300d86-5ca3-43d3-9a12-441a9b40876b",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "11934f6c-927c-46eb-b687-b19ad352da84",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "f4deb7a8-514f-451a-a488-1505e36eecc4",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "b7af90a9-90b1-4184-aef5-a1a872c2bff7",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "822c00e1-724d-4200-82a1-1d41a581f48d",
+      "FromPortName": "Output",
+      "ToNodeId": "b7af90a9-90b1-4184-aef5-a1a872c2bff7",
+      "ToPortName": "SearchQuery"
+    },
+    {
+      "FromNodeId": "f4deb7a8-514f-451a-a488-1505e36eecc4",
+      "FromPortName": "VariableValue",
+      "ToNodeId": "b7af90a9-90b1-4184-aef5-a1a872c2bff7",
+      "ToPortName": "SearchEngineName"
+    },
+    {
+      "FromNodeId": "11934f6c-927c-46eb-b687-b19ad352da84",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "822c00e1-724d-4200-82a1-1d41a581f48d",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "822c00e1-724d-4200-82a1-1d41a581f48d",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "f4deb7a8-514f-451a-a488-1505e36eecc4",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "b7af90a9-90b1-4184-aef5-a1a872c2bff7",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "76815c7d-4953-4293-a6ee-fa79c775d346",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

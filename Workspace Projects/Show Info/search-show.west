@@ -1,0 +1,625 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "search_show_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "search_show_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [
+                {
+                  "ContextName": "con_search_show",
+                  "Id": "ba8f6225-cb49-4f5b-be03-1afdff89e138",
+                  "IsFolded": false,
+                  "DisplayName": "Context",
+                  "Position": {
+                    "X": 4089.73680567051,
+                    "Y": 4045.6799668078415
+                  }
+                }
+              ],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "@sys.text:search-term",
+                  "ExpressionName": null,
+                  "Id": "0f521549-f651-494d-bcde-7f12a3f30650",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4086.5131214599842,
+                    "Y": 4164.8904931236311
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Getting show information.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4083.1509756863425,
+                  "Y": 4365.9878530855794
+                }
+              },
+              "Id": "8b252fbd-d0da-467c-8247-8407d6f24165",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_show_intent)",
+              "Position": {
+                "X": 4455.6020811833532,
+                "Y": 4074.4377364981087
+              }
+            },
+            {
+              "IntentName": "search_show_start_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "Movie Info",
+                  "ExpressionName": null,
+                  "Id": "7c536cf3-af27-4a2c-8ea6-add9007f8d6b",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4052.333333333333,
+                    "Y": 3421.666666666667
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Which movie's information shall I get?",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "f1ed9229-80aa-44a7-a430-b80b32262074",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 3968.3333333333339,
+                  "Y": 3666.9824561403511
+                }
+              },
+              "Id": "ab9bf8e4-7c0c-4b75-a959-4de110140fd5",
+              "IsFolded": false,
+              "DisplayName": "Intent (search_show_start_intent)",
+              "Position": {
+                "X": 4400.333333333333,
+                "Y": 3373.666666666667
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "0dd6d49c-1709-404e-bf5b-4be4a2c33fad",
+          "IsFolded": false,
+          "DisplayName": "Dialog (search_show_dialog)",
+          "Position": {
+            "X": 5185.5131578947367,
+            "Y": 3533.8421052631579
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "fc515df6-05be-4196-ace0-a3a3a534b69c",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5637.7368421052633,
+        "Y": 3644.7105263157896
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "search_show_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "search_show_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [
+            {
+              "ContextName": "con_search_show",
+              "Id": "ba8f6225-cb49-4f5b-be03-1afdff89e138",
+              "IsFolded": false,
+              "DisplayName": "Context",
+              "Position": {
+                "X": 4089.73680567051,
+                "Y": 4045.6799668078415
+              }
+            }
+          ],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "@sys.text:search-term",
+              "ExpressionName": null,
+              "Id": "0f521549-f651-494d-bcde-7f12a3f30650",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4086.5131214599842,
+                "Y": 4164.8904931236311
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Getting show information.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4083.1509756863425,
+              "Y": 4365.9878530855794
+            }
+          },
+          "Id": "8b252fbd-d0da-467c-8247-8407d6f24165",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_show_intent)",
+          "Position": {
+            "X": 4455.6020811833532,
+            "Y": 4074.4377364981087
+          }
+        },
+        {
+          "IntentName": "search_show_start_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "Movie Info",
+              "ExpressionName": null,
+              "Id": "7c536cf3-af27-4a2c-8ea6-add9007f8d6b",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4052.333333333333,
+                "Y": 3421.666666666667
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Which movie's information shall I get?",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "f1ed9229-80aa-44a7-a430-b80b32262074",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 3968.3333333333339,
+              "Y": 3666.9824561403511
+            }
+          },
+          "Id": "ab9bf8e4-7c0c-4b75-a959-4de110140fd5",
+          "IsFolded": false,
+          "DisplayName": "Intent (search_show_start_intent)",
+          "Position": {
+            "X": 4400.333333333333,
+            "Y": 3373.666666666667
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "0dd6d49c-1709-404e-bf5b-4be4a2c33fad",
+      "IsFolded": false,
+      "DisplayName": "Dialog (search_show_dialog)",
+      "Position": {
+        "X": 5185.5131578947367,
+        "Y": 3533.8421052631579
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_show_start_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "Movie Info",
+          "ExpressionName": null,
+          "Id": "7c536cf3-af27-4a2c-8ea6-add9007f8d6b",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4052.333333333333,
+            "Y": 3421.666666666667
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Which movie's information shall I get?",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "f1ed9229-80aa-44a7-a430-b80b32262074",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 3968.3333333333339,
+          "Y": 3666.9824561403511
+        }
+      },
+      "Id": "ab9bf8e4-7c0c-4b75-a959-4de110140fd5",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_show_start_intent)",
+      "Position": {
+        "X": 4400.333333333333,
+        "Y": 3373.666666666667
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Which movie's information shall I get?",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "f1ed9229-80aa-44a7-a430-b80b32262074",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 3968.3333333333339,
+        "Y": 3666.9824561403511
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "Movie Info",
+      "ExpressionName": null,
+      "Id": "7c536cf3-af27-4a2c-8ea6-add9007f8d6b",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4052.333333333333,
+        "Y": 3421.666666666667
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "con_search_show",
+      "Lifespan": 2,
+      "Id": "e7c8ba6e-f06e-4107-96e3-d6677a97c682",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 4264.6666666666652,
+        "Y": 3734.9883040935679
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "search_show_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [
+        {
+          "ContextName": "con_search_show",
+          "Id": "ba8f6225-cb49-4f5b-be03-1afdff89e138",
+          "IsFolded": false,
+          "DisplayName": "Context",
+          "Position": {
+            "X": 4089.73680567051,
+            "Y": 4045.6799668078415
+          }
+        }
+      ],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "@sys.text:search-term",
+          "ExpressionName": null,
+          "Id": "0f521549-f651-494d-bcde-7f12a3f30650",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4086.5131214599842,
+            "Y": 4164.8904931236311
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Getting show information.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4083.1509756863425,
+          "Y": 4365.9878530855794
+        }
+      },
+      "Id": "8b252fbd-d0da-467c-8247-8407d6f24165",
+      "IsFolded": false,
+      "DisplayName": "Intent (search_show_intent)",
+      "Position": {
+        "X": 4455.6020811833532,
+        "Y": 4074.4377364981087
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
+      "ContextName": "con_search_show",
+      "Id": "ba8f6225-cb49-4f5b-be03-1afdff89e138",
+      "IsFolded": false,
+      "DisplayName": "Context",
+      "Position": {
+        "X": 4089.73680567051,
+        "Y": 4045.6799668078415
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "@sys.text:search-term",
+      "ExpressionName": null,
+      "Id": "0f521549-f651-494d-bcde-7f12a3f30650",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4086.5131214599842,
+        "Y": 4164.8904931236311
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Getting show information.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4083.1509756863425,
+        "Y": 4365.9878530855794
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "search-term",
+      "EntityGetType": "Value",
+      "EntityPropertyName": null,
+      "Id": "d4ea9250-245c-4f05-9315-3741262d286a",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 4397.4949494949515,
+        "Y": 4756.3657628920773
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Getting show information.",
+      "Id": "2b68c2af-9f29-4203-b60b-ff5f7c737093",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3710.7393483709257,
+        "Y": 4547.1804511278215
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
+      "ContextName": "con_search_show",
+      "Id": "6a3d6664-4de6-4222-941a-99a87db41ba3",
+      "IsFolded": false,
+      "DisplayName": "Context Remove",
+      "Position": {
+        "X": 5249.4497607655494,
+        "Y": 4712.1610845295072
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Which movie's information shall I get?",
+      "Id": "b36f8225-988b-4645-b485-6db3ca70f950",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 3312.8373753009964,
+        "Y": 3681.3494152046787
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.MovieInfo.Nodes.ShowInfoNode, Syn.VA.Plugins.MovieInfo",
+      "MessageTemplate": "Year: {{year}}\r\n\r\nGenre: {{genre}}\r\n\r\nPlot: {{plot}}\r\n\r\nIMDB Rating: {{imdbrating}}",
+      "OmdbQuery": null,
+      "SuccessEvent": null,
+      "FailureEvent": null,
+      "Id": "60c15d14-8053-4665-9a26-572c959400b9",
+      "IsFolded": false,
+      "DisplayName": "Show Info",
+      "Position": {
+        "X": 4805.4109332957769,
+        "Y": 4550.2459902483643
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Year: {{year}}\r\n\r\nGenre: {{genre}}\r\n\r\nPlot: {{plot}}\r\n\r\nIMDB Rating: {{imdbrating}}",
+      "Id": "b54e6d86-b7ef-4bbb-b6e7-7dc29b1d6372",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4379.4388243335643,
+        "Y": 4459.7238209159259
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "0dd6d49c-1709-404e-bf5b-4be4a2c33fad",
+      "FromPortName": "Output",
+      "ToNodeId": "fc515df6-05be-4196-ace0-a3a3a534b69c",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "8b252fbd-d0da-467c-8247-8407d6f24165",
+      "FromPortName": "Output",
+      "ToNodeId": "0dd6d49c-1709-404e-bf5b-4be4a2c33fad",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "ab9bf8e4-7c0c-4b75-a959-4de110140fd5",
+      "FromPortName": "Output",
+      "ToNodeId": "0dd6d49c-1709-404e-bf5b-4be4a2c33fad",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "7c536cf3-af27-4a2c-8ea6-add9007f8d6b",
+      "FromPortName": "Output",
+      "ToNodeId": "ab9bf8e4-7c0c-4b75-a959-4de110140fd5",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "f1ed9229-80aa-44a7-a430-b80b32262074",
+      "FromPortName": "Output",
+      "ToNodeId": "ab9bf8e4-7c0c-4b75-a959-4de110140fd5",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "b36f8225-988b-4645-b485-6db3ca70f950",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "f1ed9229-80aa-44a7-a430-b80b32262074",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "f1ed9229-80aa-44a7-a430-b80b32262074",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "e7c8ba6e-f06e-4107-96e3-d6677a97c682",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "ba8f6225-cb49-4f5b-be03-1afdff89e138",
+      "FromPortName": "Output",
+      "ToNodeId": "8b252fbd-d0da-467c-8247-8407d6f24165",
+      "ToPortName": "IntentContexts"
+    },
+    {
+      "FromNodeId": "0f521549-f651-494d-bcde-7f12a3f30650",
+      "FromPortName": "Output",
+      "ToNodeId": "8b252fbd-d0da-467c-8247-8407d6f24165",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+      "FromPortName": "Output",
+      "ToNodeId": "8b252fbd-d0da-467c-8247-8407d6f24165",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "2b68c2af-9f29-4203-b60b-ff5f7c737093",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "20fb92f9-315c-4282-bc0d-e5315001e9c1",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "d4ea9250-245c-4f05-9315-3741262d286a",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "60c15d14-8053-4665-9a26-572c959400b9",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "6a3d6664-4de6-4222-941a-99a87db41ba3",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "d4ea9250-245c-4f05-9315-3741262d286a",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "60c15d14-8053-4665-9a26-572c959400b9",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "b54e6d86-b7ef-4bbb-b6e7-7dc29b1d6372",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "60c15d14-8053-4665-9a26-572c959400b9",
+      "ToPortName": "MessageTemplate"
+    },
+    {
+      "FromNodeId": "d4ea9250-245c-4f05-9315-3741262d286a",
+      "FromPortName": "Output",
+      "ToNodeId": "60c15d14-8053-4665-9a26-572c959400b9",
+      "ToPortName": "OmdbQuery"
+    }
+  ]
+}

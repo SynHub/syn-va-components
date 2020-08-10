@@ -1,0 +1,191 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "discord_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [],
+          "Events": [
+            {
+              "EventName": "discord-bot-started",
+              "ResponseNode": {
+                "Priority": "Low",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Discord bot client started.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "b1fc0c2b-d9da-481e-8b92-43b10c86081c",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4753.0,
+                  "Y": 3672.65
+                }
+              },
+              "Id": "d0b1be3f-dd03-48ae-aae8-f6ddf9866b23",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 5017.0,
+                "Y": 3716.65
+              }
+            }
+          ],
+          "Actions": [],
+          "Id": "5239dae3-909e-4b98-91e1-50adb96de431",
+          "IsFolded": false,
+          "DisplayName": "Dialog (discord_dialog)",
+          "Position": {
+            "X": 5312.0,
+            "Y": 3518.65
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "15318045-707d-4b5c-835f-159148cded60",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5554.0,
+        "Y": 3496.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "discord_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [],
+      "Events": [
+        {
+          "EventName": "discord-bot-started",
+          "ResponseNode": {
+            "Priority": "Low",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Discord bot client started.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "b1fc0c2b-d9da-481e-8b92-43b10c86081c",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4753.0,
+              "Y": 3672.65
+            }
+          },
+          "Id": "d0b1be3f-dd03-48ae-aae8-f6ddf9866b23",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 5017.0,
+            "Y": 3716.65
+          }
+        }
+      ],
+      "Actions": [],
+      "Id": "5239dae3-909e-4b98-91e1-50adb96de431",
+      "IsFolded": false,
+      "DisplayName": "Dialog (discord_dialog)",
+      "Position": {
+        "X": 5312.0,
+        "Y": 3518.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "discord-bot-started",
+      "ResponseNode": {
+        "Priority": "Low",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Discord bot client started.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "b1fc0c2b-d9da-481e-8b92-43b10c86081c",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4753.0,
+          "Y": 3672.65
+        }
+      },
+      "Id": "d0b1be3f-dd03-48ae-aae8-f6ddf9866b23",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 5017.0,
+        "Y": 3716.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Low",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Discord bot client started.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "b1fc0c2b-d9da-481e-8b92-43b10c86081c",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4753.0,
+        "Y": 3672.65
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Discord bot client started.",
+      "Id": "0633e3be-ac47-4757-b4f5-7231ac7af215",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4357.0,
+        "Y": 3827.65
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "5239dae3-909e-4b98-91e1-50adb96de431",
+      "FromPortName": "Output",
+      "ToNodeId": "15318045-707d-4b5c-835f-159148cded60",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "d0b1be3f-dd03-48ae-aae8-f6ddf9866b23",
+      "FromPortName": "Output",
+      "ToNodeId": "5239dae3-909e-4b98-91e1-50adb96de431",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "b1fc0c2b-d9da-481e-8b92-43b10c86081c",
+      "FromPortName": "Output",
+      "ToNodeId": "d0b1be3f-dd03-48ae-aae8-f6ddf9866b23",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "0633e3be-ac47-4757-b4f5-7231ac7af215",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "b1fc0c2b-d9da-481e-8b92-43b10c86081c",
+      "ToPortName": "Text"
+    }
+  ]
+}

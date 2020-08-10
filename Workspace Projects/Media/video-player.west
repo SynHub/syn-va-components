@@ -1,0 +1,509 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "video_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "start_video_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "play @video-title",
+                  "ExpressionName": null,
+                  "Id": "b3d91a32-03d6-4c3a-ae8b-a52ed4895a01",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4733.6140350877195,
+                    "Y": 3303.7377192982458
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "24c63e9b-63a1-4192-98d2-92e321a03850",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4759.9473684210516,
+                  "Y": 3542.5622807017535
+                }
+              },
+              "Id": "52e792f8-b21e-4439-b1dc-7a2fda6468cf",
+              "IsFolded": false,
+              "DisplayName": "Intent (start_video_intent)",
+              "Position": {
+                "X": 5267.666666666667,
+                "Y": 3254.5798245614028
+              }
+            },
+            {
+              "IntentName": "stop_video_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "stop video",
+                  "ExpressionName": null,
+                  "Id": "f17a1559-4641-42e5-a222-aead544b86b5",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4946.52029300249,
+                    "Y": 4074.708641135267
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "29a8c2b8-ac94-439d-893e-cd3b471e54fe",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4949.721758203952,
+                  "Y": 4303.5960870227145
+                }
+              },
+              "Id": "83194341-05dc-495d-8bb3-8624d8425612",
+              "IsFolded": false,
+              "DisplayName": "Intent (stop_video_intent)",
+              "Position": {
+                "X": 5287.5179124281285,
+                "Y": 4027.7819229446168
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "2a79d376-7547-4a7e-975f-c405c129b542",
+          "IsFolded": false,
+          "DisplayName": "Dialog (video_dialog)",
+          "Position": {
+            "X": 5788.0726817042605,
+            "Y": 3578.9557644110282
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "e009e8d1-f0eb-4d8b-814f-c04f6be6d196",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 6165.80701754386,
+        "Y": 3690.7377192982458
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "video_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "start_video_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "play @video-title",
+              "ExpressionName": null,
+              "Id": "b3d91a32-03d6-4c3a-ae8b-a52ed4895a01",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4733.6140350877195,
+                "Y": 3303.7377192982458
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "24c63e9b-63a1-4192-98d2-92e321a03850",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4759.9473684210516,
+              "Y": 3542.5622807017535
+            }
+          },
+          "Id": "52e792f8-b21e-4439-b1dc-7a2fda6468cf",
+          "IsFolded": false,
+          "DisplayName": "Intent (start_video_intent)",
+          "Position": {
+            "X": 5267.666666666667,
+            "Y": 3254.5798245614028
+          }
+        },
+        {
+          "IntentName": "stop_video_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "stop video",
+              "ExpressionName": null,
+              "Id": "f17a1559-4641-42e5-a222-aead544b86b5",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4946.52029300249,
+                "Y": 4074.708641135267
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "29a8c2b8-ac94-439d-893e-cd3b471e54fe",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4949.721758203952,
+              "Y": 4303.5960870227145
+            }
+          },
+          "Id": "83194341-05dc-495d-8bb3-8624d8425612",
+          "IsFolded": false,
+          "DisplayName": "Intent (stop_video_intent)",
+          "Position": {
+            "X": 5287.5179124281285,
+            "Y": 4027.7819229446168
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "2a79d376-7547-4a7e-975f-c405c129b542",
+      "IsFolded": false,
+      "DisplayName": "Dialog (video_dialog)",
+      "Position": {
+        "X": 5788.0726817042605,
+        "Y": 3578.9557644110282
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "start_video_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "play @video-title",
+          "ExpressionName": null,
+          "Id": "b3d91a32-03d6-4c3a-ae8b-a52ed4895a01",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4733.6140350877195,
+            "Y": 3303.7377192982458
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "24c63e9b-63a1-4192-98d2-92e321a03850",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4759.9473684210516,
+          "Y": 3542.5622807017535
+        }
+      },
+      "Id": "52e792f8-b21e-4439-b1dc-7a2fda6468cf",
+      "IsFolded": false,
+      "DisplayName": "Intent (start_video_intent)",
+      "Position": {
+        "X": 5267.666666666667,
+        "Y": 3254.5798245614028
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "24c63e9b-63a1-4192-98d2-92e321a03850",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4759.9473684210516,
+        "Y": 3542.5622807017535
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "play @video-title",
+      "ExpressionName": null,
+      "Id": "b3d91a32-03d6-4c3a-ae8b-a52ed4895a01",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4733.6140350877195,
+        "Y": 3303.7377192982458
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Media.Nodes.VideoPlayerNode, Syn.VA.Plugins.Media",
+      "MovieTitle": null,
+      "PlaySuccessEventName": null,
+      "PlayFailEventName": null,
+      "PlayerTask": 0,
+      "Id": "413cb744-fac5-4baf-b27c-72bdd16358b7",
+      "IsFolded": false,
+      "DisplayName": "Video Player",
+      "Position": {
+        "X": 5270.5964912280706,
+        "Y": 3623.1412280701757
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "video-title",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "9c486e7e-8e51-4e71-9d5e-adbe7d9734c8",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 5041.3157894736842,
+        "Y": 3654.2815789473693
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "stop_video_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "stop video",
+          "ExpressionName": null,
+          "Id": "f17a1559-4641-42e5-a222-aead544b86b5",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4946.52029300249,
+            "Y": 4074.708641135267
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "29a8c2b8-ac94-439d-893e-cd3b471e54fe",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4949.721758203952,
+          "Y": 4303.5960870227145
+        }
+      },
+      "Id": "83194341-05dc-495d-8bb3-8624d8425612",
+      "IsFolded": false,
+      "DisplayName": "Intent (stop_video_intent)",
+      "Position": {
+        "X": 5287.5179124281285,
+        "Y": 4027.7819229446168
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "stop video",
+      "ExpressionName": null,
+      "Id": "f17a1559-4641-42e5-a222-aead544b86b5",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4946.52029300249,
+        "Y": 4074.708641135267
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "29a8c2b8-ac94-439d-893e-cd3b471e54fe",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4949.721758203952,
+        "Y": 4303.5960870227145
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Media.Nodes.VideoPlayerNode, Syn.VA.Plugins.Media",
+      "MovieTitle": null,
+      "PlaySuccessEventName": null,
+      "PlayFailEventName": null,
+      "PlayerTask": 1,
+      "Id": "dbf19eed-2b44-4882-b02b-1558139d5fde",
+      "IsFolded": false,
+      "DisplayName": "Video Player",
+      "Position": {
+        "X": 5291.9773973016972,
+        "Y": 4374.7239065715867
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "2a79d376-7547-4a7e-975f-c405c129b542",
+      "FromPortName": "Output",
+      "ToNodeId": "e009e8d1-f0eb-4d8b-814f-c04f6be6d196",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "52e792f8-b21e-4439-b1dc-7a2fda6468cf",
+      "FromPortName": "Output",
+      "ToNodeId": "2a79d376-7547-4a7e-975f-c405c129b542",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "83194341-05dc-495d-8bb3-8624d8425612",
+      "FromPortName": "Output",
+      "ToNodeId": "2a79d376-7547-4a7e-975f-c405c129b542",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "b3d91a32-03d6-4c3a-ae8b-a52ed4895a01",
+      "FromPortName": "Output",
+      "ToNodeId": "52e792f8-b21e-4439-b1dc-7a2fda6468cf",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "24c63e9b-63a1-4192-98d2-92e321a03850",
+      "FromPortName": "Output",
+      "ToNodeId": "52e792f8-b21e-4439-b1dc-7a2fda6468cf",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "9c486e7e-8e51-4e71-9d5e-adbe7d9734c8",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "413cb744-fac5-4baf-b27c-72bdd16358b7",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "9c486e7e-8e51-4e71-9d5e-adbe7d9734c8",
+      "FromPortName": "Output",
+      "ToNodeId": "413cb744-fac5-4baf-b27c-72bdd16358b7",
+      "ToPortName": "MovieTitle"
+    },
+    {
+      "FromNodeId": "24c63e9b-63a1-4192-98d2-92e321a03850",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "9c486e7e-8e51-4e71-9d5e-adbe7d9734c8",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "f17a1559-4641-42e5-a222-aead544b86b5",
+      "FromPortName": "Output",
+      "ToNodeId": "83194341-05dc-495d-8bb3-8624d8425612",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "29a8c2b8-ac94-439d-893e-cd3b471e54fe",
+      "FromPortName": "Output",
+      "ToNodeId": "83194341-05dc-495d-8bb3-8624d8425612",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "29a8c2b8-ac94-439d-893e-cd3b471e54fe",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "dbf19eed-2b44-4882-b02b-1558139d5fde",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

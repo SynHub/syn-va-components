@@ -1,0 +1,18 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.Windows.Nodes.SystemCommandNode, Syn.VA.Plugins.Windows",
+      "SystemCommand": 0,
+      "Id": "123a7ae5-83d7-4d26-8cb1-d7f1e155fdbd",
+      "IsFolded": false,
+      "DisplayName": "System Command",
+      "Position": {
+        "X": 5560.0,
+        "Y": 3752.0
+      }
+    }
+  ],
+  "Connections": []
+}

@@ -1,0 +1,18 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.Windows.Nodes.WindowCommandNode, Syn.VA.Plugins.Windows",
+      "WindowCommand": 0,
+      "Id": "8b8829b7-8553-4859-8210-5958556453d6",
+      "IsFolded": false,
+      "DisplayName": "Window Command",
+      "Position": {
+        "X": 5420.0,
+        "Y": 3692.0
+      }
+    }
+  ],
+  "Connections": []
+}

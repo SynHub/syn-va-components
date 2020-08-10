@@ -1,0 +1,271 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.HelloPlugin.HelloNode, Syn.VA.Plugins.HelloPlugin",
+      "Id": "bf9d5eab-5010-4586-b5c8-667707a94efd",
+      "IsFolded": false,
+      "DisplayName": "Hello",
+      "Position": {
+        "X": 5119.4735797162175,
+        "Y": 3927.7136053988088
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "hello_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [
+        {
+          "IntentName": "hello_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "hello plugin",
+              "ExpressionName": null,
+              "Id": "9abd817b-b653-4b1d-91bb-ae61dc35d6e7",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4817.6393152943538,
+                "Y": 3580.956928196983
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "a8555511-bcf3-435f-b9d1-ebaa5e56175c",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4809.57438022942,
+              "Y": 3816.904980145036
+            }
+          },
+          "Id": "797e6854-31d7-4bf1-b8b0-40c49eb1dba1",
+          "IsFolded": false,
+          "DisplayName": "Intent (hello_intent)",
+          "Position": {
+            "X": 5100.414207069246,
+            "Y": 3566.6365818766376
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "79748e64-8e29-49ef-bec0-1195e1863186",
+      "IsFolded": false,
+      "DisplayName": "Dialog (hello_dialog)",
+      "Position": {
+        "X": 5352.23238888743,
+        "Y": 3486.203681443737
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "hello_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [
+            {
+              "IntentName": "hello_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "hello plugin",
+                  "ExpressionName": null,
+                  "Id": "9abd817b-b653-4b1d-91bb-ae61dc35d6e7",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4817.6393152943538,
+                    "Y": 3580.956928196983
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "a8555511-bcf3-435f-b9d1-ebaa5e56175c",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4809.57438022942,
+                  "Y": 3816.904980145036
+                }
+              },
+              "Id": "797e6854-31d7-4bf1-b8b0-40c49eb1dba1",
+              "IsFolded": false,
+              "DisplayName": "Intent (hello_intent)",
+              "Position": {
+                "X": 5100.414207069246,
+                "Y": 3566.6365818766376
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "79748e64-8e29-49ef-bec0-1195e1863186",
+          "IsFolded": false,
+          "DisplayName": "Dialog (hello_dialog)",
+          "Position": {
+            "X": 5352.23238888743,
+            "Y": 3486.203681443737
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "01551a69-624f-4f78-8ae2-2fdb3d7c4758",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5682.232388887428,
+        "Y": 3528.021863261918
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "hello_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "hello plugin",
+          "ExpressionName": null,
+          "Id": "9abd817b-b653-4b1d-91bb-ae61dc35d6e7",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4817.6393152943538,
+            "Y": 3580.956928196983
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "a8555511-bcf3-435f-b9d1-ebaa5e56175c",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4809.57438022942,
+          "Y": 3816.904980145036
+        }
+      },
+      "Id": "797e6854-31d7-4bf1-b8b0-40c49eb1dba1",
+      "IsFolded": false,
+      "DisplayName": "Intent (hello_intent)",
+      "Position": {
+        "X": 5100.414207069246,
+        "Y": 3566.6365818766376
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "a8555511-bcf3-435f-b9d1-ebaa5e56175c",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4809.57438022942,
+        "Y": 3816.904980145036
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "hello plugin",
+      "ExpressionName": null,
+      "Id": "9abd817b-b653-4b1d-91bb-ae61dc35d6e7",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4817.6393152943538,
+        "Y": 3580.956928196983
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "a8555511-bcf3-435f-b9d1-ebaa5e56175c",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "bf9d5eab-5010-4586-b5c8-667707a94efd",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "797e6854-31d7-4bf1-b8b0-40c49eb1dba1",
+      "FromPortName": "Output",
+      "ToNodeId": "79748e64-8e29-49ef-bec0-1195e1863186",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "79748e64-8e29-49ef-bec0-1195e1863186",
+      "FromPortName": "Output",
+      "ToNodeId": "01551a69-624f-4f78-8ae2-2fdb3d7c4758",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "9abd817b-b653-4b1d-91bb-ae61dc35d6e7",
+      "FromPortName": "Output",
+      "ToNodeId": "797e6854-31d7-4bf1-b8b0-40c49eb1dba1",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "a8555511-bcf3-435f-b9d1-ebaa5e56175c",
+      "FromPortName": "Output",
+      "ToNodeId": "797e6854-31d7-4bf1-b8b0-40c49eb1dba1",
+      "ToPortName": "Response"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "telegram_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [],
+          "Events": [
+            {
+              "EventName": "telegram-bot-started",
+              "ResponseNode": {
+                "Priority": 1,
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Telegram bot client started.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "1f595bce-3023-432b-82ed-ef99346596b1",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4753.0,
+                  "Y": 3672.65
+                }
+              },
+              "Id": "a1e25168-bfb0-4373-b8f6-3b9c30469ba3",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 5017.0,
+                "Y": 3716.65
+              }
+            }
+          ],
+          "Actions": [],
+          "Id": "e655d06f-fa44-44b9-bc7e-ed558aa461ee",
+          "IsFolded": false,
+          "DisplayName": "Dialog (telegram_dialog)",
+          "Position": {
+            "X": 5312.0,
+            "Y": 3518.65
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "fc060893-5210-4c8a-a34a-774465fac27f",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5554.0,
+        "Y": 3496.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "telegram_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [],
+      "Events": [
+        {
+          "EventName": "telegram-bot-started",
+          "ResponseNode": {
+            "Priority": 1,
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Telegram bot client started.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "1f595bce-3023-432b-82ed-ef99346596b1",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4753.0,
+              "Y": 3672.65
+            }
+          },
+          "Id": "a1e25168-bfb0-4373-b8f6-3b9c30469ba3",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 5017.0,
+            "Y": 3716.65
+          }
+        }
+      ],
+      "Actions": [],
+      "Id": "e655d06f-fa44-44b9-bc7e-ed558aa461ee",
+      "IsFolded": false,
+      "DisplayName": "Dialog (telegram_dialog)",
+      "Position": {
+        "X": 5312.0,
+        "Y": 3518.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "telegram-bot-started",
+      "ResponseNode": {
+        "Priority": 1,
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Telegram bot client started.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "1f595bce-3023-432b-82ed-ef99346596b1",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4753.0,
+          "Y": 3672.65
+        }
+      },
+      "Id": "a1e25168-bfb0-4373-b8f6-3b9c30469ba3",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 5017.0,
+        "Y": 3716.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": 1,
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Telegram bot client started.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "1f595bce-3023-432b-82ed-ef99346596b1",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4753.0,
+        "Y": 3672.65
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Telegram bot client started.",
+      "Id": "6ce6e1e8-03a5-491e-ba0a-cba5a4ef0781",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4357.0,
+        "Y": 3827.65
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "e655d06f-fa44-44b9-bc7e-ed558aa461ee",
+      "FromPortName": "Output",
+      "ToNodeId": "fc060893-5210-4c8a-a34a-774465fac27f",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "a1e25168-bfb0-4373-b8f6-3b9c30469ba3",
+      "FromPortName": "Output",
+      "ToNodeId": "e655d06f-fa44-44b9-bc7e-ed558aa461ee",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "1f595bce-3023-432b-82ed-ef99346596b1",
+      "FromPortName": "Output",
+      "ToNodeId": "a1e25168-bfb0-4373-b8f6-3b9c30469ba3",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "6ce6e1e8-03a5-491e-ba0a-cba5a4ef0781",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "1f595bce-3023-432b-82ed-ef99346596b1",
+      "ToPortName": "Text"
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.Weather.Nodes.WeatherNode, Syn.VA.Plugins.Weather",
+      "MessageTemplate": "Description: {{WeatherDescription}}\r\n\r\nTemperature: {{Temperature}} {{unit}}\r\n\r\nClouds: {{Clouds}}%\r\n\r\nHumidity: {{Humidity}}%\r\n\r\nWind: {{WindSpeed}} m/s\r\n\r\nPressure: {{Pressure}}hpa",
+      "WeatherSuccessEventName": null,
+      "WeatherFailEventName": null,
+      "Id": "f4ef9a37-f479-4bca-a3b8-13f4f95138bc",
+      "IsFolded": false,
+      "DisplayName": "Weather",
+      "Position": {
+        "X": 5331.2008943928458,
+        "Y": 3941.5163398692807
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "weather_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "weather_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "how is the weather",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "weather report",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "how is the weather",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "weather report",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "how is the weather",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "weather report",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "how is the weather",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "weather report",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Getting weather report.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4768.0,
+                  "Y": 3759.0
+                }
+              },
+              "Id": "5ad16388-3009-4a3c-a729-9ee9097e26b9",
+              "IsFolded": false,
+              "DisplayName": "Intent (weather_intent)",
+              "Position": {
+                "X": 5014.3333333333339,
+                "Y": 3431.6666666666665
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "77399f31-c14d-4584-92a8-34dde0bc5b29",
+          "IsFolded": false,
+          "DisplayName": "Dialog (weather_dialog)",
+          "Position": {
+            "X": 5296.0,
+            "Y": 3451.0
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "264f844f-78fa-4047-a567-d4527522c047",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5577.0,
+        "Y": 3402.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "weather_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "weather_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "how is the weather",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "weather report",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "how is the weather",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "weather report",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "how is the weather",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "weather report",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "how is the weather",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "weather report",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Getting weather report.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4768.0,
+              "Y": 3759.0
+            }
+          },
+          "Id": "5ad16388-3009-4a3c-a729-9ee9097e26b9",
+          "IsFolded": false,
+          "DisplayName": "Intent (weather_intent)",
+          "Position": {
+            "X": 5014.3333333333339,
+            "Y": 3431.6666666666665
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "77399f31-c14d-4584-92a8-34dde0bc5b29",
+      "IsFolded": false,
+      "DisplayName": "Dialog (weather_dialog)",
+      "Position": {
+        "X": 5296.0,
+        "Y": 3451.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "weather_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "how is the weather",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "weather report",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "how is the weather",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "weather report",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "how is the weather",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "weather report",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "how is the weather",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "weather report",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Getting weather report.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4768.0,
+          "Y": 3759.0
+        }
+      },
+      "Id": "5ad16388-3009-4a3c-a729-9ee9097e26b9",
+      "IsFolded": false,
+      "DisplayName": "Intent (weather_intent)",
+      "Position": {
+        "X": 5014.3333333333339,
+        "Y": 3431.6666666666665
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Getting weather report.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4768.0,
+        "Y": 3759.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Getting weather report.",
+      "Id": "bfd5d073-fbf3-49bf-9312-8a6bd7dba2c4",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4405.0,
+        "Y": 3870.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionListNode, Syn.Bot",
+      "ExpressionList": [
+        "how is the weather",
+        "weather report"
+      ],
+      "Id": "ff33ec08-e59e-426e-a5e9-891ea4f8c66a",
+      "IsFolded": false,
+      "DisplayName": "Expression List",
+      "Position": {
+        "X": 4710.0,
+        "Y": 3492.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Description: {{WeatherDescription}}\r\n\r\nTemperature: {{Temperature}} {{unit}}\r\n\r\nClouds: {{Clouds}}%\r\n\r\nHumidity: {{Humidity}}%\r\n\r\nWind: {{WindSpeed}} m/s\r\n\r\nPressure: {{Pressure}}hpa",
+      "Id": "8813686f-e9af-4196-8c75-9e4ea566a873",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4972.6409383530126,
+        "Y": 4029.2896997395455
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "f4ef9a37-f479-4bca-a3b8-13f4f95138bc",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "8813686f-e9af-4196-8c75-9e4ea566a873",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "f4ef9a37-f479-4bca-a3b8-13f4f95138bc",
+      "ToPortName": "MessageTemplate"
+    },
+    {
+      "FromNodeId": "77399f31-c14d-4584-92a8-34dde0bc5b29",
+      "FromPortName": "Output",
+      "ToNodeId": "264f844f-78fa-4047-a567-d4527522c047",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "5ad16388-3009-4a3c-a729-9ee9097e26b9",
+      "FromPortName": "Output",
+      "ToNodeId": "77399f31-c14d-4584-92a8-34dde0bc5b29",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "ff33ec08-e59e-426e-a5e9-891ea4f8c66a",
+      "FromPortName": "Expressions",
+      "ToNodeId": "5ad16388-3009-4a3c-a729-9ee9097e26b9",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+      "FromPortName": "Output",
+      "ToNodeId": "5ad16388-3009-4a3c-a729-9ee9097e26b9",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "bfd5d073-fbf3-49bf-9312-8a6bd7dba2c4",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "ab9ce2fb-48f5-452f-8955-c9cdb7e19bfe",
+      "ToPortName": "Text"
+    }
+  ]
+}

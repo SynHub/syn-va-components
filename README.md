@@ -20,7 +20,7 @@ The `Plugins` folder at the moment contains a sample `Hello Plugin` project to h
 
 ## Workspace
 
-The `Workspace Projects` folder contains example Workspace project files for you to download and see how you can extend the VA using OSCOVA and VA Framework nodes.
+The `Workspace Templates` folder contains example Workspace project files for you to download and see how you can extend the VA using OSCOVA and VA Framework nodes.
 
 ## More Coming Up
 

@@ -1,0 +1,272 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "actions_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [
+            {
+              "IntentName": "settings_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "settings panel",
+                  "ExpressionName": null,
+                  "Id": "2a5e6b3c-0ae7-4ebc-8149-e48abc414fd8",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4671.166666666667,
+                    "Y": 3658.65
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "8eeed59d-d7d6-4ab2-974d-a18370d1e2c3",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4639.9220779220768,
+                  "Y": 3894.2149350649356
+                }
+              },
+              "Id": "34978354-4939-4a96-b416-5cecaa038dfb",
+              "IsFolded": false,
+              "DisplayName": "Intent (settings_intent)",
+              "Position": {
+                "X": 4954.712121212121,
+                "Y": 3591.574242424243
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "64628ba6-c094-415d-8d8b-5cfe1797fccc",
+          "IsFolded": false,
+          "DisplayName": "Dialog (actions_dialog)",
+          "Position": {
+            "X": 5227.5,
+            "Y": 3591.8015151515156
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "ce9a1014-6c8b-4369-9722-142f608f5123",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5538.0,
+        "Y": 3557.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "actions_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [
+        {
+          "IntentName": "settings_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "settings panel",
+              "ExpressionName": null,
+              "Id": "2a5e6b3c-0ae7-4ebc-8149-e48abc414fd8",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4671.166666666667,
+                "Y": 3658.65
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "8eeed59d-d7d6-4ab2-974d-a18370d1e2c3",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4639.9220779220768,
+              "Y": 3894.2149350649356
+            }
+          },
+          "Id": "34978354-4939-4a96-b416-5cecaa038dfb",
+          "IsFolded": false,
+          "DisplayName": "Intent (settings_intent)",
+          "Position": {
+            "X": 4954.712121212121,
+            "Y": 3591.574242424243
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "64628ba6-c094-415d-8d8b-5cfe1797fccc",
+      "IsFolded": false,
+      "DisplayName": "Dialog (actions_dialog)",
+      "Position": {
+        "X": 5227.5,
+        "Y": 3591.8015151515156
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "settings panel",
+      "ExpressionName": null,
+      "Id": "2a5e6b3c-0ae7-4ebc-8149-e48abc414fd8",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4671.166666666667,
+        "Y": 3658.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "8eeed59d-d7d6-4ab2-974d-a18370d1e2c3",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4639.9220779220768,
+        "Y": 3894.2149350649356
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotActionCallerNode, Syn.Bot",
+      "ActionId": "show-settings-panel",
+      "Id": "a133a5b3-286b-4908-a1eb-f30129799536",
+      "IsFolded": false,
+      "DisplayName": "Action Caller",
+      "Position": {
+        "X": 5027.3982683982676,
+        "Y": 4051.2170995671
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "settings_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "settings panel",
+          "ExpressionName": null,
+          "Id": "2a5e6b3c-0ae7-4ebc-8149-e48abc414fd8",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4671.166666666667,
+            "Y": 3658.65
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "8eeed59d-d7d6-4ab2-974d-a18370d1e2c3",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4639.9220779220768,
+          "Y": 3894.2149350649356
+        }
+      },
+      "Id": "34978354-4939-4a96-b416-5cecaa038dfb",
+      "IsFolded": false,
+      "DisplayName": "Intent (settings_intent)",
+      "Position": {
+        "X": 4954.712121212121,
+        "Y": 3591.574242424243
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "64628ba6-c094-415d-8d8b-5cfe1797fccc",
+      "FromPortName": "Output",
+      "ToNodeId": "ce9a1014-6c8b-4369-9722-142f608f5123",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "34978354-4939-4a96-b416-5cecaa038dfb",
+      "FromPortName": "Output",
+      "ToNodeId": "64628ba6-c094-415d-8d8b-5cfe1797fccc",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "8eeed59d-d7d6-4ab2-974d-a18370d1e2c3",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "a133a5b3-286b-4908-a1eb-f30129799536",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "2a5e6b3c-0ae7-4ebc-8149-e48abc414fd8",
+      "FromPortName": "Output",
+      "ToNodeId": "34978354-4939-4a96-b416-5cecaa038dfb",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "8eeed59d-d7d6-4ab2-974d-a18370d1e2c3",
+      "FromPortName": "Output",
+      "ToNodeId": "34978354-4939-4a96-b416-5cecaa038dfb",
+      "ToPortName": "Response"
+    }
+  ]
+}

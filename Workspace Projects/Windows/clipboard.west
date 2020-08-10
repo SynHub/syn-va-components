@@ -1,0 +1,47 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.Windows.Nodes.ClipboardSetNode, Syn.VA.Plugins.Windows",
+      "ClipboardText": null,
+      "Id": "79edc15f-32df-43ca-b7a6-4c3ecc8b224c",
+      "IsFolded": false,
+      "DisplayName": "Clipboard Set",
+      "Position": {
+        "X": 5417.0,
+        "Y": 3762.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.OutputTextNode, Syn.Workspace",
+      "InputValue": null,
+      "Id": "d3367a54-ff69-41e0-adaf-bf4a8288283c",
+      "IsFolded": false,
+      "DisplayName": "Output Text",
+      "Position": {
+        "X": 5406.0,
+        "Y": 3607.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": null,
+      "Id": "f5da74d6-cf08-493a-b32a-fe81838668be",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 5117.0,
+        "Y": 3828.0
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "f5da74d6-cf08-493a-b32a-fe81838668be",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "79edc15f-32df-43ca-b7a6-4c3ecc8b224c",
+      "ToPortName": "ClipboardText"
+    }
+  ]
+}

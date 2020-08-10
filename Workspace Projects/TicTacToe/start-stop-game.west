@@ -1,0 +1,588 @@
+{
+  "GraphVersion": "1.5.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "start_game_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "start_game_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "start game",
+                  "ExpressionName": null,
+                  "Id": "c999852e-e080-4c7c-865b-63ead9bd68ee",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4518.6470588235288,
+                    "Y": 3210.2794117647059
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Starting game.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4505.2941176470586,
+                  "Y": 3465.2401960784318
+                }
+              },
+              "Id": "72566954-b92d-4328-a785-6354ffa83f22",
+              "IsFolded": false,
+              "DisplayName": "Intent (start_game_intent)",
+              "Position": {
+                "X": 4822.4705882352937,
+                "Y": 3230.2794117647059
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "ab3eb0e2-1452-4615-b3f3-21cd0e937eac",
+          "IsFolded": false,
+          "DisplayName": "Dialog (start_game_dialog)",
+          "Position": {
+            "X": 5312.6431623931621,
+            "Y": 3413.3482905982905
+          }
+        },
+        {
+          "DialogName": "stop_game_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "stop_game_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "stop game",
+                  "ExpressionName": null,
+                  "Id": "d4e94eb6-ee62-4b4d-a2fa-32b751fdfeed",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4517.1744084948432,
+                    "Y": 4108.9282058842437
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Stopping game.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4521.3410751615093,
+                  "Y": 4373.4282058842437
+                }
+              },
+              "Id": "fc811911-03de-404a-8c13-3bf9f1163517",
+              "IsFolded": false,
+              "DisplayName": "Intent (stop_game_intent)",
+              "Position": {
+                "X": 4818.507741828178,
+                "Y": 4120.9282058842446
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "dc9c3afc-8080-4ecb-8ccc-c5fe0aab8f33",
+          "IsFolded": false,
+          "DisplayName": "Dialog (stop_game_dialog)",
+          "Position": {
+            "X": 5335.6243795763939,
+            "Y": 4187.5948725509106
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "3c5451dd-e548-410e-bd34-5da0426748a7",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5849.4249084249095,
+        "Y": 3818.7301587301581
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "start_game_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "start_game_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "start game",
+              "ExpressionName": null,
+              "Id": "c999852e-e080-4c7c-865b-63ead9bd68ee",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4518.6470588235288,
+                "Y": 3210.2794117647059
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Starting game.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4505.2941176470586,
+              "Y": 3465.2401960784318
+            }
+          },
+          "Id": "72566954-b92d-4328-a785-6354ffa83f22",
+          "IsFolded": false,
+          "DisplayName": "Intent (start_game_intent)",
+          "Position": {
+            "X": 4822.4705882352937,
+            "Y": 3230.2794117647059
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "ab3eb0e2-1452-4615-b3f3-21cd0e937eac",
+      "IsFolded": false,
+      "DisplayName": "Dialog (start_game_dialog)",
+      "Position": {
+        "X": 5312.6431623931621,
+        "Y": 3413.3482905982905
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "start_game_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "start game",
+          "ExpressionName": null,
+          "Id": "c999852e-e080-4c7c-865b-63ead9bd68ee",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4518.6470588235288,
+            "Y": 3210.2794117647059
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Starting game.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4505.2941176470586,
+          "Y": 3465.2401960784318
+        }
+      },
+      "Id": "72566954-b92d-4328-a785-6354ffa83f22",
+      "IsFolded": false,
+      "DisplayName": "Intent (start_game_intent)",
+      "Position": {
+        "X": 4822.4705882352937,
+        "Y": 3230.2794117647059
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Starting game.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4505.2941176470586,
+        "Y": 3465.2401960784318
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "start game",
+      "ExpressionName": null,
+      "Id": "c999852e-e080-4c7c-865b-63ead9bd68ee",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4518.6470588235288,
+        "Y": 3210.2794117647059
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.TicTacToe.Nodes.TicTacToeNode, Syn.VA.Plugins.TicTacToe",
+      "GameCommand": "Start",
+      "MarkPosition": 0,
+      "Id": "4365c865-5806-4774-8522-c00506b16dcc",
+      "IsFolded": false,
+      "DisplayName": "Tic Tac Toe",
+      "Position": {
+        "X": 4754.1176470588234,
+        "Y": 3596.5147058823527
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Starting game.",
+      "Id": "9cf9f134-95c9-474d-83e0-e76e40d27a29",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4187.5441176470586,
+        "Y": 3502.455882352941
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "stop_game_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "stop_game_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "stop game",
+              "ExpressionName": null,
+              "Id": "d4e94eb6-ee62-4b4d-a2fa-32b751fdfeed",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4517.1744084948432,
+                "Y": 4108.9282058842437
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Stopping game.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4521.3410751615093,
+              "Y": 4373.4282058842437
+            }
+          },
+          "Id": "fc811911-03de-404a-8c13-3bf9f1163517",
+          "IsFolded": false,
+          "DisplayName": "Intent (stop_game_intent)",
+          "Position": {
+            "X": 4818.507741828178,
+            "Y": 4120.9282058842446
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "dc9c3afc-8080-4ecb-8ccc-c5fe0aab8f33",
+      "IsFolded": false,
+      "DisplayName": "Dialog (stop_game_dialog)",
+      "Position": {
+        "X": 5335.6243795763939,
+        "Y": 4187.5948725509106
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "stop_game_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "stop game",
+          "ExpressionName": null,
+          "Id": "d4e94eb6-ee62-4b4d-a2fa-32b751fdfeed",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4517.1744084948432,
+            "Y": 4108.9282058842437
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Stopping game.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4521.3410751615093,
+          "Y": 4373.4282058842437
+        }
+      },
+      "Id": "fc811911-03de-404a-8c13-3bf9f1163517",
+      "IsFolded": false,
+      "DisplayName": "Intent (stop_game_intent)",
+      "Position": {
+        "X": 4818.507741828178,
+        "Y": 4120.9282058842446
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "stop game",
+      "ExpressionName": null,
+      "Id": "d4e94eb6-ee62-4b4d-a2fa-32b751fdfeed",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4517.1744084948432,
+        "Y": 4108.9282058842437
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Stopping game.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4521.3410751615093,
+        "Y": 4373.4282058842437
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.TicTacToe.Nodes.TicTacToeNode, Syn.VA.Plugins.TicTacToe",
+      "GameCommand": "Stop",
+      "MarkPosition": 0,
+      "Id": "7cc7c8b6-7cc0-47e9-b7f0-3bcab0ece0fc",
+      "IsFolded": false,
+      "DisplayName": "Tic Tac Toe",
+      "Position": {
+        "X": 4824.2577418281762,
+        "Y": 4502.0115392175776
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Stopping game.",
+      "Id": "2284ca5b-0d21-4cb5-9590-99caea130766",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4121.0077418281762,
+        "Y": 4472.5115392175776
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "con_game",
+      "Lifespan": 5,
+      "Id": "05543aff-5475-4d67-8ba5-370f3cb9ba28",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 5072.4534357744287,
+        "Y": 3700.2451273267047
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextRemoveNode, Syn.Bot",
+      "ContextName": "con_game",
+      "Id": "b3a2fee7-f6c7-4ea8-b649-e424d9337955",
+      "IsFolded": false,
+      "DisplayName": "Context Remove",
+      "Position": {
+        "X": 5094.7259345175144,
+        "Y": 4551.053950856116
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "ab3eb0e2-1452-4615-b3f3-21cd0e937eac",
+      "FromPortName": "Output",
+      "ToNodeId": "3c5451dd-e548-410e-bd34-5da0426748a7",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "dc9c3afc-8080-4ecb-8ccc-c5fe0aab8f33",
+      "FromPortName": "Output",
+      "ToNodeId": "3c5451dd-e548-410e-bd34-5da0426748a7",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "72566954-b92d-4328-a785-6354ffa83f22",
+      "FromPortName": "Output",
+      "ToNodeId": "ab3eb0e2-1452-4615-b3f3-21cd0e937eac",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "c999852e-e080-4c7c-865b-63ead9bd68ee",
+      "FromPortName": "Output",
+      "ToNodeId": "72566954-b92d-4328-a785-6354ffa83f22",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+      "FromPortName": "Output",
+      "ToNodeId": "72566954-b92d-4328-a785-6354ffa83f22",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "9cf9f134-95c9-474d-83e0-e76e40d27a29",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "f38714e8-739f-46f5-9e3b-7a73d21a64bc",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "4365c865-5806-4774-8522-c00506b16dcc",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "fc811911-03de-404a-8c13-3bf9f1163517",
+      "FromPortName": "Output",
+      "ToNodeId": "dc9c3afc-8080-4ecb-8ccc-c5fe0aab8f33",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "d4e94eb6-ee62-4b4d-a2fa-32b751fdfeed",
+      "FromPortName": "Output",
+      "ToNodeId": "fc811911-03de-404a-8c13-3bf9f1163517",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+      "FromPortName": "Output",
+      "ToNodeId": "fc811911-03de-404a-8c13-3bf9f1163517",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "2284ca5b-0d21-4cb5-9590-99caea130766",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "da777bc3-d4c1-4558-9b00-8df9cfa90cb9",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "7cc7c8b6-7cc0-47e9-b7f0-3bcab0ece0fc",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "4365c865-5806-4774-8522-c00506b16dcc",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "05543aff-5475-4d67-8ba5-370f3cb9ba28",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "7cc7c8b6-7cc0-47e9-b7f0-3bcab0ece0fc",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "b3a2fee7-f6c7-4ea8-b649-e424d9337955",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

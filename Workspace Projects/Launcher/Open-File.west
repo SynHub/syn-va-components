@@ -1,0 +1,288 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "open_app_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "open_app_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "open @filename",
+                  "ExpressionName": null,
+                  "Id": "11b110a9-1ce4-4a50-9c7c-5981075ed13c",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4805.8141923436024,
+                    "Y": 3840.4510652745944
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Opening app.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4836.5359934183443,
+                  "Y": 4089.9006549006544
+                }
+              },
+              "Id": "fe132922-60a8-4889-a208-876b24716aeb",
+              "IsFolded": false,
+              "DisplayName": "Intent (open_app_intent)",
+              "Position": {
+                "X": 5140.10533910534,
+                "Y": 3762.2585519056106
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "6f2d19ce-34b3-4add-85ac-aca7de2aa00a",
+          "IsFolded": false,
+          "DisplayName": "Dialog (open_app_dialog)",
+          "Position": {
+            "X": 5439.4128987627428,
+            "Y": 3707.2118026452404
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "3002f2f2-94fe-40dd-93d4-c5b1ed935f70",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5725.5806342780015,
+        "Y": 3781.6706917953047
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "open_app_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "open_app_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "open @filename",
+              "ExpressionName": null,
+              "Id": "11b110a9-1ce4-4a50-9c7c-5981075ed13c",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4805.8141923436024,
+                "Y": 3840.4510652745944
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Opening app.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4836.5359934183443,
+              "Y": 4089.9006549006544
+            }
+          },
+          "Id": "fe132922-60a8-4889-a208-876b24716aeb",
+          "IsFolded": false,
+          "DisplayName": "Intent (open_app_intent)",
+          "Position": {
+            "X": 5140.10533910534,
+            "Y": 3762.2585519056106
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "6f2d19ce-34b3-4add-85ac-aca7de2aa00a",
+      "IsFolded": false,
+      "DisplayName": "Dialog (open_app_dialog)",
+      "Position": {
+        "X": 5439.4128987627428,
+        "Y": 3707.2118026452404
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "open_app_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "open @filename",
+          "ExpressionName": null,
+          "Id": "11b110a9-1ce4-4a50-9c7c-5981075ed13c",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4805.8141923436024,
+            "Y": 3840.4510652745944
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Opening app.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4836.5359934183443,
+          "Y": 4089.9006549006544
+        }
+      },
+      "Id": "fe132922-60a8-4889-a208-876b24716aeb",
+      "IsFolded": false,
+      "DisplayName": "Intent (open_app_intent)",
+      "Position": {
+        "X": 5140.10533910534,
+        "Y": 3762.2585519056106
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Opening app.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4836.5359934183443,
+        "Y": 4089.9006549006544
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "open @filename",
+      "ExpressionName": null,
+      "Id": "11b110a9-1ce4-4a50-9c7c-5981075ed13c",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4805.8141923436024,
+        "Y": 3840.4510652745944
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Opening app.",
+      "Id": "65cd7dbf-7aaf-4cf2-bea9-38cc30d2f4a4",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4537.9775910364133,
+        "Y": 4136.0981240981264
+      }
+    },
+    {
+      "$type": "Syn.VA.Plugins.Launcher.Nodes.FileLauncherNode, Syn.VA.Plugins.Launcher",
+      "Id": "e80d8344-facd-4001-81e3-c7e8749d2d18",
+      "IsFolded": false,
+      "DisplayName": "File Launcher",
+      "Position": {
+        "X": 5106.0923724366439,
+        "Y": 4132.9434217829012
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "6f2d19ce-34b3-4add-85ac-aca7de2aa00a",
+      "FromPortName": "Output",
+      "ToNodeId": "3002f2f2-94fe-40dd-93d4-c5b1ed935f70",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "fe132922-60a8-4889-a208-876b24716aeb",
+      "FromPortName": "Output",
+      "ToNodeId": "6f2d19ce-34b3-4add-85ac-aca7de2aa00a",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "11b110a9-1ce4-4a50-9c7c-5981075ed13c",
+      "FromPortName": "Output",
+      "ToNodeId": "fe132922-60a8-4889-a208-876b24716aeb",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+      "FromPortName": "Output",
+      "ToNodeId": "fe132922-60a8-4889-a208-876b24716aeb",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "65cd7dbf-7aaf-4cf2-bea9-38cc30d2f4a4",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "d847eab6-9960-4a1d-9bb8-9613ad6d0ace",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "e80d8344-facd-4001-81e3-c7e8749d2d18",
+      "ToPortName": "OnNodeTriggered"
+    }
+  ]
+}

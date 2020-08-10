@@ -1,0 +1,879 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.Reminder.Nodes.ReminderNode, Syn.VA.Plugins.Reminder",
+      "ReminderText": null,
+      "AddedEvent": "reminder-added-event",
+      "CanceledEvent": "reminder-removed-event",
+      "Id": "29cd2031-3c7b-466d-bb57-b9b8a4db6462",
+      "IsFolded": false,
+      "DisplayName": "Reminder",
+      "Position": {
+        "X": 5202.2065506247181,
+        "Y": 4487.5406509801769
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "reminder_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "reminder_start_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "Add reminder",
+                  "ExpressionName": null,
+                  "Id": "d8111bac-8596-4d88-9cc7-ba468ce3740c",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4470.2805429864256,
+                    "Y": 3204.1477375565614
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "What would you like to be reminded of?",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "2feba1ae-1148-4944-81a3-e08968e0b917",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4557.5295109946819,
+                  "Y": 3564.3541359053756
+                }
+              },
+              "Id": "ce6618f0-01c5-4e9d-9d13-001107848afd",
+              "IsFolded": false,
+              "DisplayName": "Intent (reminder_start_intent)",
+              "Position": {
+                "X": 4877.2805429864256,
+                "Y": 3297.3830316742083
+              }
+            },
+            {
+              "IntentName": "reminder_date_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [
+                {
+                  "ContextName": "con_add_reminder",
+                  "Id": "2801dec7-6144-420c-bd11-19bcbc31a1dc",
+                  "IsFolded": false,
+                  "DisplayName": "Context",
+                  "Position": {
+                    "X": 4574.2153855776169,
+                    "Y": 3987.3247241406743
+                  }
+                }
+              ],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "@sys.text:reminder-text",
+                  "ExpressionName": null,
+                  "Id": "20cea7fa-a719-4ff4-95e1-3404e3e0d977",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4572.2214187601194,
+                    "Y": 4126.8658072405833
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Select a reminder date and time.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4616.3016591251871,
+                  "Y": 4389.8475867270063
+                }
+              },
+              "Id": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+              "IsFolded": false,
+              "DisplayName": "Intent (reminder_date_intent)",
+              "Position": {
+                "X": 4904.13599438058,
+                "Y": 4047.3250212292082
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "535bc7ec-529d-466b-ad15-5f86380b63e7",
+          "IsFolded": false,
+          "DisplayName": "Dialog (reminder_dialog)",
+          "Position": {
+            "X": 5378.2149321266979,
+            "Y": 3568.5368778280545
+          }
+        },
+        {
+          "DialogName": "reminder_events_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [],
+          "Events": [
+            {
+              "EventName": "reminder-added-event",
+              "ResponseNode": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Reminded added.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "0f194f75-19b5-489f-ac6d-3c4409d9ce17",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 5993.3243852384594,
+                  "Y": 4173.3828690027949
+                }
+              },
+              "Id": "0bcf5c9e-e3f3-4d88-9bd6-d1b1b01563b9",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 6277.07438523846,
+                "Y": 4265.5887513557327
+              }
+            },
+            {
+              "EventName": "reminder-removed-event",
+              "ResponseNode": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Reminder removed.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "e4f7f531-25b7-4806-aa45-9503f3b1ce26",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 6040.166516962945,
+                  "Y": 4551.4822369551039
+                }
+              },
+              "Id": "06d091f2-37c5-4050-87fa-6ea14cd50f04",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 6288.7655617090513,
+                "Y": 4583.0887513557363
+              }
+            }
+          ],
+          "Actions": [],
+          "Id": "d43612d2-19fe-4e8f-b3d0-62f0811ee980",
+          "IsFolded": false,
+          "DisplayName": "Dialog (reminder_events_dialog)",
+          "Position": {
+            "X": 6716.6787269751539,
+            "Y": 4212.7265988024037
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "57554087-be1e-4cf9-9238-232cbb52ac63",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 7044.1694318753152,
+        "Y": 3880.0968505350847
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "reminder_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "reminder_start_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "Add reminder",
+              "ExpressionName": null,
+              "Id": "d8111bac-8596-4d88-9cc7-ba468ce3740c",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4470.2805429864256,
+                "Y": 3204.1477375565614
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "What would you like to be reminded of?",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "2feba1ae-1148-4944-81a3-e08968e0b917",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4557.5295109946819,
+              "Y": 3564.3541359053756
+            }
+          },
+          "Id": "ce6618f0-01c5-4e9d-9d13-001107848afd",
+          "IsFolded": false,
+          "DisplayName": "Intent (reminder_start_intent)",
+          "Position": {
+            "X": 4877.2805429864256,
+            "Y": 3297.3830316742083
+          }
+        },
+        {
+          "IntentName": "reminder_date_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [
+            {
+              "ContextName": "con_add_reminder",
+              "Id": "2801dec7-6144-420c-bd11-19bcbc31a1dc",
+              "IsFolded": false,
+              "DisplayName": "Context",
+              "Position": {
+                "X": 4574.2153855776169,
+                "Y": 3987.3247241406743
+              }
+            }
+          ],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "@sys.text:reminder-text",
+              "ExpressionName": null,
+              "Id": "20cea7fa-a719-4ff4-95e1-3404e3e0d977",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4572.2214187601194,
+                "Y": 4126.8658072405833
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Select a reminder date and time.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4616.3016591251871,
+              "Y": 4389.8475867270063
+            }
+          },
+          "Id": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+          "IsFolded": false,
+          "DisplayName": "Intent (reminder_date_intent)",
+          "Position": {
+            "X": 4904.13599438058,
+            "Y": 4047.3250212292082
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "535bc7ec-529d-466b-ad15-5f86380b63e7",
+      "IsFolded": false,
+      "DisplayName": "Dialog (reminder_dialog)",
+      "Position": {
+        "X": 5378.2149321266979,
+        "Y": 3568.5368778280545
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "reminder_start_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "Add reminder",
+          "ExpressionName": null,
+          "Id": "d8111bac-8596-4d88-9cc7-ba468ce3740c",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4470.2805429864256,
+            "Y": 3204.1477375565614
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "What would you like to be reminded of?",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "2feba1ae-1148-4944-81a3-e08968e0b917",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4557.5295109946819,
+          "Y": 3564.3541359053756
+        }
+      },
+      "Id": "ce6618f0-01c5-4e9d-9d13-001107848afd",
+      "IsFolded": false,
+      "DisplayName": "Intent (reminder_start_intent)",
+      "Position": {
+        "X": 4877.2805429864256,
+        "Y": 3297.3830316742083
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Select a reminder date and time.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4616.3016591251871,
+        "Y": 4389.8475867270063
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Select a reminder date and time.",
+      "Id": "9a0c61d9-d3e7-47e3-907e-c2f94e4bd04e",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4194.2428355957763,
+        "Y": 4444.9064102564171
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "Add reminder",
+      "ExpressionName": null,
+      "Id": "d8111bac-8596-4d88-9cc7-ba468ce3740c",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4470.2805429864256,
+        "Y": 3204.1477375565614
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextAddNode, Syn.Bot",
+      "ContextName": "con_add_reminder",
+      "Lifespan": 5,
+      "Id": "5dcbcd88-738e-40b3-82f1-74590853b143",
+      "IsFolded": false,
+      "DisplayName": "Context Add",
+      "Position": {
+        "X": 4857.2580177820109,
+        "Y": 3664.8971223307149
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "What would you like to be reminded of?",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "2feba1ae-1148-4944-81a3-e08968e0b917",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4557.5295109946819,
+        "Y": 3564.3541359053756
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "What would you like to be reminded of?",
+      "Id": "f622a40f-3820-402d-93da-b2052fc98c84",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4135.1765698182126,
+        "Y": 3660.8247241406707
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "reminder_date_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [
+        {
+          "ContextName": "con_add_reminder",
+          "Id": "2801dec7-6144-420c-bd11-19bcbc31a1dc",
+          "IsFolded": false,
+          "DisplayName": "Context",
+          "Position": {
+            "X": 4574.2153855776169,
+            "Y": 3987.3247241406743
+          }
+        }
+      ],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "@sys.text:reminder-text",
+          "ExpressionName": null,
+          "Id": "20cea7fa-a719-4ff4-95e1-3404e3e0d977",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4572.2214187601194,
+            "Y": 4126.8658072405833
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Select a reminder date and time.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4616.3016591251871,
+          "Y": 4389.8475867270063
+        }
+      },
+      "Id": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+      "IsFolded": false,
+      "DisplayName": "Intent (reminder_date_intent)",
+      "Position": {
+        "X": 4904.13599438058,
+        "Y": 4047.3250212292082
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ContextNode, Syn.Bot",
+      "ContextName": "con_add_reminder",
+      "Id": "2801dec7-6144-420c-bd11-19bcbc31a1dc",
+      "IsFolded": false,
+      "DisplayName": "Context",
+      "Position": {
+        "X": 4574.2153855776169,
+        "Y": 3987.3247241406743
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "@sys.text:reminder-text",
+      "ExpressionName": null,
+      "Id": "20cea7fa-a719-4ff4-95e1-3404e3e0d977",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4572.2214187601194,
+        "Y": 4126.8658072405833
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.EntityGetNode, Syn.Bot",
+      "EntityName": "reminder-text",
+      "EntityGetType": 1,
+      "EntityPropertyName": null,
+      "Id": "1cfa4247-af8d-4a6c-9955-bc5de725a855",
+      "IsFolded": false,
+      "DisplayName": "Entity Get",
+      "Position": {
+        "X": 4908.3839204236592,
+        "Y": 4590.0555479936884
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "reminder_events_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [],
+      "Events": [
+        {
+          "EventName": "reminder-added-event",
+          "ResponseNode": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Reminded added.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "0f194f75-19b5-489f-ac6d-3c4409d9ce17",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 5993.3243852384594,
+              "Y": 4173.3828690027949
+            }
+          },
+          "Id": "0bcf5c9e-e3f3-4d88-9bd6-d1b1b01563b9",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 6277.07438523846,
+            "Y": 4265.5887513557327
+          }
+        },
+        {
+          "EventName": "reminder-removed-event",
+          "ResponseNode": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Reminder removed.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "e4f7f531-25b7-4806-aa45-9503f3b1ce26",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 6040.166516962945,
+              "Y": 4551.4822369551039
+            }
+          },
+          "Id": "06d091f2-37c5-4050-87fa-6ea14cd50f04",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 6288.7655617090513,
+            "Y": 4583.0887513557363
+          }
+        }
+      ],
+      "Actions": [],
+      "Id": "d43612d2-19fe-4e8f-b3d0-62f0811ee980",
+      "IsFolded": false,
+      "DisplayName": "Dialog (reminder_events_dialog)",
+      "Position": {
+        "X": 6716.6787269751539,
+        "Y": 4212.7265988024037
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "reminder-added-event",
+      "ResponseNode": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Reminded added.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "0f194f75-19b5-489f-ac6d-3c4409d9ce17",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 5993.3243852384594,
+          "Y": 4173.3828690027949
+        }
+      },
+      "Id": "0bcf5c9e-e3f3-4d88-9bd6-d1b1b01563b9",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 6277.07438523846,
+        "Y": 4265.5887513557327
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Reminded added.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "0f194f75-19b5-489f-ac6d-3c4409d9ce17",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 5993.3243852384594,
+        "Y": 4173.3828690027949
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Reminded added.",
+      "Id": "25cb321a-84d7-4240-a390-03ac1a619b98",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 5684.6479146502243,
+        "Y": 4237.5005160616174
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "reminder-removed-event",
+      "ResponseNode": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Reminder removed.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "e4f7f531-25b7-4806-aa45-9503f3b1ce26",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 6040.166516962945,
+          "Y": 4551.4822369551039
+        }
+      },
+      "Id": "06d091f2-37c5-4050-87fa-6ea14cd50f04",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 6288.7655617090513,
+        "Y": 4583.0887513557363
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Reminder removed.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "e4f7f531-25b7-4806-aa45-9503f3b1ce26",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 6040.166516962945,
+        "Y": 4551.4822369551039
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Reminder removed.",
+      "Id": "bc453230-2eb6-4051-8dd6-c07460ac382d",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 5658.9165169629468,
+        "Y": 4647.7322369551039
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "29cd2031-3c7b-466d-bb57-b9b8a4db6462",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "1cfa4247-af8d-4a6c-9955-bc5de725a855",
+      "FromPortName": "Output",
+      "ToNodeId": "29cd2031-3c7b-466d-bb57-b9b8a4db6462",
+      "ToPortName": "ReminderText"
+    },
+    {
+      "FromNodeId": "535bc7ec-529d-466b-ad15-5f86380b63e7",
+      "FromPortName": "Output",
+      "ToNodeId": "57554087-be1e-4cf9-9238-232cbb52ac63",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "d43612d2-19fe-4e8f-b3d0-62f0811ee980",
+      "FromPortName": "Output",
+      "ToNodeId": "57554087-be1e-4cf9-9238-232cbb52ac63",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "ce6618f0-01c5-4e9d-9d13-001107848afd",
+      "FromPortName": "Output",
+      "ToNodeId": "535bc7ec-529d-466b-ad15-5f86380b63e7",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+      "FromPortName": "Output",
+      "ToNodeId": "535bc7ec-529d-466b-ad15-5f86380b63e7",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "d8111bac-8596-4d88-9cc7-ba468ce3740c",
+      "FromPortName": "Output",
+      "ToNodeId": "ce6618f0-01c5-4e9d-9d13-001107848afd",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "2feba1ae-1148-4944-81a3-e08968e0b917",
+      "FromPortName": "Output",
+      "ToNodeId": "ce6618f0-01c5-4e9d-9d13-001107848afd",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "9a0c61d9-d3e7-47e3-907e-c2f94e4bd04e",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "2feba1ae-1148-4944-81a3-e08968e0b917",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "5dcbcd88-738e-40b3-82f1-74590853b143",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "f622a40f-3820-402d-93da-b2052fc98c84",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "2feba1ae-1148-4944-81a3-e08968e0b917",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "2801dec7-6144-420c-bd11-19bcbc31a1dc",
+      "FromPortName": "Output",
+      "ToNodeId": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+      "ToPortName": "IntentContexts"
+    },
+    {
+      "FromNodeId": "20cea7fa-a719-4ff4-95e1-3404e3e0d977",
+      "FromPortName": "Output",
+      "ToNodeId": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+      "FromPortName": "Output",
+      "ToNodeId": "0da74bf9-bf06-4e76-bdb7-82c96fe4d599",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "756b3886-c673-4f9b-ab71-f05a61d146ce",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "1cfa4247-af8d-4a6c-9955-bc5de725a855",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "0bcf5c9e-e3f3-4d88-9bd6-d1b1b01563b9",
+      "FromPortName": "Output",
+      "ToNodeId": "d43612d2-19fe-4e8f-b3d0-62f0811ee980",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "06d091f2-37c5-4050-87fa-6ea14cd50f04",
+      "FromPortName": "Output",
+      "ToNodeId": "d43612d2-19fe-4e8f-b3d0-62f0811ee980",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "0f194f75-19b5-489f-ac6d-3c4409d9ce17",
+      "FromPortName": "Output",
+      "ToNodeId": "0bcf5c9e-e3f3-4d88-9bd6-d1b1b01563b9",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "25cb321a-84d7-4240-a390-03ac1a619b98",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "0f194f75-19b5-489f-ac6d-3c4409d9ce17",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "e4f7f531-25b7-4806-aa45-9503f3b1ce26",
+      "FromPortName": "Output",
+      "ToNodeId": "06d091f2-37c5-4050-87fa-6ea14cd50f04",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "bc453230-2eb6-4051-8dd6-c07460ac382d",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "e4f7f531-25b7-4806-aa45-9503f3b1ce26",
+      "ToPortName": "Text"
+    }
+  ]
+}

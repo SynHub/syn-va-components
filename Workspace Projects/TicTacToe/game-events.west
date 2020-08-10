@@ -1,0 +1,441 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "game_events_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [],
+          "Events": [
+            {
+              "EventName": "tictactoe_game_over",
+              "ResponseNode": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Game over.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "7cfc124c-e007-48df-87e5-47091b6a9174",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 5067.4343434343436,
+                  "Y": 3475.2863636363636
+                }
+              },
+              "Id": "bb02cef4-b75e-4240-8f32-fd04b35a8bba",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 5297.1414141414143,
+                "Y": 3581.4277777777779
+              }
+            },
+            {
+              "EventName": "tictactoe_player_won",
+              "ResponseNode": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "You won!",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "94e20933-f0ac-4961-9482-d058e9993ab5",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 5067.5382395382412,
+                  "Y": 3858.2004670767828
+                }
+              },
+              "Id": "bb8b868b-0c56-4a2c-84a0-b304a3793121",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 5281.8437950937951,
+                "Y": 3873.0615781878942
+              }
+            },
+            {
+              "EventName": "tictactoe_computer_won",
+              "ResponseNode": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Computer won!",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "e3b24125-25d5-4693-b7c1-b22ad42a408e",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 5082.9058865970637,
+                  "Y": 4264.385107599659
+                }
+              },
+              "Id": "0b8b601b-0b0c-4660-96f3-4a7eacd80b99",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 5289.9892199303958,
+                "Y": 4179.965172959136
+              }
+            }
+          ],
+          "Actions": [],
+          "Id": "7635aff8-8634-43c2-be57-a14e8815cc74",
+          "IsFolded": false,
+          "DisplayName": "Dialog (game_events_dialog)",
+          "Position": {
+            "X": 5682.3368983957225,
+            "Y": 3666.7462566844924
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "d63746af-f04d-42e6-9346-40ca343b7e33",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5997.411764705882,
+        "Y": 3673.9441176470591
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "tictactoe_game_over",
+      "ResponseNode": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Game over.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "7cfc124c-e007-48df-87e5-47091b6a9174",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 5067.4343434343436,
+          "Y": 3475.2863636363636
+        }
+      },
+      "Id": "bb02cef4-b75e-4240-8f32-fd04b35a8bba",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 5297.1414141414143,
+        "Y": 3581.4277777777779
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "game_events_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [],
+      "Events": [
+        {
+          "EventName": "tictactoe_game_over",
+          "ResponseNode": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Game over.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "7cfc124c-e007-48df-87e5-47091b6a9174",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 5067.4343434343436,
+              "Y": 3475.2863636363636
+            }
+          },
+          "Id": "bb02cef4-b75e-4240-8f32-fd04b35a8bba",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 5297.1414141414143,
+            "Y": 3581.4277777777779
+          }
+        },
+        {
+          "EventName": "tictactoe_player_won",
+          "ResponseNode": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "You won!",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "94e20933-f0ac-4961-9482-d058e9993ab5",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 5067.5382395382412,
+              "Y": 3858.2004670767828
+            }
+          },
+          "Id": "bb8b868b-0c56-4a2c-84a0-b304a3793121",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 5281.8437950937951,
+            "Y": 3873.0615781878942
+          }
+        },
+        {
+          "EventName": "tictactoe_computer_won",
+          "ResponseNode": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Computer won!",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "e3b24125-25d5-4693-b7c1-b22ad42a408e",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 5082.9058865970637,
+              "Y": 4264.385107599659
+            }
+          },
+          "Id": "0b8b601b-0b0c-4660-96f3-4a7eacd80b99",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 5289.9892199303958,
+            "Y": 4179.965172959136
+          }
+        }
+      ],
+      "Actions": [],
+      "Id": "7635aff8-8634-43c2-be57-a14e8815cc74",
+      "IsFolded": false,
+      "DisplayName": "Dialog (game_events_dialog)",
+      "Position": {
+        "X": 5682.3368983957225,
+        "Y": 3666.7462566844924
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Game over.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "7cfc124c-e007-48df-87e5-47091b6a9174",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 5067.4343434343436,
+        "Y": 3475.2863636363636
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Game over.",
+      "Id": "2a511857-c386-4701-bd79-dd6406ec8a11",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4807.7474747474753,
+        "Y": 3638.3368686868689
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "tictactoe_player_won",
+      "ResponseNode": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "You won!",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "94e20933-f0ac-4961-9482-d058e9993ab5",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 5067.5382395382412,
+          "Y": 3858.2004670767828
+        }
+      },
+      "Id": "bb8b868b-0c56-4a2c-84a0-b304a3793121",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 5281.8437950937951,
+        "Y": 3873.0615781878942
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "You won!",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "94e20933-f0ac-4961-9482-d058e9993ab5",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 5067.5382395382412,
+        "Y": 3858.2004670767828
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "You won!",
+      "Id": "9b1a0e1c-d2d5-4cfd-8c86-bb4d8fdc218e",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4754.760461760462,
+        "Y": 3950.1449115212276
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "tictactoe_computer_won",
+      "ResponseNode": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Computer won!",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "e3b24125-25d5-4693-b7c1-b22ad42a408e",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 5082.9058865970637,
+          "Y": 4264.385107599659
+        }
+      },
+      "Id": "0b8b601b-0b0c-4660-96f3-4a7eacd80b99",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 5289.9892199303958,
+        "Y": 4179.965172959136
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Computer won!",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "e3b24125-25d5-4693-b7c1-b22ad42a408e",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 5082.9058865970637,
+        "Y": 4264.385107599659
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Computer won!",
+      "Id": "28c3b12b-038c-4b39-bdbc-2466d5021b44",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4719.4581741787633,
+        "Y": 4349.4504670767828
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "7635aff8-8634-43c2-be57-a14e8815cc74",
+      "FromPortName": "Output",
+      "ToNodeId": "d63746af-f04d-42e6-9346-40ca343b7e33",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "7cfc124c-e007-48df-87e5-47091b6a9174",
+      "FromPortName": "Output",
+      "ToNodeId": "bb02cef4-b75e-4240-8f32-fd04b35a8bba",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "bb02cef4-b75e-4240-8f32-fd04b35a8bba",
+      "FromPortName": "Output",
+      "ToNodeId": "7635aff8-8634-43c2-be57-a14e8815cc74",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "bb8b868b-0c56-4a2c-84a0-b304a3793121",
+      "FromPortName": "Output",
+      "ToNodeId": "7635aff8-8634-43c2-be57-a14e8815cc74",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "0b8b601b-0b0c-4660-96f3-4a7eacd80b99",
+      "FromPortName": "Output",
+      "ToNodeId": "7635aff8-8634-43c2-be57-a14e8815cc74",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "2a511857-c386-4701-bd79-dd6406ec8a11",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "7cfc124c-e007-48df-87e5-47091b6a9174",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "94e20933-f0ac-4961-9482-d058e9993ab5",
+      "FromPortName": "Output",
+      "ToNodeId": "bb8b868b-0c56-4a2c-84a0-b304a3793121",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "9b1a0e1c-d2d5-4cfd-8c86-bb4d8fdc218e",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "94e20933-f0ac-4961-9482-d058e9993ab5",
+      "ToPortName": "Text"
+    },
+    {
+      "FromNodeId": "e3b24125-25d5-4693-b7c1-b22ad42a408e",
+      "FromPortName": "Output",
+      "ToNodeId": "0b8b601b-0b0c-4660-96f3-4a7eacd80b99",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "28c3b12b-038c-4b39-bdbc-2466d5021b44",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "e3b24125-25d5-4693-b7c1-b22ad42a408e",
+      "ToPortName": "Text"
+    }
+  ]
+}

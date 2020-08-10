@@ -1,0 +1,191 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "process_events_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [],
+          "Events": [
+            {
+              "EventName": "process_detected_NOTEPAD",
+              "ResponseNode": {
+                "Priority": "Low",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "User is noting down something.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "6634b744-1c60-4a9d-b3ee-e888e401d5d4",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4738.0,
+                  "Y": 3797.65
+                }
+              },
+              "Id": "5d1d6856-c342-45d2-90c2-b11ba73be8f6",
+              "IsFolded": false,
+              "DisplayName": "Event",
+              "Position": {
+                "X": 4987.454545454545,
+                "Y": 3847.1954545454546
+              }
+            }
+          ],
+          "Actions": [],
+          "Id": "0d9ab241-d7f2-4b04-9c71-39948e09697a",
+          "IsFolded": false,
+          "DisplayName": "Dialog (process_events_dialog)",
+          "Position": {
+            "X": 5341.0,
+            "Y": 3596.65
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "6fc7d91c-48fe-4c92-85a5-8004428445e7",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5673.0,
+        "Y": 3535.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "process_events_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [],
+      "Events": [
+        {
+          "EventName": "process_detected_NOTEPAD",
+          "ResponseNode": {
+            "Priority": "Low",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "User is noting down something.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "6634b744-1c60-4a9d-b3ee-e888e401d5d4",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4738.0,
+              "Y": 3797.65
+            }
+          },
+          "Id": "5d1d6856-c342-45d2-90c2-b11ba73be8f6",
+          "IsFolded": false,
+          "DisplayName": "Event",
+          "Position": {
+            "X": 4987.454545454545,
+            "Y": 3847.1954545454546
+          }
+        }
+      ],
+      "Actions": [],
+      "Id": "0d9ab241-d7f2-4b04-9c71-39948e09697a",
+      "IsFolded": false,
+      "DisplayName": "Dialog (process_events_dialog)",
+      "Position": {
+        "X": 5341.0,
+        "Y": 3596.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotEventNode, Syn.Bot",
+      "EventName": "process_detected_NOTEPAD",
+      "ResponseNode": {
+        "Priority": "Low",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "User is noting down something.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "6634b744-1c60-4a9d-b3ee-e888e401d5d4",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4738.0,
+          "Y": 3797.65
+        }
+      },
+      "Id": "5d1d6856-c342-45d2-90c2-b11ba73be8f6",
+      "IsFolded": false,
+      "DisplayName": "Event",
+      "Position": {
+        "X": 4987.454545454545,
+        "Y": 3847.1954545454546
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Low",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "User is noting down something.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "6634b744-1c60-4a9d-b3ee-e888e401d5d4",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4738.0,
+        "Y": 3797.65
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "User is noting down something.",
+      "Id": "7fb95ccf-6782-471a-b404-cf5ec82778db",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4351.0,
+        "Y": 3892.65
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "0d9ab241-d7f2-4b04-9c71-39948e09697a",
+      "FromPortName": "Output",
+      "ToNodeId": "6fc7d91c-48fe-4c92-85a5-8004428445e7",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "5d1d6856-c342-45d2-90c2-b11ba73be8f6",
+      "FromPortName": "Output",
+      "ToNodeId": "0d9ab241-d7f2-4b04-9c71-39948e09697a",
+      "ToPortName": "Events"
+    },
+    {
+      "FromNodeId": "6634b744-1c60-4a9d-b3ee-e888e401d5d4",
+      "FromPortName": "Output",
+      "ToNodeId": "5d1d6856-c342-45d2-90c2-b11ba73be8f6",
+      "ToPortName": "ResponseNode"
+    },
+    {
+      "FromNodeId": "7fb95ccf-6782-471a-b404-cf5ec82778db",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "6634b744-1c60-4a9d-b3ee-e888e401d5d4",
+      "ToPortName": "Text"
+    }
+  ]
+}

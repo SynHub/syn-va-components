@@ -1,0 +1,272 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "actions_dialog",
+          "IntentAlias": null,
+          "Domain": null,
+          "Intents": [
+            {
+              "IntentName": "shutdown_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "shutdown",
+                  "ExpressionName": null,
+                  "Id": "a944eb9b-645d-469c-ba90-c0ca1c47e8d5",
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 4702.0,
+                    "Y": 3618.65
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": null,
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "529517a5-a86c-40ab-a213-b0c2162aba84",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4662.9523809523807,
+                  "Y": 3876.4119047619051
+                }
+              },
+              "Id": "6831d6dc-e2a4-4f2f-90d9-5c31fead3b88",
+              "IsFolded": false,
+              "DisplayName": "Intent (shutdown_intent)",
+              "Position": {
+                "X": 4961.0,
+                "Y": 3601.65
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "03292b6a-b497-4cd7-a47f-f923410076f8",
+          "IsFolded": false,
+          "DisplayName": "Dialog (actions_dialog)",
+          "Position": {
+            "X": 5205.0,
+            "Y": 3581.65
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "d4f01448-f2ac-46fd-b67a-199ddfc20418",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5538.0,
+        "Y": 3557.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "actions_dialog",
+      "IntentAlias": null,
+      "Domain": null,
+      "Intents": [
+        {
+          "IntentName": "shutdown_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "shutdown",
+              "ExpressionName": null,
+              "Id": "a944eb9b-645d-469c-ba90-c0ca1c47e8d5",
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 4702.0,
+                "Y": 3618.65
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": null,
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "529517a5-a86c-40ab-a213-b0c2162aba84",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4662.9523809523807,
+              "Y": 3876.4119047619051
+            }
+          },
+          "Id": "6831d6dc-e2a4-4f2f-90d9-5c31fead3b88",
+          "IsFolded": false,
+          "DisplayName": "Intent (shutdown_intent)",
+          "Position": {
+            "X": 4961.0,
+            "Y": 3601.65
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "03292b6a-b497-4cd7-a47f-f923410076f8",
+      "IsFolded": false,
+      "DisplayName": "Dialog (actions_dialog)",
+      "Position": {
+        "X": 5205.0,
+        "Y": 3581.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionNode, Syn.Bot",
+      "Value": "shutdown",
+      "ExpressionName": null,
+      "Id": "a944eb9b-645d-469c-ba90-c0ca1c47e8d5",
+      "IsFolded": false,
+      "DisplayName": "Expression",
+      "Position": {
+        "X": 4702.0,
+        "Y": 3618.65
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": null,
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "529517a5-a86c-40ab-a213-b0c2162aba84",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4662.9523809523807,
+        "Y": 3876.4119047619051
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.BotActionCallerNode, Syn.Bot",
+      "ActionId": "shutdown-app",
+      "Id": "c156e400-03a7-467e-865f-333eb233b0e0",
+      "IsFolded": false,
+      "DisplayName": "Action Caller",
+      "Position": {
+        "X": 4943.7619047619046,
+        "Y": 3992.1261904761905
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "shutdown_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "shutdown",
+          "ExpressionName": null,
+          "Id": "a944eb9b-645d-469c-ba90-c0ca1c47e8d5",
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 4702.0,
+            "Y": 3618.65
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": null,
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "529517a5-a86c-40ab-a213-b0c2162aba84",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4662.9523809523807,
+          "Y": 3876.4119047619051
+        }
+      },
+      "Id": "6831d6dc-e2a4-4f2f-90d9-5c31fead3b88",
+      "IsFolded": false,
+      "DisplayName": "Intent (shutdown_intent)",
+      "Position": {
+        "X": 4961.0,
+        "Y": 3601.65
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "03292b6a-b497-4cd7-a47f-f923410076f8",
+      "FromPortName": "Output",
+      "ToNodeId": "d4f01448-f2ac-46fd-b67a-199ddfc20418",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "6831d6dc-e2a4-4f2f-90d9-5c31fead3b88",
+      "FromPortName": "Output",
+      "ToNodeId": "03292b6a-b497-4cd7-a47f-f923410076f8",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "529517a5-a86c-40ab-a213-b0c2162aba84",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "c156e400-03a7-467e-865f-333eb233b0e0",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "a944eb9b-645d-469c-ba90-c0ca1c47e8d5",
+      "FromPortName": "Output",
+      "ToNodeId": "6831d6dc-e2a4-4f2f-90d9-5c31fead3b88",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "529517a5-a86c-40ab-a213-b0c2162aba84",
+      "FromPortName": "Output",
+      "ToNodeId": "6831d6dc-e2a4-4f2f-90d9-5c31fead3b88",
+      "ToPortName": "Response"
+    }
+  ]
+}

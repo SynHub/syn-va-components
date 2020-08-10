@@ -1,0 +1,523 @@
+{
+  "GraphVersion": "1.2.0.0",
+  "UserNote": "",
+  "Nodes": [
+    {
+      "$type": "Syn.VA.Plugins.Horoscope.Nodes.HoroscopeNode, Syn.VA.Plugins.Horoscope",
+      "Id": "b254ab4d-38c4-4a6c-b7fe-dabf19238391",
+      "IsFolded": false,
+      "DisplayName": "Horoscope",
+      "Position": {
+        "X": 4991.0,
+        "Y": 3898.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.OscovaBotNode, Syn.Bot",
+      "Dialogs": [
+        {
+          "DialogName": "zodiac_dialog",
+          "IntentAlias": null,
+          "Domain": "private",
+          "Intents": [
+            {
+              "IntentName": "zodiac_intent",
+              "MinScore": 0.0,
+              "IntentContexts": [],
+              "Prompts": [],
+              "AutoEntity": null,
+              "Fallback": null,
+              "Trait": null,
+              "Event": null,
+              "Action": null,
+              "Expressions": [
+                {
+                  "Value": "whats my horoscope",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "horoscope of the day",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "daily horoscope",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "horoscope",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "whats my horoscope",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "horoscope of the day",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "daily horoscope",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                },
+                {
+                  "Value": "horoscope",
+                  "ExpressionName": null,
+                  "Id": null,
+                  "IsFolded": false,
+                  "DisplayName": "Expression",
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0
+                  }
+                }
+              ],
+              "Response": {
+                "Priority": "Normal",
+                "Hint": null,
+                "Type": null,
+                "Format": null,
+                "Text": "Getting your horoscope.",
+                "ResponseMessages": [],
+                "Children": [],
+                "Id": "b789578d-6751-407e-976d-298730dd8834",
+                "IsFolded": false,
+                "DisplayName": "Response",
+                "Position": {
+                  "X": 4693.0,
+                  "Y": 3772.0
+                }
+              },
+              "Id": "9a6140c9-e7af-4e77-a2dd-6d2397825fce",
+              "IsFolded": false,
+              "DisplayName": "Intent (zodiac_intent)",
+              "Position": {
+                "X": 4991.0,
+                "Y": 3494.0
+              }
+            }
+          ],
+          "Events": [],
+          "Actions": [],
+          "Id": "a845970d-6789-4e37-97e0-2936eab332be",
+          "IsFolded": false,
+          "DisplayName": "Dialog (zodiac_dialog)",
+          "Position": {
+            "X": 5266.0,
+            "Y": 3439.0
+          }
+        }
+      ],
+      "Entities": [],
+      "Traits": [],
+      "Scripts": [],
+      "Filters": [],
+      "BotSettings": null,
+      "UserSettings": null,
+      "SimlNodes": [],
+      "Id": "90416163-b829-4033-b013-279ee4ed5970",
+      "IsFolded": false,
+      "DisplayName": "Oscova Bot",
+      "Position": {
+        "X": 5526.0,
+        "Y": 3359.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.DialogNode, Syn.Bot",
+      "DialogName": "zodiac_dialog",
+      "IntentAlias": null,
+      "Domain": "private",
+      "Intents": [
+        {
+          "IntentName": "zodiac_intent",
+          "MinScore": 0.0,
+          "IntentContexts": [],
+          "Prompts": [],
+          "AutoEntity": null,
+          "Fallback": null,
+          "Trait": null,
+          "Event": null,
+          "Action": null,
+          "Expressions": [
+            {
+              "Value": "whats my horoscope",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "horoscope of the day",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "daily horoscope",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "horoscope",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "whats my horoscope",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "horoscope of the day",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "daily horoscope",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            },
+            {
+              "Value": "horoscope",
+              "ExpressionName": null,
+              "Id": null,
+              "IsFolded": false,
+              "DisplayName": "Expression",
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0
+              }
+            }
+          ],
+          "Response": {
+            "Priority": "Normal",
+            "Hint": null,
+            "Type": null,
+            "Format": null,
+            "Text": "Getting your horoscope.",
+            "ResponseMessages": [],
+            "Children": [],
+            "Id": "b789578d-6751-407e-976d-298730dd8834",
+            "IsFolded": false,
+            "DisplayName": "Response",
+            "Position": {
+              "X": 4693.0,
+              "Y": 3772.0
+            }
+          },
+          "Id": "9a6140c9-e7af-4e77-a2dd-6d2397825fce",
+          "IsFolded": false,
+          "DisplayName": "Intent (zodiac_intent)",
+          "Position": {
+            "X": 4991.0,
+            "Y": 3494.0
+          }
+        }
+      ],
+      "Events": [],
+      "Actions": [],
+      "Id": "a845970d-6789-4e37-97e0-2936eab332be",
+      "IsFolded": false,
+      "DisplayName": "Dialog (zodiac_dialog)",
+      "Position": {
+        "X": 5266.0,
+        "Y": 3439.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.IntentNode, Syn.Bot",
+      "IntentName": "zodiac_intent",
+      "MinScore": 0.0,
+      "IntentContexts": [],
+      "Prompts": [],
+      "AutoEntity": null,
+      "Fallback": null,
+      "Trait": null,
+      "Event": null,
+      "Action": null,
+      "Expressions": [
+        {
+          "Value": "whats my horoscope",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "horoscope of the day",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "daily horoscope",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "horoscope",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "whats my horoscope",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "horoscope of the day",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "daily horoscope",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "Value": "horoscope",
+          "ExpressionName": null,
+          "Id": null,
+          "IsFolded": false,
+          "DisplayName": "Expression",
+          "Position": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        }
+      ],
+      "Response": {
+        "Priority": "Normal",
+        "Hint": null,
+        "Type": null,
+        "Format": null,
+        "Text": "Getting your horoscope.",
+        "ResponseMessages": [],
+        "Children": [],
+        "Id": "b789578d-6751-407e-976d-298730dd8834",
+        "IsFolded": false,
+        "DisplayName": "Response",
+        "Position": {
+          "X": 4693.0,
+          "Y": 3772.0
+        }
+      },
+      "Id": "9a6140c9-e7af-4e77-a2dd-6d2397825fce",
+      "IsFolded": false,
+      "DisplayName": "Intent (zodiac_intent)",
+      "Position": {
+        "X": 4991.0,
+        "Y": 3494.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ResponseNode, Syn.Bot",
+      "Priority": "Normal",
+      "Hint": null,
+      "Type": null,
+      "Format": null,
+      "Text": "Getting your horoscope.",
+      "ResponseMessages": [],
+      "Children": [],
+      "Id": "b789578d-6751-407e-976d-298730dd8834",
+      "IsFolded": false,
+      "DisplayName": "Response",
+      "Position": {
+        "X": 4693.0,
+        "Y": 3772.0
+      }
+    },
+    {
+      "$type": "Syn.Bot.Oscova.WorkspaceNodes.ExpressionListNode, Syn.Bot",
+      "ExpressionList": [
+        "whats my horoscope",
+        "horoscope of the day",
+        "daily horoscope",
+        "horoscope"
+      ],
+      "Id": "d0c16293-5b2a-4b99-b45f-b2277b874690",
+      "IsFolded": false,
+      "DisplayName": "Expression List",
+      "Position": {
+        "X": 4643.0,
+        "Y": 3429.0
+      }
+    },
+    {
+      "$type": "Syn.Workspace.Nodes.InputOutput.InputTextNode, Syn.Workspace",
+      "OutputValue": "Getting your horoscope.",
+      "Id": "c123f0d5-69f8-458b-93b4-22889de06a7c",
+      "IsFolded": false,
+      "DisplayName": "Input Text",
+      "Position": {
+        "X": 4366.0,
+        "Y": 3877.0
+      }
+    }
+  ],
+  "Connections": [
+    {
+      "FromNodeId": "b789578d-6751-407e-976d-298730dd8834",
+      "FromPortName": "TriggerFlow",
+      "ToNodeId": "b254ab4d-38c4-4a6c-b7fe-dabf19238391",
+      "ToPortName": "OnNodeTriggered"
+    },
+    {
+      "FromNodeId": "a845970d-6789-4e37-97e0-2936eab332be",
+      "FromPortName": "Output",
+      "ToNodeId": "90416163-b829-4033-b013-279ee4ed5970",
+      "ToPortName": "Dialogs"
+    },
+    {
+      "FromNodeId": "9a6140c9-e7af-4e77-a2dd-6d2397825fce",
+      "FromPortName": "Output",
+      "ToNodeId": "a845970d-6789-4e37-97e0-2936eab332be",
+      "ToPortName": "Intents"
+    },
+    {
+      "FromNodeId": "d0c16293-5b2a-4b99-b45f-b2277b874690",
+      "FromPortName": "Expressions",
+      "ToNodeId": "9a6140c9-e7af-4e77-a2dd-6d2397825fce",
+      "ToPortName": "Expressions"
+    },
+    {
+      "FromNodeId": "b789578d-6751-407e-976d-298730dd8834",
+      "FromPortName": "Output",
+      "ToNodeId": "9a6140c9-e7af-4e77-a2dd-6d2397825fce",
+      "ToPortName": "Response"
+    },
+    {
+      "FromNodeId": "c123f0d5-69f8-458b-93b4-22889de06a7c",
+      "FromPortName": "OutputValue",
+      "ToNodeId": "b789578d-6751-407e-976d-298730dd8834",
+      "ToPortName": "Text"
+    }
+  ]
+}
