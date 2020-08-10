@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syn.VA.Plugins.HelloPlugin", "Syn.VA.Plugins.HelloPlugin\Syn.VA.Plugins.HelloPlugin.csproj", "{1B58D5D1-BF31-4B93-A712-A29A4D4F4320}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syn.VA.Plugins.HelloPlugin", "Syn.VA.Plugins.HelloPlugin.csproj", "{70A97391-0F92-4274-9969-E53A6246151B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1B58D5D1-BF31-4B93-A712-A29A4D4F4320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B58D5D1-BF31-4B93-A712-A29A4D4F4320}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B58D5D1-BF31-4B93-A712-A29A4D4F4320}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B58D5D1-BF31-4B93-A712-A29A4D4F4320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A97391-0F92-4274-9969-E53A6246151B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A97391-0F92-4274-9969-E53A6246151B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A97391-0F92-4274-9969-E53A6246151B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A97391-0F92-4274-9969-E53A6246151B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABDCDE5A-DC37-4F96-BDB1-947E97FE51BC}
 	EndGlobalSection
 EndGlobal

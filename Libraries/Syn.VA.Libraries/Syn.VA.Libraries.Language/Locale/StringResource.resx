@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Assistant_AuthenticationWindowTitle" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
+  <data name="Assistant_AuthenticationWindow_LabelContent" xml:space="preserve">
+    <value>Authentication Required</value>
+  </data>
+  <data name="Assistant_AuthenticationWindow_PasswordBoxWatermark" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="Assistant_LicenseWindowTitle" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="Assistant_LogWindowTitle" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Assistant_SettingsWindow_DefaultLabelContent" xml:space="preserve">
+    <value>This plugin offers no editable settings.</value>
+  </data>
+  <data name="AvatarPlugin_DisplayName" xml:space="preserve">
+    <value>Avatar</value>
+  </data>
+  <data name="AvatarPlugin_SelectAvatarLabelContent" xml:space="preserve">
+    <value>Select Avatar (Please change the Speech settings accordingly)</value>
+  </data>
+  <data name="BrandPlugin_AvatarModeLabelContent" xml:space="preserve">
+    <value>Avatar Panel Mode</value>
+  </data>
+  <data name="BrandPlugin_DisplayName" xml:space="preserve">
+    <value>Branding</value>
+  </data>
+  <data name="BrandPlugin_InputPlaceholderLabelContent" xml:space="preserve">
+    <value>Input Placeholder</value>
+  </data>
+  <data name="BrandPlugin_IntroTitleLabelContent" xml:space="preserve">
+    <value>Intro Title</value>
+  </data>
+  <data name="BrandPlugin_LogoFilePathTextBoxWatermark" xml:space="preserve">
+    <value>Logo file path</value>
+  </data>
+  <data name="BrandPlugin_PanelConfirmPasswordLabelContent" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="BrandPlugin_PanelPasswordLabelContent" xml:space="preserve">
+    <value>Settings Panel Password (Empty for No Password)</value>
+  </data>
+  <data name="BrandPlugin_PasswordMismatchMessage" xml:space="preserve">
+    <value>Passwords do not match. Settings not saved.</value>
+  </data>
+  <data name="BrandPlugin_RefreshTextBoxPlaceholder" xml:space="preserve">
+    <value>Refresh Button Text</value>
+  </data>
+  <data name="BrandPlugin_RefreshToggleButtonOffContent" xml:space="preserve">
+    <value>Do not show Refresh Button</value>
+  </data>
+  <data name="BrandPlugin_RefreshToggleButtonOnContent" xml:space="preserve">
+    <value>Show Refresh Button</value>
+  </data>
+  <data name="BrandPlugin_UseLogoToggleButtonOffContent" xml:space="preserve">
+    <value>Do not display logo</value>
+  </data>
+  <data name="BrandPlugin_UseLogoToggleButtonOnContent" xml:space="preserve">
+    <value>Display Logo</value>
+  </data>
+  <data name="BrandPlugin_WindowTitleLabelContent" xml:space="preserve">
+    <value>Window Title</value>
+  </data>
+  <data name="BrowserPlugin_BrowserWindowTitleContent" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="BrowserPlugin_DisplayName" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="Common_Applications" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="Common_Browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="Common_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Common_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Common_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Common_Directories" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="Common_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Common_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Common_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Common_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Common_Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Common_Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Common_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Common_SearchEngines" xml:space="preserve">
+    <value>Search Engines</value>
+  </data>
+  <data name="Common_Websites" xml:space="preserve">
+    <value>Websites</value>
+  </data>
+  <data name="DiscordPlugin_BotTokenLabelContent" xml:space="preserve">
+    <value>Specify Discord Bot Token</value>
+  </data>
+  <data name="DiscordPlugin_ChannelToggleOffContent" xml:space="preserve">
+    <value>Discord Bot is Off</value>
+  </data>
+  <data name="DiscordPlugin_ChannelToggleOnContent" xml:space="preserve">
+    <value>Discord Bot is On</value>
+  </data>
+  <data name="DiscordPlugin_DisplayName" xml:space="preserve">
+    <value>Discord Integration</value>
+  </data>
+  <data name="DiscordPlugin_UsernameLabelContent" xml:space="preserve">
+    <value>Specify Your Discord Username (example: You#1234)</value>
+  </data>
+  <data name="SystemPlugin_CultureLabelContent" xml:space="preserve">
+    <value>Application Thread Culture</value>
+  </data>
+  <data name="DisplayPlugin_DisplayName" xml:space="preserve">
+    <value>Display Mode</value>
+  </data>
+  <data name="DisplayPlugin_ModeLabelContent" xml:space="preserve">
+    <value>Display Modes</value>
+  </data>
+  <data name="DisplayPlugin_ShowInTaskbarOffContent" xml:space="preserve">
+    <value>Do not show in Taskbar</value>
+  </data>
+  <data name="DisplayPlugin_ShowInTaskbarOnContent" xml:space="preserve">
+    <value>Show in Taskbar</value>
+  </data>
+  <data name="SystemPlugin_UserInterfaceCultureLabelContent" xml:space="preserve">
+    <value>Application UI Culture</value>
+  </data>
+  <data name="HoroscopePlugin_DisplayName" xml:space="preserve">
+    <value>Horoscope</value>
+  </data>
+  <data name="HoroscopePlugin_SelectionLabelContent" xml:space="preserve">
+    <value>Select your Zodiac Sign</value>
+  </data>
+  <data name="LauncherPlugin_AddFileMessage" xml:space="preserve">
+    <value>Please specify a name for this file</value>
+  </data>
+  <data name="LauncherPlugin_AddFileTitle" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="LauncherPlugin_AddFolderMessage" xml:space="preserve">
+    <value>Please specify a name for this folder</value>
+  </data>
+  <data name="LauncherPlugin_AddFolderTitle" xml:space="preserve">
+    <value>Folder Name</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineAddressMessage" xml:space="preserve">
+    <value>Please type in the URL of the search engine. Use {0} for query replacement.</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineAddressTitle" xml:space="preserve">
+    <value>Search Engine Address</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineNameMessage" xml:space="preserve">
+    <value>Please type a name for the search engine. Example 'Google'</value>
+  </data>
+  <data name="LauncherPlugin_AddSearchEngineNameTitle" xml:space="preserve">
+    <value>Search Engine Name</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteAddressMessage" xml:space="preserve">
+    <value>Please type in the URL of the website.</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteAddressTitle" xml:space="preserve">
+    <value>Website Address</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteNameMessage" xml:space="preserve">
+    <value>Please type a name for the website. Example 'Google'</value>
+  </data>
+  <data name="LauncherPlugin_AddWebsiteNameTitle" xml:space="preserve">
+    <value>Website Name</value>
+  </data>
+  <data name="LauncherPlugin_DisplayName" xml:space="preserve">
+    <value>Files, Folders &amp; Websites</value>
+  </data>
+  <data name="LogPlugin_DisplayName" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="LogPlugin_WindowTitle" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="MapPlugin_DefaultZoomLabelContent" xml:space="preserve">
+    <value>Default Zoom</value>
+  </data>
+  <data name="MapPlugin_DisplayName" xml:space="preserve">
+    <value>Maps</value>
+  </data>
+  <data name="MapPlugin_MapProviderLabelContent" xml:space="preserve">
+    <value>Map Provider</value>
+  </data>
+  <data name="MapPlugin_MaximumZoomLabelContent" xml:space="preserve">
+    <value>Maximum Zoom</value>
+  </data>
+  <data name="MapPlugin_MinimumZoomLabelContent" xml:space="preserve">
+    <value>Minimum Zoom</value>
+  </data>
+  <data name="MediaPlugin_DisplayName" xml:space="preserve">
+    <value>Songs &amp; Videos</value>
+  </data>
+  <data name="MediaPlugin_IndexingMessage" xml:space="preserve">
+    <value>Indexing has started. You will be notified when indexing is over.</value>
+    <comment>Message displayed in settings panel after a new media directory is set.</comment>
+  </data>
+  <data name="MediaPlugin_MusicDirectoryLabelContentFormat" xml:space="preserve">
+    <value>Selected Songs Directory (Indexed {0} Files)</value>
+  </data>
+  <data name="MediaPlugin_MusicPlayerTitleFormat" xml:space="preserve">
+    <value>Now Playing [{0}]</value>
+    <comment>The text displayed on the music player box for the current song being played.</comment>
+  </data>
+  <data name="MediaPlugin_VideoDirectoryLabelContentFormat" xml:space="preserve">
+    <value>Selected Videos Directory (Indexed {0} Files)</value>
+  </data>
+  <data name="NewsPlugin_DisplayName" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="NewsPlugin_FeedSelectionLabelContent" xml:space="preserve">
+    <value>Select your News Feed</value>
+  </data>
+  <data name="ProcessMonitorPlugin_AddProcessMessage" xml:space="preserve">
+    <value>Please provide a process name</value>
+  </data>
+  <data name="ProcessMonitorPlugin_AddProcessTitle" xml:space="preserve">
+    <value>Process Name</value>
+  </data>
+  <data name="ProcessMonitorPlugin_DisplayName" xml:space="preserve">
+    <value>Process Monitor</value>
+  </data>
+  <data name="ProcessMonitorPlugin_ServiceDescription" xml:space="preserve">
+    <value>Raise intelligent events based on user interaction</value>
+  </data>
+  <data name="ReminderPlugin_DisplayName" xml:space="preserve">
+    <value>Reminders</value>
+  </data>
+  <data name="ReminderPlugin_ReminderServiceDescription" xml:space="preserve">
+    <value>Scheduled Reminder Service</value>
+  </data>
+  <data name="ServicePlugin_DisplayName" xml:space="preserve">
+    <value>Services &amp; Plugins</value>
+  </data>
+  <data name="ServicePlugin_PluginTabHeader" xml:space="preserve">
+    <value>Plugins</value>
+  </data>
+  <data name="ServicePlugin_ServiceTabHeader" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="ShowInfoPlugin_ApiKeyLabelContent" xml:space="preserve">
+    <value>Your API Key for Omdb</value>
+  </data>
+  <data name="ShowInfoPlugin_DisplayName" xml:space="preserve">
+    <value>Show Info</value>
+  </data>
+  <data name="SpeechPlugin_AddChoiceDialogMessage" xml:space="preserve">
+    <value>Enter the phrase you wish to save as a voice command</value>
+  </data>
+  <data name="SpeechPlugin_AddChoiceDialogTitle" xml:space="preserve">
+    <value>Add Command</value>
+  </data>
+  <data name="SpeechPlugin_AddChoiceTextBoxPlaceholder" xml:space="preserve">
+    <value>Type the command value here...</value>
+  </data>
+  <data name="SpeechPlugin_ChoiceTabItemHeader" xml:space="preserve">
+    <value>Voice Commands</value>
+  </data>
+  <data name="SpeechPlugin_DisplayName" xml:space="preserve">
+    <value>Speech</value>
+  </data>
+  <data name="SpeechPlugin_EngineLabelContent" xml:space="preserve">
+    <value>Speech Recognition Engine</value>
+  </data>
+  <data name="SpeechPlugin_EnginesTabItemHeader" xml:space="preserve">
+    <value>Engines</value>
+  </data>
+  <data name="SpeechPlugin_GetChoiceMessage" xml:space="preserve">
+    <value>Please provide the word or phrase for voice command</value>
+  </data>
+  <data name="SpeechPlugin_GetChoiceTitle" xml:space="preserve">
+    <value>Provide Command</value>
+  </data>
+  <data name="SpeechPlugin_GrammarTabItemHeader" xml:space="preserve">
+    <value>SRGS</value>
+  </data>
+  <data name="SpeechPlugin_MasterVolumeLabel" xml:space="preserve">
+    <value>Master Volume</value>
+  </data>
+  <data name="SpeechPlugin_MicrophoneVolumeLabelContent" xml:space="preserve">
+    <value>Microphone Volume</value>
+  </data>
+  <data name="SpeechPlugin_RankLabelContent" xml:space="preserve">
+    <value>Minimum Rank (Equal and Above)</value>
+  </data>
+  <data name="SpeechPlugin_SettingsSavedMessage" xml:space="preserve">
+    <value>New speech settings saved.</value>
+  </data>
+  <data name="SpeechPlugin_SynthesisConfidenceLabelContent" xml:space="preserve">
+    <value>Minimum Speech Confidence</value>
+  </data>
+  <data name="SpeechPlugin_SynthesisRateLabelContent" xml:space="preserve">
+    <value>Speech Synthesis Rate</value>
+  </data>
+  <data name="SpeechPlugin_SynthesizerLabelContent" xml:space="preserve">
+    <value>Speech Synthesis Engine</value>
+  </data>
+  <data name="SpeechPlugin_VoiceLabelContent" xml:space="preserve">
+    <value>Synthesizer Voice</value>
+  </data>
+  <data name="SpeechPlugin_VolumeLabelContent" xml:space="preserve">
+    <value>Speech Synthesis Volume</value>
+  </data>
+  <data name="SystemPlugin_DisplayName" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="TelegramPlugin_BotTokenLabelContent" xml:space="preserve">
+    <value>Specify Telegram Bot Token</value>
+  </data>
+  <data name="TelegramPlugin_ChannelToggleOffContent" xml:space="preserve">
+    <value>Telegram Bot is Off</value>
+  </data>
+  <data name="TelegramPlugin_ChannelToggleOnContent" xml:space="preserve">
+    <value>Telegram Bot is On</value>
+  </data>
+  <data name="TelegramPlugin_DisplayName" xml:space="preserve">
+    <value>Telegram Integration</value>
+  </data>
+  <data name="TelegramPlugin_UsernameLabelContent" xml:space="preserve">
+    <value>Specify Your Telegram Username</value>
+  </data>
+  <data name="ThemePlugin_DisplayName" xml:space="preserve">
+    <value>Themes &amp; Colors</value>
+  </data>
+  <data name="TicTacToePlugin_DisplayName" xml:space="preserve">
+    <value>Tic Tac Toe</value>
+  </data>
+  <data name="TicTacToePlugin_PlayerDifficultyContent" xml:space="preserve">
+    <value>Game Difficulty</value>
+  </data>
+  <data name="TicTacToePlugin_PlayerLabelContent" xml:space="preserve">
+    <value>First Player</value>
+  </data>
+  <data name="UserPlugin_DisplayName" xml:space="preserve">
+    <value>User Information</value>
+    <comment>Name to be displayed in settings panel</comment>
+  </data>
+  <data name="UserPlugin_NameLabelContent" xml:space="preserve">
+    <value>Name (The Bot will call you by this name)</value>
+  </data>
+  <data name="WeatherPlugin_DisplayName" xml:space="preserve">
+    <value>Weather</value>
+    <comment>Name to be displayed in settings panel</comment>
+  </data>
+  <data name="WeatherPlugin_LocationLabelContent" xml:space="preserve">
+    <value>Type Your Location (example: Washington)</value>
+  </data>
+  <data name="WeatherPlugin_TemperatureUnitLabelContent" xml:space="preserve">
+    <value>Select Temperature Unit</value>
+  </data>
+  <data name="WikipediaPlugin_DisplayName" xml:space="preserve">
+    <value>Wikipedia</value>
+  </data>
+  <data name="WindowsPlugin_DisplayName" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="WindowsPlugin_ScreenshotLabelContent" xml:space="preserve">
+    <value>Screenshot Directory</value>
+  </data>
+  <data name="WindowsPlugin_WallpaperLabelContent" xml:space="preserve">
+    <value>Wallpaper Directory</value>
+  </data>
+  <data name="SystemPlugin_ResetButtonContent" xml:space="preserve">
+    <value>Reset and Shutdown</value>
+  </data>
+  <data name="SystemPlugin_RestartButtonContent" xml:space="preserve">
+    <value>Restart Dashboard</value>
+  </data>
+  <data name="SystemPlugin_WorkingDirectoryButtonContent" xml:space="preserve">
+    <value>Open Working Directory</value>
+  </data>
+</root>
