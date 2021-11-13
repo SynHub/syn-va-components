@@ -19,7 +19,7 @@ namespace Syn.VA.Libraries.Language.Locale {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class StringResource {
@@ -106,6 +106,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open Settings Panel....
+        /// </summary>
+        public static string Assistant_SettingsContextMenuHeader {
+            get {
+                return ResourceManager.GetString("Assistant_SettingsContextMenuHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This plugin offers no editable settings..
         /// </summary>
         public static string Assistant_SettingsWindow_DefaultLabelContent {
@@ -115,11 +124,29 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Avatar.
+        ///   Looks up a localized string similar to Custom Avatar Name.
+        /// </summary>
+        public static string AvatarPlugin_CustomNameLabelContent {
+            get {
+                return ResourceManager.GetString("AvatarPlugin_CustomNameLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avatar Engine.
         /// </summary>
         public static string AvatarPlugin_DisplayName {
             get {
                 return ResourceManager.GetString("AvatarPlugin_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anti-Aliasing Quality.
+        /// </summary>
+        public static string AvatarPlugin_SelectAntiAliasingLabelContent {
+            get {
+                return ResourceManager.GetString("AvatarPlugin_SelectAntiAliasingLabelContent", resourceCulture);
             }
         }
         
@@ -133,6 +160,87 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Graphics Resolution Scale.
+        /// </summary>
+        public static string AvatarPlugin_SelectResolutionScaleLabelContent {
+            get {
+                return ResourceManager.GetString("AvatarPlugin_SelectResolutionScaleLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shadow Quality.
+        /// </summary>
+        public static string AvatarPlugin_SelectShadowQualityLabelContent {
+            get {
+                return ResourceManager.GetString("AvatarPlugin_SelectShadowQualityLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Texture Quality.
+        /// </summary>
+        public static string AvatarPlugin_SelectTextureQualityLabelContent {
+            get {
+                return ResourceManager.GetString("AvatarPlugin_SelectTextureQualityLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use Ambient Background.
+        /// </summary>
+        public static string AvatarPlugin_UseAmbientToggleSwitchContent {
+            get {
+                return ResourceManager.GetString("AvatarPlugin_UseAmbientToggleSwitchContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Backup.
+        /// </summary>
+        public static string BackupPlugin_DisplayName {
+            get {
+                return ResourceManager.GetString("BackupPlugin_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export Knowledge....
+        /// </summary>
+        public static string BackupPlugin_ExportButtonContent {
+            get {
+                return ResourceManager.GetString("BackupPlugin_ExportButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export of Knowledge-Base successful..
+        /// </summary>
+        public static string BackupPlugin_ExportCompletedMessageString {
+            get {
+                return ResourceManager.GetString("BackupPlugin_ExportCompletedMessageString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import Knowledge....
+        /// </summary>
+        public static string BackupPlugin_ImportButtonContent {
+            get {
+                return ResourceManager.GetString("BackupPlugin_ImportButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Knowledge-Base import successful. Please restart to load the new knowledge-base data..
+        /// </summary>
+        public static string BackupPlugin_ImportCompletedMessageString {
+            get {
+                return ResourceManager.GetString("BackupPlugin_ImportCompletedMessageString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Avatar Panel Mode.
         /// </summary>
         public static string BrandPlugin_AvatarModeLabelContent {
@@ -142,7 +250,7 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Branding.
+        ///   Looks up a localized string similar to Enterprise Branding.
         /// </summary>
         public static string BrandPlugin_DisplayName {
             get {
@@ -214,38 +322,20 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do not show Refresh Button.
-        /// </summary>
-        public static string BrandPlugin_RefreshToggleButtonOffContent {
-            get {
-                return ResourceManager.GetString("BrandPlugin_RefreshToggleButtonOffContent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Show Refresh Button.
         /// </summary>
-        public static string BrandPlugin_RefreshToggleButtonOnContent {
+        public static string BrandPlugin_RefreshToggleButtonContent {
             get {
-                return ResourceManager.GetString("BrandPlugin_RefreshToggleButtonOnContent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Do not display logo.
-        /// </summary>
-        public static string BrandPlugin_UseLogoToggleButtonOffContent {
-            get {
-                return ResourceManager.GetString("BrandPlugin_UseLogoToggleButtonOffContent", resourceCulture);
+                return ResourceManager.GetString("BrandPlugin_RefreshToggleButtonContent", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Display Logo.
         /// </summary>
-        public static string BrandPlugin_UseLogoToggleButtonOnContent {
+        public static string BrandPlugin_UseLogoToggleButtonContent {
             get {
-                return ResourceManager.GetString("BrandPlugin_UseLogoToggleButtonOnContent", resourceCulture);
+                return ResourceManager.GetString("BrandPlugin_UseLogoToggleButtonContent", resourceCulture);
             }
         }
         
@@ -340,6 +430,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There was a problem processing your request. Please refer the log for more details..
+        /// </summary>
+        public static string Common_Error {
+            get {
+                return ResourceManager.GetString("Common_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string Common_FirstName {
@@ -363,6 +462,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         public static string Common_LastName {
             get {
                 return ResourceManager.GetString("Common_LastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string Common_No {
+            get {
+                return ResourceManager.GetString("Common_No", resourceCulture);
             }
         }
         
@@ -408,6 +516,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         public static string Common_Websites {
             get {
                 return ResourceManager.GetString("Common_Websites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string Common_Yes {
+            get {
+                return ResourceManager.GetString("Common_Yes", resourceCulture);
             }
         }
         
@@ -475,20 +592,11 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Do not show in Taskbar.
-        /// </summary>
-        public static string DisplayPlugin_ShowInTaskbarOffContent {
-            get {
-                return ResourceManager.GetString("DisplayPlugin_ShowInTaskbarOffContent", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Show in Taskbar.
         /// </summary>
-        public static string DisplayPlugin_ShowInTaskbarOnContent {
+        public static string DisplayPlugin_ShowInTaskbarContent {
             get {
-                return ResourceManager.GetString("DisplayPlugin_ShowInTaskbarOnContent", resourceCulture);
+                return ResourceManager.GetString("DisplayPlugin_ShowInTaskbarContent", resourceCulture);
             }
         }
         
@@ -691,7 +799,16 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Songs &amp; Videos.
+        ///   Looks up a localized string similar to Your API Key for Omdb.
+        /// </summary>
+        public static string MediaPlugin_ApiKeyLabelContent {
+            get {
+                return ResourceManager.GetString("MediaPlugin_ApiKeyLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Songs, Videos &amp; Shows.
         /// </summary>
         public static string MediaPlugin_DisplayName {
             get {
@@ -754,33 +871,6 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please provide a process name.
-        /// </summary>
-        public static string ProcessMonitorPlugin_AddProcessMessage {
-            get {
-                return ResourceManager.GetString("ProcessMonitorPlugin_AddProcessMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Process Name.
-        /// </summary>
-        public static string ProcessMonitorPlugin_AddProcessTitle {
-            get {
-                return ResourceManager.GetString("ProcessMonitorPlugin_AddProcessTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Process Monitor.
-        /// </summary>
-        public static string ProcessMonitorPlugin_DisplayName {
-            get {
-                return ResourceManager.GetString("ProcessMonitorPlugin_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Raise intelligent events based on user interaction.
         /// </summary>
         public static string ProcessMonitorPlugin_ServiceDescription {
@@ -804,6 +894,42 @@ namespace Syn.VA.Libraries.Language.Locale {
         public static string ReminderPlugin_ReminderServiceDescription {
             get {
                 return ResourceManager.GetString("ReminderPlugin_ReminderServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remote Control.
+        /// </summary>
+        public static string RemoteControlPlugin_DisplayName {
+            get {
+                return ResourceManager.GetString("RemoteControlPlugin_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specify a different Port Number (Default 3101).
+        /// </summary>
+        public static string RemoteControlPlugin_LabelContent {
+            get {
+                return ResourceManager.GetString("RemoteControlPlugin_LabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scan the QR code below to download the VA Remote App.
+        /// </summary>
+        public static string RemoteControlPlugin_QrLabelContent {
+            get {
+                return ResourceManager.GetString("RemoteControlPlugin_QrLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable Remote Control on Startup.
+        /// </summary>
+        public static string RemoteControlPlugin_ToggleSwitchContent {
+            get {
+                return ResourceManager.GetString("RemoteControlPlugin_ToggleSwitchContent", resourceCulture);
             }
         }
         
@@ -835,11 +961,29 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your API Key for Omdb.
+        ///   Looks up a localized string similar to Save.
         /// </summary>
-        public static string ShowInfoPlugin_ApiKeyLabelContent {
+        public static string SettingsPanel_SaveButton_ItemSave {
             get {
-                return ResourceManager.GetString("ShowInfoPlugin_ApiKeyLabelContent", resourceCulture);
+                return ResourceManager.GetString("SettingsPanel_SaveButton_ItemSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save and Restart.
+        /// </summary>
+        public static string SettingsPanel_SaveButtonItemSaveRestart {
+            get {
+                return ResourceManager.GetString("SettingsPanel_SaveButtonItemSaveRestart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        public static string SettingsPanel_WindowTitle {
+            get {
+                return ResourceManager.GetString("SettingsPanel_WindowTitle", resourceCulture);
             }
         }
         
@@ -880,6 +1024,33 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AWS Access Key.
+        /// </summary>
+        public static string SpeechPlugin_AmazonAccessKeyLabelContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_AmazonAccessKeyLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AWS Secret Key.
+        /// </summary>
+        public static string SpeechPlugin_AmazonSecretKeyLabelContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_AmazonSecretKeyLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Microsoft Bing Subscription Key.
+        /// </summary>
+        public static string SpeechPlugin_BingSubscriptionKeyLabelContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_BingSubscriptionKeyLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Voice Commands.
         /// </summary>
         public static string SpeechPlugin_ChoiceTabItemHeader {
@@ -894,6 +1065,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         public static string SpeechPlugin_DisplayName {
             get {
                 return ResourceManager.GetString("SpeechPlugin_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable Speech Synthesis on Start up.
+        /// </summary>
+        public static string SpeechPlugin_EnableSpeechSynthesisLabelContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_EnableSpeechSynthesisLabelContent", resourceCulture);
             }
         }
         
@@ -943,6 +1123,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string SpeechPlugin_LanguageLabelContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_LanguageLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Master Volume.
         /// </summary>
         public static string SpeechPlugin_MasterVolumeLabel {
@@ -961,11 +1150,47 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Online Speech.
+        /// </summary>
+        public static string SpeechPlugin_OnlineSpeechTabItemHeader {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_OnlineSpeechTabItemHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Sound Control Panel).
+        /// </summary>
+        public static string SpeechPlugin_OpenSoundControlButtonContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_OpenSoundControlButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Sound Settings.
+        /// </summary>
+        public static string SpeechPlugin_OpenSoundSettingsButtonContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_OpenSoundSettingsButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Minimum Rank (Equal and Above).
         /// </summary>
         public static string SpeechPlugin_RankLabelContent {
             get {
                 return ResourceManager.GetString("SpeechPlugin_RankLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region.
+        /// </summary>
+        public static string SpeechPlugin_RegionLabelContent {
+            get {
+                return ResourceManager.GetString("SpeechPlugin_RegionLabelContent", resourceCulture);
             }
         }
         
@@ -1024,6 +1249,24 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Are you sure you wish to factory reset the application?.
+        /// </summary>
+        public static string SystemPlugin_ConfirmResetMessageString {
+            get {
+                return ResourceManager.GetString("SystemPlugin_ConfirmResetMessageString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Support (Email).
+        /// </summary>
+        public static string SystemPlugin_ContactSupportButtonContent {
+            get {
+                return ResourceManager.GetString("SystemPlugin_ContactSupportButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Application Thread Culture.
         /// </summary>
         public static string SystemPlugin_CultureLabelContent {
@@ -1033,7 +1276,7 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to System.
+        ///   Looks up a localized string similar to System &amp; Support.
         /// </summary>
         public static string SystemPlugin_DisplayName {
             get {
@@ -1042,7 +1285,34 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reset and Shutdown.
+        ///   Looks up a localized string similar to Open Community Lobby (Chat).
+        /// </summary>
+        public static string SystemPlugin_OpenCommunityLobbyButtonContent {
+            get {
+                return ResourceManager.GetString("SystemPlugin_OpenCommunityLobbyButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Logs.
+        /// </summary>
+        public static string SystemPlugin_OpenLogsButtonContent {
+            get {
+                return ResourceManager.GetString("SystemPlugin_OpenLogsButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quick Start Tutorial (Offline).
+        /// </summary>
+        public static string SystemPlugin_OpenQuickStartTutorialButtonContent {
+            get {
+                return ResourceManager.GetString("SystemPlugin_OpenQuickStartTutorialButtonContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Factory Reset and Shutdown.
         /// </summary>
         public static string SystemPlugin_ResetButtonContent {
             get {
@@ -1065,6 +1335,15 @@ namespace Syn.VA.Libraries.Language.Locale {
         public static string SystemPlugin_UserInterfaceCultureLabelContent {
             get {
                 return ResourceManager.GetString("SystemPlugin_UserInterfaceCultureLabelContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visit Developer Center (Online).
+        /// </summary>
+        public static string SystemPlugin_VisitDeveloperCenterButtonContent {
+            get {
+                return ResourceManager.GetString("SystemPlugin_VisitDeveloperCenterButtonContent", resourceCulture);
             }
         }
         
@@ -1213,11 +1492,47 @@ namespace Syn.VA.Libraries.Language.Locale {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please provide a process name.
+        /// </summary>
+        public static string WindowsPlugin_AddProcessMessage {
+            get {
+                return ResourceManager.GetString("WindowsPlugin_AddProcessMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Process Name.
+        /// </summary>
+        public static string WindowsPlugin_AddProcessTitle {
+            get {
+                return ResourceManager.GetString("WindowsPlugin_AddProcessTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directories.
+        /// </summary>
+        public static string WindowsPlugin_DirectoryTabHeader {
+            get {
+                return ResourceManager.GetString("WindowsPlugin_DirectoryTabHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Windows.
         /// </summary>
         public static string WindowsPlugin_DisplayName {
             get {
                 return ResourceManager.GetString("WindowsPlugin_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Processes.
+        /// </summary>
+        public static string WindowsPlugin_ProcessTabHeader {
+            get {
+                return ResourceManager.GetString("WindowsPlugin_ProcessTabHeader", resourceCulture);
             }
         }
         

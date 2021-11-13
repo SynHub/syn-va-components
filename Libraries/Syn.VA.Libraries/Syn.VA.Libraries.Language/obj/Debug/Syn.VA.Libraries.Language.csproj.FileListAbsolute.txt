@@ -1,0 +1,8 @@
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\bin\Debug\Syn.VA.Libraries.Language.dll
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\bin\Debug\Syn.VA.Libraries.Language.pdb
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\obj\Debug\Syn.VA.Libraries.Language.Locale.StringResource.resources
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\obj\Debug\Syn.VA.Libraries.Language.csproj.GenerateResource.cache
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\obj\Debug\Syn.VA.Libraries.Language.csproj.CoreCompileInputs.cache
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\obj\Debug\Syn.VA.Libraries.Language.dll
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\obj\Debug\Syn.VA.Libraries.Language.pdb
+H:\BitBucket\Syn.VA.Dashboard\Syn.VA.Libraries\Syn.VA.Libraries.Language\obj\Debug\Syn.VA.Libraries.Language.csproj.AssemblyReference.cache

@@ -136,16 +136,28 @@
     <value>This plugin offers no editable settings.</value>
   </data>
   <data name="AvatarPlugin_DisplayName" xml:space="preserve">
-    <value>Avatar</value>
+    <value>Avatar Engine</value>
   </data>
   <data name="AvatarPlugin_SelectAvatarLabelContent" xml:space="preserve">
     <value>Select Avatar (Please change the Speech settings accordingly)</value>
+  </data>
+  <data name="AvatarPlugin_SelectResolutionScaleLabelContent" xml:space="preserve">
+    <value>Graphics Resolution Scale</value>
+  </data>
+  <data name="AvatarPlugin_SelectAntiAliasingLabelContent" xml:space="preserve">
+    <value>Anti-Aliasing Quality</value>
+  </data>
+  <data name="AvatarPlugin_SelectShadowQualityLabelContent" xml:space="preserve">
+    <value>Shadow Quality</value>
+  </data>
+  <data name="AvatarPlugin_SelectTextureQualityLabelContent" xml:space="preserve">
+    <value>Texture Quality</value>
   </data>
   <data name="BrandPlugin_AvatarModeLabelContent" xml:space="preserve">
     <value>Avatar Panel Mode</value>
   </data>
   <data name="BrandPlugin_DisplayName" xml:space="preserve">
-    <value>Branding</value>
+    <value>Enterprise Branding</value>
   </data>
   <data name="BrandPlugin_InputPlaceholderLabelContent" xml:space="preserve">
     <value>Input Placeholder</value>
@@ -168,16 +180,10 @@
   <data name="BrandPlugin_RefreshTextBoxPlaceholder" xml:space="preserve">
     <value>Refresh Button Text</value>
   </data>
-  <data name="BrandPlugin_RefreshToggleButtonOffContent" xml:space="preserve">
-    <value>Do not show Refresh Button</value>
-  </data>
-  <data name="BrandPlugin_RefreshToggleButtonOnContent" xml:space="preserve">
+  <data name="BrandPlugin_RefreshToggleButtonContent" xml:space="preserve">
     <value>Show Refresh Button</value>
   </data>
-  <data name="BrandPlugin_UseLogoToggleButtonOffContent" xml:space="preserve">
-    <value>Do not display logo</value>
-  </data>
-  <data name="BrandPlugin_UseLogoToggleButtonOnContent" xml:space="preserve">
+  <data name="BrandPlugin_UseLogoToggleButtonContent" xml:space="preserve">
     <value>Display Logo</value>
   </data>
   <data name="BrandPlugin_WindowTitleLabelContent" xml:space="preserve">
@@ -258,10 +264,7 @@
   <data name="DisplayPlugin_ModeLabelContent" xml:space="preserve">
     <value>Display Modes</value>
   </data>
-  <data name="DisplayPlugin_ShowInTaskbarOffContent" xml:space="preserve">
-    <value>Do not show in Taskbar</value>
-  </data>
-  <data name="DisplayPlugin_ShowInTaskbarOnContent" xml:space="preserve">
+  <data name="DisplayPlugin_ShowInTaskbarContent" xml:space="preserve">
     <value>Show in Taskbar</value>
   </data>
   <data name="SystemPlugin_UserInterfaceCultureLabelContent" xml:space="preserve">
@@ -334,7 +337,7 @@
     <value>Minimum Zoom</value>
   </data>
   <data name="MediaPlugin_DisplayName" xml:space="preserve">
-    <value>Songs &amp; Videos</value>
+    <value>Songs, Videos &amp; Shows</value>
   </data>
   <data name="MediaPlugin_IndexingMessage" xml:space="preserve">
     <value>Indexing has started. You will be notified when indexing is over.</value>
@@ -356,14 +359,11 @@
   <data name="NewsPlugin_FeedSelectionLabelContent" xml:space="preserve">
     <value>Select your News Feed</value>
   </data>
-  <data name="ProcessMonitorPlugin_AddProcessMessage" xml:space="preserve">
+  <data name="WindowsPlugin_AddProcessMessage" xml:space="preserve">
     <value>Please provide a process name</value>
   </data>
-  <data name="ProcessMonitorPlugin_AddProcessTitle" xml:space="preserve">
+  <data name="WindowsPlugin_AddProcessTitle" xml:space="preserve">
     <value>Process Name</value>
-  </data>
-  <data name="ProcessMonitorPlugin_DisplayName" xml:space="preserve">
-    <value>Process Monitor</value>
   </data>
   <data name="ProcessMonitorPlugin_ServiceDescription" xml:space="preserve">
     <value>Raise intelligent events based on user interaction</value>
@@ -383,7 +383,7 @@
   <data name="ServicePlugin_ServiceTabHeader" xml:space="preserve">
     <value>Services</value>
   </data>
-  <data name="ShowInfoPlugin_ApiKeyLabelContent" xml:space="preserve">
+  <data name="MediaPlugin_ApiKeyLabelContent" xml:space="preserve">
     <value>Your API Key for Omdb</value>
   </data>
   <data name="ShowInfoPlugin_DisplayName" xml:space="preserve">
@@ -428,6 +428,15 @@
   <data name="SpeechPlugin_RankLabelContent" xml:space="preserve">
     <value>Minimum Rank (Equal and Above)</value>
   </data>
+  <data name="SpeechPlugin_EnableSpeechSynthesisLabelContent" xml:space="preserve">
+    <value>Enable Speech Synthesis on Start up</value>
+  </data>
+  <data name="SpeechPlugin_OpenSoundSettingsButtonContent" xml:space="preserve">
+    <value>Open Sound Settings</value>
+  </data>
+  <data name="SpeechPlugin_OpenSoundControlButtonContent" xml:space="preserve">
+    <value>Open Sound Control Panel)</value>
+  </data>
   <data name="SpeechPlugin_SettingsSavedMessage" xml:space="preserve">
     <value>New speech settings saved.</value>
   </data>
@@ -447,7 +456,10 @@
     <value>Speech Synthesis Volume</value>
   </data>
   <data name="SystemPlugin_DisplayName" xml:space="preserve">
-    <value>System</value>
+    <value>System &amp; Support</value>
+  </data>
+  <data name="SystemPlugin_ConfirmResetMessageString" xml:space="preserve">
+    <value>Are you sure you wish to factory reset the application?</value>
   </data>
   <data name="TelegramPlugin_BotTokenLabelContent" xml:space="preserve">
     <value>Specify Telegram Bot Token</value>
@@ -502,16 +514,109 @@
   <data name="WindowsPlugin_ScreenshotLabelContent" xml:space="preserve">
     <value>Screenshot Directory</value>
   </data>
+  <data name="WindowsPlugin_DirectoryTabHeader" xml:space="preserve">
+    <value>Directories</value>
+  </data>
+  <data name="WindowsPlugin_ProcessTabHeader" xml:space="preserve">
+    <value>Processes</value>
+  </data>
   <data name="WindowsPlugin_WallpaperLabelContent" xml:space="preserve">
     <value>Wallpaper Directory</value>
   </data>
   <data name="SystemPlugin_ResetButtonContent" xml:space="preserve">
-    <value>Reset and Shutdown</value>
+    <value>Factory Reset and Shutdown</value>
+  </data>
+  <data name="SystemPlugin_OpenLogsButtonContent" xml:space="preserve">
+    <value>Open Logs</value>
   </data>
   <data name="SystemPlugin_RestartButtonContent" xml:space="preserve">
     <value>Restart Dashboard</value>
   </data>
   <data name="SystemPlugin_WorkingDirectoryButtonContent" xml:space="preserve">
     <value>Open Working Directory</value>
+  </data>
+  <data name="SystemPlugin_ContactSupportButtonContent" xml:space="preserve">
+    <value>Contact Support (Email)</value>
+  </data>
+  <data name="SystemPlugin_OpenCommunityLobbyButtonContent" xml:space="preserve">
+    <value>Open Community Lobby (Chat)</value>
+  </data>
+  <data name="SystemPlugin_VisitDeveloperCenterButtonContent" xml:space="preserve">
+    <value>Visit Developer Center (Online)</value>
+  </data>
+  <data name="SystemPlugin_OpenQuickStartTutorialButtonContent" xml:space="preserve">
+    <value>Quick Start Tutorial (Offline)</value>
+  </data>
+  <data name="AvatarPlugin_UseAmbientToggleSwitchContent" xml:space="preserve">
+    <value>Use Ambient Background</value>
+  </data>
+  <data name="AvatarPlugin_CustomNameLabelContent" xml:space="preserve">
+    <value>Custom Avatar Name</value>
+  </data>
+  <data name="Assistant_SettingsContextMenuHeader" xml:space="preserve">
+    <value>Open Settings Panel...</value>
+  </data>
+  <data name="BackupPlugin_DisplayName" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BackupPlugin_ExportButtonContent" xml:space="preserve">
+    <value>Export Knowledge...</value>
+  </data>
+  <data name="BackupPlugin_ImportButtonContent" xml:space="preserve">
+    <value>Import Knowledge...</value>
+  </data>
+  <data name="BackupPlugin_ExportCompletedMessageString" xml:space="preserve">
+    <value>Export of Knowledge-Base successful.</value>
+  </data>
+  <data name="BackupPlugin_ImportCompletedMessageString" xml:space="preserve">
+    <value>Knowledge-Base import successful. Please restart to load the new knowledge-base data.</value>
+  </data>
+  <data name="Common_Error" xml:space="preserve">
+    <value>There was a problem processing your request. Please refer the log for more details.</value>
+  </data>
+  <data name="Common_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Common_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="SpeechPlugin_OnlineSpeechTabItemHeader" xml:space="preserve">
+    <value>Online Speech</value>
+  </data>
+  <data name="SettingsPanel_SaveButton_ItemSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SettingsPanel_SaveButtonItemSaveRestart" xml:space="preserve">
+    <value>Save and Restart</value>
+  </data>
+  <data name="SpeechPlugin_RegionLabelContent" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="SpeechPlugin_BingSubscriptionKeyLabelContent" xml:space="preserve">
+    <value>Microsoft Bing Subscription Key</value>
+  </data>
+  <data name="SpeechPlugin_AmazonAccessKeyLabelContent" xml:space="preserve">
+    <value>AWS Access Key</value>
+  </data>
+  <data name="SpeechPlugin_AmazonSecretKeyLabelContent" xml:space="preserve">
+    <value>AWS Secret Key</value>
+  </data>
+  <data name="SpeechPlugin_LanguageLabelContent" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="SettingsPanel_WindowTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="RemoteControlPlugin_LabelContent" xml:space="preserve">
+    <value>Specify a different Port Number (Default 3101)</value>
+  </data>
+  <data name="RemoteControlPlugin_ToggleSwitchContent" xml:space="preserve">
+    <value>Enable Remote Control on Startup</value>
+  </data>
+  <data name="RemoteControlPlugin_DisplayName" xml:space="preserve">
+    <value>Remote Control</value>
+  </data>
+  <data name="RemoteControlPlugin_QrLabelContent" xml:space="preserve">
+    <value>Scan the QR code below to download the VA Remote App</value>
   </data>
 </root>
